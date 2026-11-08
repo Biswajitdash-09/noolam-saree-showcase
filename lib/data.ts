@@ -920,7 +920,7 @@ export const bridal: Bridal[] = [
     fabric: "Pattu",
     pallu: "Red-gold pallu",
     price: 27300,
-    media: "/images/bridal/piece-4-center.png",
+    media: "/images/bridal/bridal-manjal.jpg",
     swatch: { name: "Manjal", base: "#d9a12b", deep: "#8a5f0a", light: "#f4d48a", pattern: "zari" },
   },
   {

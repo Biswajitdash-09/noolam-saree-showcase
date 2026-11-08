@@ -43,7 +43,7 @@ function PieceThumb({ piece }: { piece: LookPiece }) {
 
 export function TryLook() {
   const { addToCart, toggleWish, isWished } = useStore();
-  const [active, setActive] = React.useState(6);
+  const [active, setActive] = React.useState(0);
   const trackRef = React.useRef<HTMLDivElement>(null);
   const dragRef = React.useRef<{ down: boolean; startX: number; startLeft: number }>({
     down: false,
@@ -65,7 +65,7 @@ export function TryLook() {
   }, []);
 
   React.useEffect(() => {
-    const id = window.setTimeout(() => scrollToIndex(6), 120);
+    const id = window.setTimeout(() => scrollToIndex(0), 120);
     return () => window.clearTimeout(id);
   }, [scrollToIndex]);
 
