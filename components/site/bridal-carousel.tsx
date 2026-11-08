@@ -110,8 +110,8 @@ export function BridalCarousel() {
                     className={cn(
                       "object-cover transition-transform duration-[1200ms] group-hover:scale-[1.05]",
                       isActive
-                        ? "sepia-[0.12] saturate-[0.96] brightness-[0.98]"
-                        : "sepia-[0.28] saturate-[0.8] brightness-[0.9]",
+                        ? "brightness-[0.98] contrast-[1.03]"
+                        : "brightness-[0.92] contrast-[1.0] opacity-80",
                     )}
                   />
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(250,247,242,0.06)_0%,transparent_38%,rgba(44,5,11,0.42)_100%)]" />

@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import { ArrowLeft, ArrowRight, Heart, X } from "lucide-react";
 import { toast } from "sonner";
 
@@ -65,18 +66,15 @@ export function RackDetail({ items, index, onIndexChange, onClose }: RackDetailP
       >
         <DialogTitle className="sr-only">{product.name}</DialogTitle>
 
-        <div className="pointer-events-none absolute inset-x-0 top-[26%] flex items-center justify-center gap-4 opacity-30 blur-[6px]">
-          {items.slice(0, 9).map((item) => (
-            <SilkArt
-              key={item.id}
-              swatch={item.swatch}
-              shape={item.kind === "blouse" ? "blouse" : "drape"}
-              className={cn(
-                "w-[90px] opacity-70",
-                item.kind === "blouse" ? "h-[110px]" : "h-[190px]",
-              )}
+        <div className="pointer-events-none absolute inset-x-0 top-[22%] flex items-center justify-center opacity-30 blur-[8px]">
+          <div className="relative h-[220px] w-full max-w-[1400px]">
+            <Image
+              src="/images/rack/full-rail.png"
+              alt="The rail"
+              fill
+              className="object-contain"
             />
-          ))}
+          </div>
         </div>
 
         <div className="relative z-10 flex min-h-[100svh] flex-col">

@@ -11,14 +11,14 @@ export function Hero() {
       className="relative flex min-h-[100svh] items-end overflow-hidden bg-maroon-950"
     >
       <Image
-        src="/images/editorial/ocean-gold.jpg"
-        alt="Golden light falling across a silk-draped showroom floor"
+        src="/images/hero-showroom.jpg"
+        alt="Grand NOOLAM temple silk showroom with carved wooden pillars and silk sarees"
         fill
         priority
         sizes="100vw"
         className="object-cover object-center"
         style={{
-          filter: "saturate(0.72) sepia(0.28) contrast(1.06) brightness(0.82)",
+          filter: "brightness(0.88) contrast(1.05)",
         }}
       />
 

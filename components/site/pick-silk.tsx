@@ -14,17 +14,18 @@ type SilkCard = {
   slug: string;
   lines: string[];
   media: string;
+  model?: string;
   tone: "light" | "dark";
 };
 
 const silks: SilkCard[] = [
-  { slug: "magenta-shot-silk", lines: ["MAGENTA", "SHOT SILK"], media: "/images/editorial/city-brick.jpg", tone: "light" },
-  { slug: "palace-check", lines: ["PALACE", "CHECK"], media: "/images/editorial/city-dusk.jpg", tone: "light" },
-  { slug: "bengal-garden", lines: ["BENGAL", "GARDEN"], media: "/images/editorial/rocky-plains.jpg", tone: "dark" },
-  { slug: "kanchi-rani", lines: ["KANCHI", "RANI"], media: "/images/editorial/ocean-sunset.jpg", tone: "light" },
-  { slug: "noolam-temple-gold-brocade", lines: ["TEMPLE", "GOLD"], media: "/images/editorial/misty-ridge.jpg", tone: "dark" },
-  { slug: "forest-rettaipet", lines: ["FOREST", "RETTAI"], media: "/images/editorial/mountain-pines.jpg", tone: "light" },
-  { slug: "ruby-korvai", lines: ["RUBY", "KORVAI"], media: "/images/editorial/city-fog.jpg", tone: "light" },
+  { slug: "magenta-shot-silk", lines: ["MAGENTA", "SHOT SILK"], media: "/images/editorial/city-brick.jpg", model: "/images/pick-silk/model-magenta.png", tone: "light" },
+  { slug: "palace-check", lines: ["PALACE", "CHECK"], media: "/images/editorial/city-dusk.jpg", model: "/images/pick-silk/model-palace.png", tone: "light" },
+  { slug: "bengal-garden", lines: ["BENGAL", "GARDEN"], media: "/images/editorial/rocky-plains.jpg", model: "/images/pick-silk/model-bengal.png", tone: "dark" },
+  { slug: "kanchi-rani", lines: ["KANCHI", "RANI"], media: "/images/editorial/ocean-sunset.jpg", model: "/images/pick-silk/model-kanchi.png", tone: "light" },
+  { slug: "noolam-temple-gold-brocade", lines: ["TEMPLE", "GOLD"], media: "/images/editorial/misty-ridge.jpg", model: "/images/pick-silk/model-benares.png", tone: "dark" },
+  { slug: "forest-rettaipet", lines: ["FOREST", "RETTAI"], media: "/images/editorial/mountain-pines.jpg", model: "/images/pick-silk/model-korvai.png", tone: "light" },
+  { slug: "ruby-korvai", lines: ["RUBY", "KORVAI"], media: "/images/editorial/city-fog.jpg", model: "/images/pick-silk/model-palace.png", tone: "light" },
 ];
 
 function SilkCardItem({ card, index, total }: { card: SilkCard; index: number; total: number }) {
@@ -104,6 +105,19 @@ function SilkCardItem({ card, index, total }: { card: SilkCard; index: number; t
               </span>
             ))}
           </h3>
+
+          {card.model && (
+            <div className="pointer-events-none absolute inset-x-0 bottom-4 top-14 z-[2] overflow-hidden">
+              <Image
+                src={card.model}
+                alt={product.name}
+                fill
+                sizes="262px"
+                draggable={false}
+                className="object-contain object-bottom drop-shadow-[0_14px_18px_rgba(0,0,0,0.35)]"
+              />
+            </div>
+          )}
 
           <button
             type="button"

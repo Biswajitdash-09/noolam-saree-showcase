@@ -7,15 +7,15 @@ import { Volume2, VolumeX } from "lucide-react";
 import { ArrowPill } from "@/components/site/arrow-pill";
 
 const leftFrames = [
-  { src: "/images/editorial/city-dusk.jpg", caption: "The lamp room", alt: "Warm dusk light in a courtyard" },
-  { src: "/images/editorial/mountain-pines.jpg", caption: "First light", alt: "Pine-covered hills at first light" },
-  { src: "/images/editorial/city-narrow.jpg", caption: "Old-city lanes", alt: "A narrow old-city lane" },
+  { src: "/images/muse-film/left-1.jpg", caption: "The drape", alt: "Red and gold saree drape" },
+  { src: "/images/muse-film/left-2.jpg", caption: "Golden hour", alt: "Model in mustard silk saree" },
+  { src: "/images/muse-film/left-3.jpg", caption: "Temple bells", alt: "Two women adorned in silk sarees" },
 ];
 
 const rightFrames = [
-  { src: "/images/editorial/ocean-gold.jpg", caption: "Feels right", alt: "Golden light on open water" },
-  { src: "/images/editorial/rocky-plains.jpg", caption: "The loom room", alt: "Rocky plains in warm light" },
-  { src: "/images/editorial/city-brick.jpg", caption: "For the vow", alt: "Brick facade in afternoon sun" },
+  { src: "/images/muse-film/right-1.jpg", caption: "Feels right", alt: "Silk fabric showcase" },
+  { src: "/images/muse-film/right-2.jpg", caption: "The laughter", alt: "Women sharing laughter in silk sarees" },
+  { src: "/images/muse-film/right-3.jpg", caption: "For the vow", alt: "Bridal silk saree with heirloom jewelry" },
 ];
 
 const grades = {
@@ -98,12 +98,12 @@ export function MuseFilm() {
 
             <div className="group relative aspect-[16/10] overflow-hidden rounded-[14px] bg-maroon-950 shadow-[0_40px_80px_-40px_rgba(44,5,11,0.65)] sm:aspect-[16/9]">
               <Image
-                src="/images/editorial/ocean-sunset.jpg"
-                alt="A model in a Kanjivaram saree, listening to music"
+                src="/images/muse-film/center-film.jpg"
+                alt="NOOLAM Muse — Feel the drape"
                 fill
                 priority
                 sizes="(max-width: 768px) 92vw, 820px"
-                className="object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.03] sepia-[0.16] saturate-[0.95]"
+                className="object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.03]"
               />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,3,6,0.18)_0%,transparent_40%,rgba(20,3,6,0.45)_100%)]" />
 

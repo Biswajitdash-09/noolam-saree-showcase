@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import type { Product } from "@/lib/data";
 import { SilkArt } from "@/components/site/silk-fabric";
 import { cn } from "@/lib/utils";
@@ -43,6 +45,29 @@ const dims = {
 export function HangerProduct({ product, size = "sm", flip = false, className }: HangerProductProps) {
   const d = dims[size];
   const isBlouse = product.kind === "blouse";
+
+  if (size === "lg") {
+    const detailImg = isBlouse
+      ? "/images/rack/blouse-detail-saffron.png"
+      : "/images/rack/saree-detail-gold.png";
+
+    return (
+      <div className={cn("relative flex flex-col items-center", className)}>
+        <div className="relative h-[340px] w-[280px] sm:h-[400px] sm:w-[340px]">
+          <Image
+            src={detailImg}
+            alt={product.name}
+            fill
+            sizes="340px"
+            className={cn(
+              "object-contain transition-transform duration-500",
+              flip && "-scale-x-100",
+            )}
+          />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={cn("relative flex flex-col items-center", className)}>

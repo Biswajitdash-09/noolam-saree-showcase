@@ -565,6 +565,7 @@ export type LookPiece = {
   name: string;
   price: number;
   swatch: Swatch;
+  thumb?: string;
 };
 
 export type Look = {
@@ -573,6 +574,7 @@ export type Look = {
   name: string;
   subtitle: string;
   media: string;
+  model?: string;
   pieces: LookPiece[];
 };
 
@@ -583,8 +585,9 @@ function piece(
   name: string,
   price: number,
   swatch: Swatch,
+  thumb?: string,
 ): LookPiece {
-  return { id, kind, label, name, price, swatch };
+  return { id, kind, label, name, price, swatch, thumb };
 }
 
 const jewel = (name: string, base: string, deep: string, light: string): Swatch => ({
@@ -602,6 +605,7 @@ export const looks: Look[] = [
     name: "Ivory Elephant",
     subtitle: "Temple ivory, antique gold",
     media: "/images/editorial/ocean-gold.jpg",
+    model: "/images/try-look/model-3.png",
     pieces: [
       piece("l1a", "saree", "NOOLAM · Saree", "Ivory Kanjivaram with Elephant Border", 32000, {
         name: "Temple Ivory",
@@ -609,18 +613,18 @@ export const looks: Look[] = [
         deep: "#a99872",
         light: "#f7efdd",
         pattern: "buta",
-      }),
+      }, "/images/try-look/thumb-1.png"),
       piece("l1b", "blouse", "NOOLAM · Blouse", "Dusty Rose Silk Blouse", 4200, {
         name: "Dusty Rose",
         base: "#b5626f",
         deep: "#6f2f3a",
         light: "#e3a2ac",
         pattern: "plain",
-      }),
-      piece("l1c", "choker", "NOOLAM · Choker", "Pink Stone Temple Choker", 9400, jewel("Ruby & Gold", "#a51e2c", "#5c0810", "#d7b551")),
-      piece("l1d", "jhumkas", "NOOLAM · Jhumkas", "Jhumkas with Pearl Drops", 4600, jewel("Pearl Gold", "#c9a227", "#7a5a10", "#f2e3b8")),
-      piece("l1e", "ottiyanam", "NOOLAM · Ottiyanam", "Elephant Motif Ottiyanam", 15000, jewel("Antique Gold", "#b98d1b", "#6b4a08", "#efd68e")),
-      piece("l1f", "bangles", "NOOLAM · Bangles", "Gold and Dusty Rose Bangle Stack", 3800, jewel("Rose Gold", "#b5626f", "#6f2f3a", "#e3c08a")),
+      }, "/images/try-look/thumb-2.png"),
+      piece("l1c", "choker", "NOOLAM · Choker", "Pink Stone Temple Choker", 9400, jewel("Ruby & Gold", "#a51e2c", "#5c0810", "#d7b551"), "/images/try-look/thumb-3.png"),
+      piece("l1d", "jhumkas", "NOOLAM · Jhumkas", "Jhumkas with Pearl Drops", 4600, jewel("Pearl Gold", "#c9a227", "#7a5a10", "#f2e3b8"), "/images/try-look/thumb-4.png"),
+      piece("l1e", "ottiyanam", "NOOLAM · Ottiyanam", "Elephant Motif Ottiyanam", 15000, jewel("Antique Gold", "#b98d1b", "#6b4a08", "#efd68e"), "/images/try-look/thumb-5.png"),
+      piece("l1f", "bangles", "NOOLAM · Bangles", "Gold and Dusty Rose Bangle Stack", 3800, jewel("Rose Gold", "#b5626f", "#6f2f3a", "#e3c08a"), "/images/try-look/thumb-6.png"),
     ],
   },
   {
@@ -629,6 +633,7 @@ export const looks: Look[] = [
     name: "Emerald Nayika",
     subtitle: "Forest silk, ruby border",
     media: "/images/editorial/mountain-pines.jpg",
+    model: "/images/try-look/model-2.png",
     pieces: [
       piece("l2a", "saree", "NOOLAM · Saree", "Forest Green Rettaipet", 18600, {
         name: "Forest",
@@ -656,6 +661,7 @@ export const looks: Look[] = [
     name: "Rani Court",
     subtitle: "Rani pink, temple gold",
     media: "/images/editorial/city-dusk.jpg",
+    model: "/images/try-look/model-1.png",
     pieces: [
       piece("l3a", "saree", "NOOLAM · Saree", "Kanchi Rani", 32400, {
         name: "Rani Pink",
@@ -683,6 +689,7 @@ export const looks: Look[] = [
     name: "Indigo Monsoon",
     subtitle: "Palace check, pearl drops",
     media: "/images/editorial/city-fog.jpg",
+    model: "/images/try-look/model-6.png",
     pieces: [
       piece("l4a", "saree", "NOOLAM · Saree", "Palace Check", 19900, {
         name: "Indigo Palace",
@@ -710,6 +717,7 @@ export const looks: Look[] = [
     name: "Marigold Bazaar",
     subtitle: "Market gold, glass bangles",
     media: "/images/editorial/rocky-plains.jpg",
+    model: "/images/try-look/model-4.png",
     pieces: [
       piece("l5a", "saree", "NOOLAM · Saree", "Marigold Half Saree", 18400, {
         name: "Marigold",
@@ -737,6 +745,7 @@ export const looks: Look[] = [
     name: "Peacock Hour",
     subtitle: "Blue silk, emerald drops",
     media: "/images/editorial/city-brick.jpg",
+    model: "/images/try-look/model-2.png",
     pieces: [
       piece("l6a", "saree", "NOOLAM · Saree", "Peacock Blue Kanjivaram", 36400, {
         name: "Peacock",
@@ -764,6 +773,7 @@ export const looks: Look[] = [
     name: "Sandalwood Dawn",
     subtitle: "Sand silk, antique gold",
     media: "/images/editorial/misty-ridge.jpg",
+    model: "/images/try-look/model-3.png",
     pieces: [
       piece("l7a", "saree", "NOOLAM · Saree", "Bengal Garden", 24600, {
         name: "Sandal Garden",
@@ -791,6 +801,7 @@ export const looks: Look[] = [
     name: "Ruby Muhurtham",
     subtitle: "Bridal ruby, full gold",
     media: "/images/editorial/ocean-sunset.jpg",
+    model: "/images/try-look/model-5.png",
     pieces: [
       piece("l8a", "saree", "NOOLAM · Saree", "Ruby Korvai", 41800, {
         name: "Ruby",
@@ -822,12 +833,12 @@ export type Mood = {
 };
 
 export const moods: Mood[] = [
-  { label: "Wedding Edit", caption: "Muhurtham silks", media: "/images/editorial/mountain-pines.jpg", tone: "warm" },
-  { label: "Kanchipuram Icons", caption: "Temple looms", media: "/images/editorial/rocky-plains.jpg", tone: "deep" },
-  { label: "Banarasi Heirlooms", caption: "Zari and brocade", media: "/images/editorial/misty-ridge.jpg", tone: "deep" },
-  { label: "Festive Radiance", caption: "Evening light", media: "/images/editorial/city-dusk.jpg", tone: "warm" },
-  { label: "Zari Signatures", caption: "Silver-core gold", media: "/images/editorial/city-brick.jpg", tone: "cool" },
-  { label: "Bridal Élan", caption: "For the vow", media: "/images/editorial/ocean-sunset.jpg", tone: "warm" },
+  { label: "Wedding Edit", caption: "Muhurtham silks", media: "/images/extracted/mood-wedding-edit.png", tone: "warm" },
+  { label: "Kanchipuram Icons", caption: "Temple looms", media: "/images/extracted/mood-kanchipuram-icons.png", tone: "deep" },
+  { label: "Banarasi Heirlooms", caption: "Zari and brocade", media: "/images/extracted/mood-banarasi-heirlooms.png", tone: "deep" },
+  { label: "Festive Radiance", caption: "Evening light", media: "/images/extracted/mood-festive-radiance.png", tone: "warm" },
+  { label: "Zari Signatures", caption: "Silver-core gold", media: "/images/extracted/mood-zari-signatures.png", tone: "cool" },
+  { label: "Bridal Élan", caption: "For the vow", media: "/images/extracted/mood-bridal-elan.png", tone: "warm" },
 ];
 
 export type Reel = {
@@ -848,7 +859,7 @@ export const reels: Reel[] = [
     fabric: "Tissue Kanjivaram",
     title: "Ponni Kanjivaram",
     location: "Lamp room, Kanchipuram",
-    media: "/images/editorial/ocean-gold.jpg",
+    media: "/images/reels/reel-01.png",
   },
   {
     id: "r2",
@@ -857,7 +868,7 @@ export const reels: Reel[] = [
     fabric: "Hand-block Cotton",
     title: "Marina Morning",
     location: "Mylapore to the sea",
-    media: "/images/editorial/city-fog.jpg",
+    media: "/images/reels/reel-02.png",
   },
   {
     id: "r3",
@@ -866,7 +877,7 @@ export const reels: Reel[] = [
     fabric: "Banarasi Katan",
     title: "Kaali Banarasi",
     location: "Studio, Varanasi red",
-    media: "/images/editorial/mountain-pines.jpg",
+    media: "/images/reels/reel-03.png",
   },
   {
     id: "r4",
@@ -875,7 +886,7 @@ export const reels: Reel[] = [
     fabric: "Kanjivaram Silk",
     title: "Pachai Pattu",
     location: "The bride's chamber",
-    media: "/images/editorial/ocean-sunset.jpg",
+    media: "/images/reels/reel-04.png",
   },
   {
     id: "r5",
@@ -884,7 +895,7 @@ export const reels: Reel[] = [
     fabric: "Georgette Silk",
     title: "Galli Sindoor",
     location: "Old-city lanes",
-    media: "/images/editorial/city-narrow.jpg",
+    media: "/images/reels/reel-05.png",
   },
 ];
 
@@ -909,7 +920,7 @@ export const bridal: Bridal[] = [
     fabric: "Pattu",
     pallu: "Red-gold pallu",
     price: 27300,
-    media: "/images/editorial/ocean-sunset.jpg",
+    media: "/images/bridal/piece-4-center.png",
     swatch: { name: "Manjal", base: "#d9a12b", deep: "#8a5f0a", light: "#f4d48a", pattern: "zari" },
   },
   {
@@ -921,7 +932,7 @@ export const bridal: Bridal[] = [
     price: 38600,
     compareAt: 42900,
     discount: "-10%",
-    media: "/images/editorial/city-dusk.jpg",
+    media: "/images/bridal/piece-5.png",
     swatch: { name: "Rakta", base: "#8a1622", deep: "#3c060c", light: "#cf4a52", pattern: "temple" },
   },
   {
@@ -931,7 +942,7 @@ export const bridal: Bridal[] = [
     fabric: "Pure silk",
     pallu: "Elephant and mango pallu",
     price: 41200,
-    media: "/images/editorial/rocky-plains.jpg",
+    media: "/images/bridal/piece-3.png",
     swatch: { name: "Ivory", base: "#e0d3b6", deep: "#a99872", light: "#f7efdd", pattern: "buta" },
   },
   {
@@ -943,7 +954,7 @@ export const bridal: Bridal[] = [
     price: 33400,
     compareAt: 39300,
     discount: "-15%",
-    media: "/images/editorial/mountain-pines.jpg",
+    media: "/images/bridal/piece-6.png",
     swatch: { name: "Malligai", base: "#e8e2d2", deep: "#b3a88f", light: "#fbf7ef", pattern: "buta" },
   },
   {
@@ -953,7 +964,7 @@ export const bridal: Bridal[] = [
     fabric: "Kanjivaram silk",
     pallu: "Peacock zari pallu",
     price: 29800,
-    media: "/images/editorial/misty-ridge.jpg",
+    media: "/images/bridal/piece-2.png",
     swatch: { name: "Neelambari", base: "#0d3f6b", deep: "#041d34", light: "#4d87bd", pattern: "zari" },
   },
   {
@@ -963,7 +974,7 @@ export const bridal: Bridal[] = [
     fabric: "Tissue silk",
     pallu: "Gold tissue pallu",
     price: 35200,
-    media: "/images/editorial/city-brick.jpg",
+    media: "/images/bridal/piece-7.png",
     swatch: { name: "Sandhya", base: "#c9a75a", deep: "#7f6222", light: "#f0dda6", pattern: "brocade" },
   },
   {
@@ -975,7 +986,7 @@ export const bridal: Bridal[] = [
     price: 44000,
     compareAt: 48900,
     discount: "-10%",
-    media: "/images/editorial/city-fog.jpg",
+    media: "/images/bridal/piece-1.png",
     swatch: { name: "Thanga", base: "#b98d1b", deep: "#6b4a08", light: "#efd68e", pattern: "zari" },
   },
 ];

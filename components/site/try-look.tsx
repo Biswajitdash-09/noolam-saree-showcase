@@ -12,6 +12,19 @@ import { looks, type Look, type LookPiece } from "@/lib/data";
 import { cn, formatINR } from "@/lib/utils";
 
 function PieceThumb({ piece }: { piece: LookPiece }) {
+  if (piece.thumb) {
+    return (
+      <div className="relative h-full w-full">
+        <Image
+          src={piece.thumb}
+          alt={piece.name}
+          fill
+          className="object-cover"
+          sizes="68px"
+        />
+      </div>
+    );
+  }
   if (piece.kind === "saree" || piece.kind === "blouse") {
     return (
       <SilkArt
@@ -206,35 +219,16 @@ export function TryLook() {
                           transition: "transform 600ms cubic-bezier(.22,1,.36,1), opacity 500ms ease, filter 500ms ease",
                         }}
                       >
-                        <div className="relative aspect-[3/4.25]">
-                          <div
-                            className="absolute inset-0 overflow-hidden"
-                            style={{
-                              maskImage:
-                                "linear-gradient(180deg,#000 0%,#000 72%,rgba(0,0,0,0.55) 90%,transparent 100%)",
-                              WebkitMaskImage:
-                                "linear-gradient(180deg,#000 0%,#000 72%,rgba(0,0,0,0.55) 90%,transparent 100%)",
-                            }}
-                          >
-                            <Image
-                              src={item.media}
-                              alt={`${item.name} — ${item.subtitle}`}
-                              fill
-                              sizes="(max-width: 640px) 72vw, 326px"
-                              className="object-cover sepia-[0.22] saturate-[0.9] brightness-[0.98]"
-                              draggable={false}
-                            />
-                            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(44,5,11,0.06)_0%,rgba(44,5,11,0.14)_45%,rgba(44,5,11,0.5)_100%)]" />
-                          </div>
-                          <div className="absolute -bottom-3 left-1/2 h-5 w-2/3 -translate-x-1/2 rounded-[50%] bg-maroon-900/15 blur-xl" />
-                          <div className="absolute inset-x-0 bottom-12 flex flex-col items-center px-5 text-center">
-                            <span className="rounded-full bg-black/35 px-3 py-1 text-[9px] uppercase tracking-[0.22em] text-white/85 backdrop-blur">
-                              Look {String(index + 1).padStart(2, "0")}
-                            </span>
-                            <p className="mt-2 text-[13px] font-medium uppercase tracking-[0.18em] text-white">
-                              {item.name}
-                            </p>
-                          </div>
+                        <div className="relative mx-auto h-[440px] w-full max-w-[280px] sm:h-[500px]">
+                          <Image
+                            src={item.model || item.media}
+                            alt={`${item.name} — ${item.subtitle}`}
+                            fill
+                            sizes="(max-width: 640px) 72vw, 280px"
+                            className="object-contain object-bottom"
+                            draggable={false}
+                          />
+                          <div className="absolute -bottom-2 left-1/2 h-4 w-3/4 -translate-x-1/2 rounded-[50%] bg-maroon-950/15 blur-lg" />
                         </div>
                       </button>
                     </div>
