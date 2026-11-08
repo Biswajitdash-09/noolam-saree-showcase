@@ -1,0 +1,296 @@
+- generic [ref=f20e4]:
+  - navigation [ref=f20e5]:
+    - generic [ref=f20e6]:
+      - generic [ref=f20e7]:
+        - link "Unsplash Home" [ref=f20e8] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=f20e9]
+        - link "Photos" [ref=f20e11] [cursor=pointer]:
+          - /url: /
+        - link "Illustrations" [ref=f20e14] [cursor=pointer]:
+          - /url: /illustrations
+      - generic [ref=f20e17]:
+        - button "Explore" [ref=f20e18] [cursor=pointer]
+        - button "Collections" [ref=f20e21] [cursor=pointer]
+        - button "Download History" [ref=f20e24] [cursor=pointer]
+      - button "Bookmarks" [ref=f20e28] [cursor=pointer]
+    - generic [ref=f20e31]:
+      - link "Log in / Sign up" [ref=f20e32] [cursor=pointer]:
+        - /url: /login?referrer=%2Fphotos%2Fa-group-of-mountains-with-snow-on-them-t2Wt4TNEJYY
+      - button "Language" [ref=f20e35] [cursor=pointer]
+      - button "Menu" [ref=f20e38] [cursor=pointer]
+  - generic [ref=f20e41]:
+    - generic [ref=f20e42]:
+      - navigation [ref=f20e43]:
+        - search "Find visuals sitewide" [ref=f20e45]:
+          - button "Search Unsplash" [ref=f20e46] [cursor=pointer]
+          - combobox [ref=f20e49]:
+            - searchbox "Search Unsplash" [ref=f20e50]
+            - listbox
+          - button "Visual Search" [ref=f20e52] [cursor=pointer]
+        - generic [ref=f20e55]:
+          - link "Get Unsplash+" [ref=f20e56] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=f20e57] [cursor=pointer]:
+            - /url: /login?referrer=%2Fphotos%2Fa-group-of-mountains-with-snow-on-them-t2Wt4TNEJYY
+        - button "Submit an image" [ref=f20e59] [cursor=pointer]
+      - generic [ref=f20e60]:
+        - generic [ref=f20e61]:
+          - banner [ref=f20e63]:
+            - generic [ref=f20e65]:
+              - link [ref=f20e66] [cursor=pointer]:
+                - /url: /@hansott
+              - generic [ref=f20e69]:
+                - link "Hans Ott" [ref=f20e70] [cursor=pointer]:
+                  - /url: /@hansott
+                - generic [ref=f20e71]:
+                  - text: For
+                  - link "Unsplash+" [ref=f20e72] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-group-of-mountains-with-snow-on-them-t2Wt4TNEJYY
+            - generic [ref=f20e73]:
+              - button "Bookmark" [ref=f20e74] [cursor=pointer]
+              - button "Add to Collection" [ref=f20e77] [cursor=pointer]
+              - button "Edit image" [ref=f20e80] [cursor=pointer]
+              - button "Download" [ref=f20e84] [cursor=pointer]
+          - button "Zoom in on this image" [ref=f20e90]:
+            - img "A group of mountains with snow on them" [ref=f20e91]
+          - generic [ref=f20e92]:
+            - generic [ref=f20e94]:
+              - button "Share this image" [ref=f20e95] [cursor=pointer]:
+                - generic [ref=f20e98]: Share
+              - button "More Actions" [ref=f20e99] [cursor=pointer]
+            - generic [ref=f20e103]:
+              - heading "A group of mountains with snow on them" [level=1] [ref=f20e105]
+              - paragraph [ref=f20e109]: Download this HD photo of mountains, snow, mountain landscape, and natural beauty in Iceland by Hans Ott (@hansott)
+              - generic [ref=f20e111]:
+                - generic [ref=f20e112]: Iceland
+                - generic [ref=f20e121]:
+                  - text: Published on
+                  - time [ref=f20e122]: July 3, 2024
+                - button "SONY, ILCE-7M4" [ref=f20e127] [cursor=pointer]
+                - generic [ref=f20e131]:
+                  - text: Licensed under the
+                  - link "Unsplash+ License" [ref=f20e132] [cursor=pointer]:
+                    - /url: /plus/license
+            - generic [ref=f20e134]:
+              - link "mountains" [ref=f20e135] [cursor=pointer]:
+                - /url: /s/photos/mountains
+              - link "snow" [ref=f20e136] [cursor=pointer]:
+                - /url: /s/photos/snow
+              - link "mountain landscape" [ref=f20e137] [cursor=pointer]:
+                - /url: /s/photos/mountain-landscape
+              - link "natural beauty" [ref=f20e138] [cursor=pointer]:
+                - /url: /s/photos/natural-beauty
+              - link "cloudy sky" [ref=f20e139] [cursor=pointer]:
+                - /url: /s/photos/cloudy-sky
+              - link "mountain range" [ref=f20e140] [cursor=pointer]:
+                - /url: /s/photos/mountain-range
+              - link "winter landscape" [ref=f20e141] [cursor=pointer]:
+                - /url: /s/photos/winter-landscape
+              - link "travel destination" [ref=f20e142] [cursor=pointer]:
+                - /url: /s/photos/travel-destination
+              - link "wilderness" [ref=f20e143] [cursor=pointer]:
+                - /url: /s/photos/wilderness
+              - link "adventure travel" [ref=f20e144] [cursor=pointer]:
+                - /url: /s/photos/adventure-travel
+              - link "geology" [ref=f20e145] [cursor=pointer]:
+                - /url: /s/photos/geology
+              - link "snowy mountains" [ref=f20e146] [cursor=pointer]:
+                - /url: /s/photos/snowy-mountains
+              - link "exploration" [ref=f20e147] [cursor=pointer]:
+                - /url: /s/photos/exploration
+              - link "mountain scenery" [ref=f20e148] [cursor=pointer]:
+                - /url: /s/photos/mountain-scenery
+              - link "highlands" [ref=f20e149] [cursor=pointer]:
+                - /url: /s/photos/highlands
+              - link "earth tones" [ref=f20e150] [cursor=pointer]:
+                - /url: /s/photos/earth-tones
+              - link "rocky terrain" [ref=f20e151] [cursor=pointer]:
+                - /url: /s/photos/rocky-terrain
+              - link "dramatic landscape" [ref=f20e152] [cursor=pointer]:
+                - /url: /s/photos/dramatic-landscape
+              - link "barren landscape" [ref=f20e153] [cursor=pointer]:
+                - /url: /s/photos/barren-landscape
+              - link "remote location" [ref=f20e154] [cursor=pointer]:
+                - /url: /s/photos/remote-location
+        - generic [ref=f20e157]:
+          - generic [ref=f20e158]:
+            - paragraph [ref=f20e160]: From this series
+            - generic [ref=f20e163]:
+              - generic [ref=f20e164]:
+                - link [ref=f20e165] [cursor=pointer]:
+                  - /url: /plus?referrer=%2Fphotos%2Fa-man-riding-a-surfboard-on-top-of-a-wave-qdmAkXbXcYI
+                - link [ref=f20e168]:
+                  - /url: /photos/a-man-riding-a-surfboard-on-top-of-a-wave-qdmAkXbXcYI
+                  - img "A man riding a surfboard on top of a wave" [ref=f20e169]
+              - generic [ref=f20e170]:
+                - link [ref=f20e171] [cursor=pointer]:
+                  - /url: /plus?referrer=%2Fphotos%2Fa-view-of-a-mountain-range-with-a-road-going-through-it-RD5lZENHNIk
+                - link [ref=f20e174]:
+                  - /url: /photos/a-view-of-a-mountain-range-with-a-road-going-through-it-RD5lZENHNIk
+                  - img "A view of a mountain range with a road going through it" [ref=f20e175]
+              - generic [ref=f20e176]:
+                - link [ref=f20e177] [cursor=pointer]:
+                  - /url: /plus?referrer=%2Fphotos%2Fa-man-riding-skis-on-top-of-a-snow-covered-slope-vngvaaV23iY
+                - link [ref=f20e180]:
+                  - /url: /photos/a-man-riding-skis-on-top-of-a-snow-covered-slope-vngvaaV23iY
+                  - img "A man riding skis on top of a snow covered slope" [ref=f20e181]
+              - generic:
+                - link [ref=f20e182] [cursor=pointer]:
+                  - /url: /plus?referrer=%2Fphotos%2Fa-man-standing-on-top-of-a-lush-green-hillside-KIwSN4jR_IE
+                - link "A man standing on top of a lush green hillside":
+                  - /url: /photos/a-man-standing-on-top-of-a-lush-green-hillside-KIwSN4jR_IE
+                  - img "A man standing on top of a lush green hillside"
+              - generic [ref=f20e185]:
+                - link [ref=f20e186] [cursor=pointer]:
+                  - /url: /plus?referrer=%2Fphotos%2Fa-dirt-path-in-the-middle-of-a-grassy-field-SG5h7Hds4xA
+                - link [ref=f20e189]:
+                  - /url: /photos/a-dirt-path-in-the-middle-of-a-grassy-field-SG5h7Hds4xA
+                  - img "A dirt path in the middle of a grassy field" [ref=f20e190]
+          - generic [ref=f20e191]:
+            - heading "Related images" [level=4] [ref=f20e193]
+            - generic [ref=f20e197]:
+              - generic [ref=f20e198]:
+                - figure [ref=f20e199]:
+                  - generic [ref=f20e201]:
+                    - link [ref=f20e202]:
+                      - /url: /photos/rhyolite-mountains-above-green-valley-xVwY1RRkuog
+                      - img "Snow-dusted rhyolite mountains rising above a green valley under a cloudy sky" [ref=f20e203]
+                    - link [ref=f20e204] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Frhyolite-mountains-above-green-valley-xVwY1RRkuog
+                - figure [ref=f20e207]:
+                  - generic [ref=f20e209]:
+                    - link [ref=f20e210]:
+                      - /url: /photos/volcanic-mountains-with-snow-patches-pJocYqY3jnU
+                      - img "Snow patches on rugged brown volcanic mountains in a vast valley" [ref=f20e211]
+                    - link [ref=f20e212] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fvolcanic-mountains-with-snow-patches-pJocYqY3jnU
+                - figure [ref=f20e215]:
+                  - generic [ref=f20e217]:
+                    - link [ref=f20e218]:
+                      - /url: /photos/volcanic-mountains-in-landmannalaugar-iceland-H5cSMcegHcA
+                      - img "Snow patches on rugged brown and tan volcanic mountains in Landmannalaugar, Iceland" [ref=f20e219]
+                    - link [ref=f20e220] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fvolcanic-mountains-in-landmannalaugar-iceland-H5cSMcegHcA
+                - figure [ref=f20e223]:
+                  - generic [ref=f20e225]:
+                    - link [ref=f20e226]:
+                      - /url: /photos/a-large-rocky-landscape-yd5rF5K0C0A
+                      - img "a large rocky landscape" [ref=f20e227]
+                    - link [ref=f20e228] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fa-large-rocky-landscape-yd5rF5K0C0A
+                - figure [ref=f20e231]:
+                  - generic [ref=f20e233]:
+                    - link [ref=f20e234]:
+                      - /url: /photos/a-mountain-range-with-snow-_YVfCCzHrU0
+                      - img "a mountain range with snow" [ref=f20e235]
+                    - link [ref=f20e236] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fa-mountain-range-with-snow-_YVfCCzHrU0
+                - figure [ref=f20e239]:
+                  - generic [ref=f20e241]:
+                    - link [ref=f20e242]:
+                      - /url: /photos/snowy-mountains-above-flat-tundra-GDDdtV9U1DI
+                      - img "Snow-dusted green mountains rising above a vast flat tundra under a cloudy sky" [ref=f20e243]
+                    - link [ref=f20e244] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fsnowy-mountains-above-flat-tundra-GDDdtV9U1DI
+                - figure [ref=f20e247]:
+                  - generic [ref=f20e249]:
+                    - link [ref=f20e250]:
+                      - /url: /photos/dirt-road-through-mossy-volcanic-mountains-gJeTCL0WZB0
+                      - img "A dirt road winding through a mossy volcanic landscape with snow-capped mountains under clouds" [ref=f20e251]
+                    - link [ref=f20e252] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fdirt-road-through-mossy-volcanic-mountains-gJeTCL0WZB0
+                - figure [ref=f20e255]:
+                  - generic [ref=f20e257]:
+                    - link [ref=f20e258]:
+                      - /url: /photos/a-rocky-mountain-with-snow-86F2QVoYbe8
+                      - img "a rocky mountain with snow" [ref=f20e259]
+                    - link [ref=f20e260] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fa-rocky-mountain-with-snow-86F2QVoYbe8
+                - figure [ref=f20e263]:
+                  - generic [ref=f20e265]:
+                    - link [ref=f20e266]:
+                      - /url: /photos/hiking-trail-through-volcanic-mountains-mYzM7O3Hd7M
+                      - img "A gravel hiking trail winding through volcanic mountains with patches of snow" [ref=f20e267]
+                    - link [ref=f20e268] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fhiking-trail-through-volcanic-mountains-mYzM7O3Hd7M
+                - figure [ref=f20e271]:
+                  - generic [ref=f20e273]:
+                    - link [ref=f20e274]:
+                      - /url: /photos/a-canyon-with-a-river-running-through-it-xa7812_UpRk
+                      - img "a canyon with a river running through it" [ref=f20e275]
+                    - link [ref=f20e276] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fa-canyon-with-a-river-running-through-it-xa7812_UpRk
+              - generic [ref=f20e279]:
+                - figure [ref=f20e280]:
+                  - generic [ref=f20e282]:
+                    - link [ref=f20e283]:
+                      - /url: /photos/volcanic-mountains-above-icelandic-lava-field-Nh1faY8JaYU
+                      - img "Snow-dusted volcanic mountains rising above a vast mossy lava field in Iceland" [ref=f20e284]
+                    - link [ref=f20e285] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fvolcanic-mountains-above-icelandic-lava-field-Nh1faY8JaYU
+                - figure [ref=f20e288]:
+                  - generic [ref=f20e290]:
+                    - link [ref=f20e291]:
+                      - /url: /photos/a-mountain-range-with-snow-QJTiMfxyETE
+                      - img "a mountain range with snow" [ref=f20e292]
+                    - link [ref=f20e293] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fa-mountain-range-with-snow-QJTiMfxyETE
+                - figure [ref=f20e296]:
+                  - generic [ref=f20e298]:
+                    - link [ref=f20e299]:
+                      - /url: /photos/lava-rocks-and-snow-capped-mountains-bjyu4NekWY8
+                      - img "Rugged mossy lava rocks in the foreground before snow-capped mountains under a cloudy sky" [ref=f20e300]
+                    - link [ref=f20e301] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Flava-rocks-and-snow-capped-mountains-bjyu4NekWY8
+                - figure [ref=f20e304]:
+                  - generic [ref=f20e306]:
+                    - link [ref=f20e307]:
+                      - /url: /photos/a-large-rocky-landscape-q0fGtuxCJjw
+                      - img "a large rocky landscape" [ref=f20e308]
+                    - link [ref=f20e309] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fa-large-rocky-landscape-q0fGtuxCJjw
+                - figure [ref=f20e312]:
+                  - generic [ref=f20e314]:
+                    - link [ref=f20e315]:
+                      - /url: /photos/hiking-trail-toward-snow-capped-mountains-mXg3NMz77JA
+                      - img "A dirt hiking trail through a rocky landscape toward snow-capped mountains in Iceland" [ref=f20e316]
+                    - link [ref=f20e317] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fhiking-trail-toward-snow-capped-mountains-mXg3NMz77JA
+                - figure [ref=f20e320]:
+                  - generic [ref=f20e322]:
+                    - link [ref=f20e323]:
+                      - /url: /photos/hiking-trail-through-volcanic-mountains-A2_ugunPcmI
+                      - img "A dirt hiking trail winding through a mossy volcanic landscape toward snow-capped mountains" [ref=f20e324]
+                    - link [ref=f20e325] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fhiking-trail-through-volcanic-mountains-A2_ugunPcmI
+                - figure [ref=f20e328]:
+                  - generic [ref=f20e330]:
+                    - link [ref=f20e331]:
+                      - /url: /photos/a-mountain-range-with-snow-7qJhiyd7yjk
+                      - img "a mountain range with snow" [ref=f20e332]
+                    - link [ref=f20e333] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fa-mountain-range-with-snow-7qJhiyd7yjk
+                - figure [ref=f20e336]:
+                  - generic [ref=f20e338]:
+                    - link [ref=f20e339]:
+                      - /url: /photos/snow-on-rolling-mountain-hills-oS83vAtdoNQ
+                      - img "Snow patches on rolling brown and green hills under a cloudy sky" [ref=f20e340]
+                    - link [ref=f20e341] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fsnow-on-rolling-mountain-hills-oS83vAtdoNQ
+                - figure [ref=f20e344]:
+                  - generic [ref=f20e346]:
+                    - link [ref=f20e347]:
+                      - /url: /photos/a-rocky-canyon-with-a-river-running-through-it-a2pz01K3YMI
+                      - img "a rocky canyon with a river running through it" [ref=f20e348]
+                    - link [ref=f20e349] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fa-rocky-canyon-with-a-river-running-through-it-a2pz01K3YMI
+                - figure [ref=f20e352]:
+                  - generic [ref=f20e354]:
+                    - link [ref=f20e355]:
+                      - /url: /photos/a-mountain-range-with-snow-UqnIK2w8e68
+                      - img "a mountain range with snow" [ref=f20e356]
+                    - link [ref=f20e357] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fa-mountain-range-with-snow-UqnIK2w8e68
+    - generic:
+      - region "Notifications"

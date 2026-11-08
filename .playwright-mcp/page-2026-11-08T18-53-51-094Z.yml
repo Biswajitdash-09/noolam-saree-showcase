@@ -1,0 +1,333 @@
+- generic [active] [ref=f15e1]:
+  - link "Skip to content" [ref=f15e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f15e3]:
+    - generic [ref=f15e4]:
+      - link "NOOLAM home" [ref=f15e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f15e12]:
+          - generic [ref=f15e13]: Noolam
+          - generic [ref=f15e14]: Kanchipuram Silk
+      - navigation "Primary" [ref=f15e15]:
+        - link "Home" [ref=f15e16] [cursor=pointer]:
+          - /url: /
+        - link "Try the Look" [ref=f15e17] [cursor=pointer]:
+          - /url: /#try-the-look
+        - link "Pick a Silk" [ref=f15e18] [cursor=pointer]:
+          - /url: /#pick-a-silk
+        - link "The Rack" [ref=f15e19] [cursor=pointer]:
+          - /url: /#the-rack
+        - link "The Muse" [ref=f15e20] [cursor=pointer]:
+          - /url: /#the-muse
+        - link "Bridal" [ref=f15e21] [cursor=pointer]:
+          - /url: /bridal
+        - link "The Weave" [ref=f15e22] [cursor=pointer]:
+          - /url: /#the-weave
+      - generic [ref=f15e23]:
+        - button "Wishlist, 0 saved" [ref=f15e24]
+        - button "Bag, 0 pieces" [ref=f15e27]
+        - link "Visit the Store" [ref=f15e31] [cursor=pointer]:
+          - /url: /#the-weave
+  - main [ref=f15e33]:
+    - generic [ref=f15e35]:
+      - navigation "Breadcrumb" [ref=f15e36]:
+        - link "Home" [ref=f15e37] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f15e40]: The bridal collection
+      - generic [ref=f15e41]:
+        - generic [ref=f15e42]:
+          - paragraph [ref=f15e43]: For the muhurtham and every vow after
+          - heading "The Bridal Collection" [level=1] [ref=f15e44]
+          - paragraph [ref=f15e45]: Seven heirloom pieces, each woven to order on the Kanchipuram pit looms. Temple korvai pallus, real zari borders, and the deep colours a muhurtham asks for — kept in the family long after the day.
+          - generic [ref=f15e46]:
+            - link "See the seven pieces" [ref=f15e47] [cursor=pointer]:
+              - /url: "#bridal-rail"
+            - link "Book a fitting" [ref=f15e53] [cursor=pointer]:
+              - /url: /#the-weave
+          - generic [ref=f15e59]:
+            - generic [ref=f15e60]:
+              - term [ref=f15e61]: "07"
+              - definition [ref=f15e62]: Heirloom pieces
+            - generic [ref=f15e63]:
+              - term [ref=f15e64]: "45"
+              - definition [ref=f15e65]: Days on the loom
+            - generic [ref=f15e66]:
+              - term [ref=f15e67]: "01"
+              - definition [ref=f15e68]: Of each woven
+        - generic [ref=f15e69]:
+          - img "Golden light across a bridal silk" [ref=f15e71]
+          - img "Lamp light in the loom room" [ref=f15e74]
+          - generic [ref=f15e76]: The bridal archive · Kanchipuram
+    - region [ref=f15e77]:
+      - generic [ref=f15e78]:
+        - generic [ref=f15e79]:
+          - generic [ref=f15e80]:
+            - paragraph [ref=f15e81]: The bridal rail
+            - heading "Kept for the vow" [level=2] [ref=f15e82]
+          - paragraph [ref=f15e83]: Every piece is final sale and made to order. Add one to your bag and the loom room will write to you within a day to plan the fitting.
+        - generic [ref=f15e85]:
+          - article [ref=f15e86]:
+            - generic [ref=f15e87]:
+              - img "Manjal Kalyanam Pattu — Pattu bridal saree" [ref=f15e88]
+              - generic [ref=f15e90]:
+                - button "Add" [ref=f15e91]
+                - button "Save Manjal Kalyanam Pattu" [ref=f15e95]
+            - generic [ref=f15e98]:
+              - paragraph [ref=f15e99]: Pattu
+              - heading "Manjal Kalyanam Pattu" [level=3] [ref=f15e100]
+              - paragraph [ref=f15e101]: Red-gold pallu
+              - generic [ref=f15e102]: ₹27,300
+          - article [ref=f15e104]:
+            - generic [ref=f15e105]:
+              - img "Rakta Muhurtham — Kanjivaram silk bridal saree" [ref=f15e106]
+              - generic [ref=f15e108]: "-10%"
+              - generic [ref=f15e109]:
+                - button "Add" [ref=f15e110]
+                - button "Save Rakta Muhurtham" [ref=f15e114]
+            - generic [ref=f15e117]:
+              - paragraph [ref=f15e118]: Kanjivaram silk
+              - heading "Rakta Muhurtham" [level=3] [ref=f15e119]
+              - paragraph [ref=f15e120]: Temple korvai pallu
+              - generic [ref=f15e121]:
+                - generic [ref=f15e122]: ₹42,900
+                - generic [ref=f15e123]: ₹38,600
+          - article [ref=f15e124]:
+            - generic [ref=f15e125]:
+              - img "Ivory Vow — Pure silk bridal saree" [ref=f15e126]
+              - generic [ref=f15e128]:
+                - button "Add" [ref=f15e129]
+                - button "Save Ivory Vow" [ref=f15e133]
+            - generic [ref=f15e136]:
+              - paragraph [ref=f15e137]: Pure silk
+              - heading "Ivory Vow" [level=3] [ref=f15e138]
+              - paragraph [ref=f15e139]: Elephant and mango pallu
+              - generic [ref=f15e140]: ₹41,200
+          - article [ref=f15e142]:
+            - generic [ref=f15e143]:
+              - img "Malligai Bride — Soft silk bridal saree" [ref=f15e144]
+              - generic [ref=f15e146]: "-15%"
+              - generic [ref=f15e147]:
+                - button "Add" [ref=f15e148]
+                - button "Save Malligai Bride" [ref=f15e152]
+            - generic [ref=f15e155]:
+              - paragraph [ref=f15e156]: Soft silk
+              - heading "Malligai Bride" [level=3] [ref=f15e157]
+              - paragraph [ref=f15e158]: Jasmine vine border
+              - generic [ref=f15e159]:
+                - generic [ref=f15e160]: ₹39,300
+                - generic [ref=f15e161]: ₹33,400
+          - article [ref=f15e162]:
+            - generic [ref=f15e163]:
+              - img "Neelambari — Kanjivaram silk bridal saree" [ref=f15e164]
+              - generic [ref=f15e166]:
+                - button "Add" [ref=f15e167]
+                - button "Save Neelambari" [ref=f15e171]
+            - generic [ref=f15e174]:
+              - paragraph [ref=f15e175]: Kanjivaram silk
+              - heading "Neelambari" [level=3] [ref=f15e176]
+              - paragraph [ref=f15e177]: Peacock zari pallu
+              - generic [ref=f15e178]: ₹29,800
+          - article [ref=f15e180]:
+            - generic [ref=f15e181]:
+              - img "Sandhya Ragam — Tissue silk bridal saree" [ref=f15e182]
+              - generic [ref=f15e184]:
+                - button "Add" [ref=f15e185]
+                - button "Save Sandhya Ragam" [ref=f15e189]
+            - generic [ref=f15e192]:
+              - paragraph [ref=f15e193]: Tissue silk
+              - heading "Sandhya Ragam" [level=3] [ref=f15e194]
+              - paragraph [ref=f15e195]: Gold tissue pallu
+              - generic [ref=f15e196]: ₹35,200
+          - article [ref=f15e198]:
+            - generic [ref=f15e199]:
+              - img "Thanga Malar — Pure Kanjivaram bridal saree" [ref=f15e200]
+              - generic [ref=f15e202]: "-10%"
+              - generic [ref=f15e203]:
+                - button "Add" [ref=f15e204]
+                - button "Save Thanga Malar" [ref=f15e208]
+            - generic [ref=f15e211]:
+              - paragraph [ref=f15e212]: Pure Kanjivaram
+              - heading "Thanga Malar" [level=3] [ref=f15e213]
+              - paragraph [ref=f15e214]: Gold flower pallu
+              - generic [ref=f15e215]:
+                - generic [ref=f15e216]: ₹48,900
+                - generic [ref=f15e217]: ₹44,000
+    - generic [ref=f15e220]:
+      - generic [ref=f15e221]:
+        - img "Silk threads on the loom at first light" [ref=f15e222]
+        - paragraph [ref=f15e224]: Loom 04 · the bridal warp
+      - generic [ref=f15e225]:
+        - paragraph [ref=f15e226]: The bridal promise
+        - heading "Made once. Worn for a lifetime." [level=2] [ref=f15e227]
+        - generic [ref=f15e228]:
+          - generic [ref=f15e229]:
+            - paragraph [ref=f15e233]: Silver-core zari
+            - paragraph [ref=f15e234]: Tested zari, woven with a silver core and gilded in gold. It keeps its light for generations.
+          - generic [ref=f15e235]:
+            - paragraph [ref=f15e242]: Fitted to you
+            - paragraph [ref=f15e243]: Come to the loom room or send your measurements. The blouse is cut and stitched in-house.
+          - generic [ref=f15e244]:
+            - paragraph [ref=f15e248]: Six weeks on the loom
+            - paragraph [ref=f15e249]: Each bridal piece is woven to order. The loom room holds your date and plans around it.
+        - generic [ref=f15e250]:
+          - link "Book a bridal appointment" [ref=f15e251] [cursor=pointer]:
+            - /url: /#the-weave
+          - link "Or browse the ready rail" [ref=f15e257] [cursor=pointer]:
+            - /url: /shop
+    - generic [ref=f15e258]:
+      - generic [ref=f15e259]:
+        - generic [ref=f15e260]:
+          - generic [ref=f15e261]:
+            - paragraph [ref=f15e262]: The Weave
+            - heading "Woven for the divine, kept for the family." [level=2] [ref=f15e263]
+            - paragraph [ref=f15e264]: A NOOLAM saree leaves the loom with the weaver's name in the border. Visit the Kanchipuram loom room, or let us bring the rack to your screen.
+            - generic [ref=f15e265]:
+              - generic [ref=f15e266]: Kanchipuram · Tamil Nadu
+              - generic [ref=f15e270]: care@noolam.example
+              - generic [ref=f15e274]: "@noolam.silk"
+          - generic [ref=f15e278]:
+            - navigation "Shop" [ref=f15e279]:
+              - paragraph [ref=f15e280]: Shop
+              - list [ref=f15e281]:
+                - listitem [ref=f15e282]:
+                  - link "All Silks" [ref=f15e283] [cursor=pointer]:
+                    - /url: /shop
+                - listitem [ref=f15e284]:
+                  - link "The Rack" [ref=f15e285] [cursor=pointer]:
+                    - /url: /shop
+                - listitem [ref=f15e286]:
+                  - link "Bridal Collection" [ref=f15e287] [cursor=pointer]:
+                    - /url: /bridal
+                - listitem [ref=f15e288]:
+                  - link "Blouses" [ref=f15e289] [cursor=pointer]:
+                    - /url: /shop
+            - navigation "The House" [ref=f15e290]:
+              - paragraph [ref=f15e291]: The House
+              - list [ref=f15e292]:
+                - listitem [ref=f15e293]:
+                  - link "Our Looms" [ref=f15e294] [cursor=pointer]:
+                    - /url: /#the-muse
+                - listitem [ref=f15e295]:
+                  - link "Try the Look" [ref=f15e296] [cursor=pointer]:
+                    - /url: /#try-the-look
+                - listitem [ref=f15e297]:
+                  - link "Pick a Silk" [ref=f15e298] [cursor=pointer]:
+                    - /url: /#pick-a-silk
+                - listitem [ref=f15e299]:
+                  - link "The Muse" [ref=f15e300] [cursor=pointer]:
+                    - /url: /#the-muse
+            - navigation "Care" [ref=f15e301]:
+              - paragraph [ref=f15e302]: Care
+              - list [ref=f15e303]:
+                - listitem [ref=f15e304]:
+                  - link "Shipping & Returns" [ref=f15e305] [cursor=pointer]:
+                    - /url: /#the-weave
+                - listitem [ref=f15e306]:
+                  - link "Silk Care" [ref=f15e307] [cursor=pointer]:
+                    - /url: /#the-weave
+                - listitem [ref=f15e308]:
+                  - link "Size Guide" [ref=f15e309] [cursor=pointer]:
+                    - /url: /#the-weave
+                - listitem [ref=f15e310]:
+                  - link "Contact" [ref=f15e311] [cursor=pointer]:
+                    - /url: /#the-weave
+        - generic [ref=f15e312]:
+          - generic [ref=f15e313]:
+            - paragraph [ref=f15e314]: The loom letter
+            - paragraph [ref=f15e315]: "Four letters a year: new weaves, loom notes, and first look at the bridal archive."
+          - generic [ref=f15e316]:
+            - generic [ref=f15e317]: Email address
+            - textbox "Email address" [ref=f15e318]:
+              - /placeholder: Your email address
+            - button "Join" [ref=f15e319]
+      - generic [ref=f15e325]:
+        - generic [ref=f15e326]: © 2026 NOOLAM Kanchipuram Silk
+        - paragraph [ref=f15e333]: Showcase demo. Product imagery is generated; atmosphere photography is free stock, credited in the project README.
+  - generic [ref=f15e337]:
+    - generic [ref=f15e338]:
+      - generic [ref=f15e339]:
+        - generic [ref=f15e340]: ◆
+        - generic [ref=f15e341]: TRY THE LOOK
+        - generic [ref=f15e342]: Eight Kanjivaram looks, styled head to toe
+      - generic [ref=f15e343]:
+        - generic [ref=f15e344]: ◆
+        - generic [ref=f15e345]: PURE ZARI
+        - generic [ref=f15e346]: Silver-core zari woven into every temple border
+      - generic [ref=f15e347]:
+        - generic [ref=f15e348]: ◆
+        - generic [ref=f15e349]: THE RACK
+        - generic [ref=f15e350]: Browse the full rail of silks
+      - generic [ref=f15e351]:
+        - generic [ref=f15e352]: ◆
+        - generic [ref=f15e353]: BRIDAL
+        - generic [ref=f15e354]: Heirloom bridal silks for the day that matters
+      - generic [ref=f15e355]:
+        - generic [ref=f15e356]: ◆
+        - generic [ref=f15e357]: THE LOOMS
+        - generic [ref=f15e358]: Handwoven in Kanchipuram, one saree at a time
+    - generic [ref=f15e359]:
+      - generic [ref=f15e360]:
+        - generic [ref=f15e361]: ◆
+        - generic [ref=f15e362]: TRY THE LOOK
+        - generic [ref=f15e363]: Eight Kanjivaram looks, styled head to toe
+      - generic [ref=f15e364]:
+        - generic [ref=f15e365]: ◆
+        - generic [ref=f15e366]: PURE ZARI
+        - generic [ref=f15e367]: Silver-core zari woven into every temple border
+      - generic [ref=f15e368]:
+        - generic [ref=f15e369]: ◆
+        - generic [ref=f15e370]: THE RACK
+        - generic [ref=f15e371]: Browse the full rail of silks
+      - generic [ref=f15e372]:
+        - generic [ref=f15e373]: ◆
+        - generic [ref=f15e374]: BRIDAL
+        - generic [ref=f15e375]: Heirloom bridal silks for the day that matters
+      - generic [ref=f15e376]:
+        - generic [ref=f15e377]: ◆
+        - generic [ref=f15e378]: THE LOOMS
+        - generic [ref=f15e379]: Handwoven in Kanchipuram, one saree at a time
+    - generic [aria-hidden] [ref=f15e380]:
+      - generic [ref=f15e381]:
+        - generic [ref=f15e382]: ◆
+        - generic [ref=f15e383]: TRY THE LOOK
+        - generic [ref=f15e384]: Eight Kanjivaram looks, styled head to toe
+      - generic [ref=f15e385]:
+        - generic [ref=f15e386]: ◆
+        - generic [ref=f15e387]: PURE ZARI
+        - generic [ref=f15e388]: Silver-core zari woven into every temple border
+      - generic [ref=f15e389]:
+        - generic [ref=f15e390]: ◆
+        - generic [ref=f15e391]: THE RACK
+        - generic [ref=f15e392]: Browse the full rail of silks
+      - generic [ref=f15e393]:
+        - generic [ref=f15e394]: ◆
+        - generic [ref=f15e395]: BRIDAL
+        - generic [ref=f15e396]: Heirloom bridal silks for the day that matters
+      - generic [ref=f15e397]:
+        - generic [ref=f15e398]: ◆
+        - generic [ref=f15e399]: THE LOOMS
+        - generic [ref=f15e400]: Handwoven in Kanchipuram, one saree at a time
+    - generic [aria-hidden] [ref=f15e401]:
+      - generic [ref=f15e402]:
+        - generic [ref=f15e403]: ◆
+        - generic [ref=f15e404]: TRY THE LOOK
+        - generic [ref=f15e405]: Eight Kanjivaram looks, styled head to toe
+      - generic [ref=f15e406]:
+        - generic [ref=f15e407]: ◆
+        - generic [ref=f15e408]: PURE ZARI
+        - generic [ref=f15e409]: Silver-core zari woven into every temple border
+      - generic [ref=f15e410]:
+        - generic [ref=f15e411]: ◆
+        - generic [ref=f15e412]: THE RACK
+        - generic [ref=f15e413]: Browse the full rail of silks
+      - generic [ref=f15e414]:
+        - generic [ref=f15e415]: ◆
+        - generic [ref=f15e416]: BRIDAL
+        - generic [ref=f15e417]: Heirloom bridal silks for the day that matters
+      - generic [ref=f15e418]:
+        - generic [ref=f15e419]: ◆
+        - generic [ref=f15e420]: THE LOOMS
+        - generic [ref=f15e421]: Handwoven in Kanchipuram, one saree at a time
+  - button "Back to top":
+    - generic: "N"
+  - region "Notifications alt+T"

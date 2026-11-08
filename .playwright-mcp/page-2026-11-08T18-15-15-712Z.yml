@@ -1,0 +1,231 @@
+- generic [ref=f50e5]:
+  - navigation [ref=f50e6]:
+    - generic [ref=f50e7]:
+      - generic [ref=f50e8]:
+        - link "Unsplash Home" [ref=f50e9] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=f50e10]
+        - link "Photos" [ref=f50e12] [cursor=pointer]:
+          - /url: /
+        - link "Illustrations" [ref=f50e15] [cursor=pointer]:
+          - /url: /illustrations
+      - generic [ref=f50e18]:
+        - button "Explore" [ref=f50e19] [cursor=pointer]
+        - button "Collections" [ref=f50e22] [cursor=pointer]
+        - button "Download History" [ref=f50e25] [cursor=pointer]
+      - button "Bookmarks" [ref=f50e29] [cursor=pointer]
+    - generic [ref=f50e32]:
+      - link "Log in / Sign up" [ref=f50e33] [cursor=pointer]:
+        - /url: /login?referrer=%2Fphotos%2Fsunset-over-the-ocean-with-reflections-on-wet-sand-EhcOX0E24Ls
+      - button "Language" [ref=f50e36] [cursor=pointer]
+      - button "Menu" [ref=f50e39] [cursor=pointer]
+  - generic [ref=f50e42]:
+    - generic [ref=f50e43]:
+      - navigation [ref=f50e44]:
+        - search "Find visuals sitewide" [ref=f50e46]:
+          - button "Search Unsplash" [ref=f50e47] [cursor=pointer]
+          - combobox [ref=f50e50]:
+            - searchbox "Search Unsplash" [ref=f50e51]
+            - listbox
+          - button "Visual Search" [ref=f50e53] [cursor=pointer]
+        - generic [ref=f50e56]:
+          - link "Get Unsplash+" [ref=f50e57] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=f50e58] [cursor=pointer]:
+            - /url: /login?referrer=%2Fphotos%2Fsunset-over-the-ocean-with-reflections-on-wet-sand-EhcOX0E24Ls
+        - button "Submit an image" [ref=f50e60] [cursor=pointer]
+      - generic [ref=f50e61]:
+        - generic [ref=f50e62]:
+          - banner [ref=f50e64]:
+            - generic [ref=f50e66]:
+              - link [ref=f50e67] [cursor=pointer]:
+                - /url: /@brandialxndra
+              - generic [ref=f50e70]:
+                - link "Brandi Alexandra" [ref=f50e71] [cursor=pointer]:
+                  - /url: /@brandialxndra
+                - link "brandialxndra" [ref=f50e73] [cursor=pointer]:
+                  - /url: /@brandialxndra
+            - generic [ref=f50e74]:
+              - button "Bookmark" [ref=f50e75] [cursor=pointer]
+              - button "Add to Collection" [ref=f50e78] [cursor=pointer]
+              - button "Edit image" [ref=f50e81] [cursor=pointer]
+              - generic [ref=f50e85]:
+                - link "Download free" [ref=f50e86] [cursor=pointer]:
+                  - /url: https://unsplash.com/photos/EhcOX0E24Ls/download?force=true
+                - button "Choose download size" [ref=f50e88] [cursor=pointer]
+          - button "Zoom in on this image" [ref=f50e94]:
+            - img "Sunset over the ocean with reflections on wet sand" [ref=f50e95]
+          - generic [ref=f50e96]:
+            - generic [ref=f50e97]:
+              - generic [ref=f50e98]:
+                - generic [ref=f50e99]:
+                  - heading "Views" [level=3] [ref=f50e100]
+                  - text: 2,125
+                - generic [ref=f50e101]:
+                  - heading "Downloads" [level=3] [ref=f50e102]
+                  - text: "42"
+              - generic [ref=f50e103]:
+                - button "Share this image" [ref=f50e104] [cursor=pointer]:
+                  - generic [ref=f50e107]: Share
+                - button "Stats about this image" [ref=f50e108] [cursor=pointer]:
+                  - generic [ref=f50e111]: Info
+                - button "More Actions" [ref=f50e112] [cursor=pointer]
+            - generic [ref=f50e116]:
+              - heading "Sunset over the ocean with reflections on wet sand" [level=1] [ref=f50e118]
+              - paragraph [ref=f50e122]: Download this free HD photo of beach, travel, sunset, and blue by Brandi Alexandra (@brandialxndra)
+              - generic [ref=f50e124]:
+                - generic [ref=f50e129]:
+                  - text: Published on
+                  - time [ref=f50e130]: October 18, 2025
+                - button "Apple, iPhone 12 Pro Max" [ref=f50e135] [cursor=pointer]
+                - generic [ref=f50e139]:
+                  - text: Free to use under the
+                  - link "Unsplash License" [ref=f50e140] [cursor=pointer]:
+                    - /url: /license
+            - generic [ref=f50e142]:
+              - link "beach" [ref=f50e143] [cursor=pointer]:
+                - /url: /s/photos/beach
+              - link "travel" [ref=f50e144] [cursor=pointer]:
+                - /url: /s/photos/travel
+              - link "sunset" [ref=f50e145] [cursor=pointer]:
+                - /url: /s/photos/sunset
+              - link "blue" [ref=f50e146] [cursor=pointer]:
+                - /url: /s/photos/blue
+              - link "beauty" [ref=f50e147] [cursor=pointer]:
+                - /url: /s/photos/beauty
+              - link "calm" [ref=f50e148] [cursor=pointer]:
+                - /url: /s/photos/calm
+              - link "waves" [ref=f50e149] [cursor=pointer]:
+                - /url: /s/photos/waves
+              - link "vacation" [ref=f50e150] [cursor=pointer]:
+                - /url: /s/photos/vacation
+              - link "reflection" [ref=f50e151] [cursor=pointer]:
+                - /url: /s/photos/reflection
+              - link "peaceful" [ref=f50e152] [cursor=pointer]:
+                - /url: /s/photos/peaceful
+              - link "horizon" [ref=f50e153] [cursor=pointer]:
+                - /url: /s/photos/horizon
+              - link "golden hour" [ref=f50e154] [cursor=pointer]:
+                - /url: /s/photos/golden-hour
+              - link "relaxation" [ref=f50e155] [cursor=pointer]:
+                - /url: /s/photos/relaxation
+              - link "evening" [ref=f50e156] [cursor=pointer]:
+                - /url: /s/photos/evening
+              - link "coastal" [ref=f50e157] [cursor=pointer]:
+                - /url: /s/photos/coastal
+              - link "serenity" [ref=f50e158] [cursor=pointer]:
+                - /url: /s/photos/serenity
+              - link "seascape" [ref=f50e159] [cursor=pointer]:
+                - /url: /s/photos/seascape
+              - link "twilight" [ref=f50e160] [cursor=pointer]:
+                - /url: /s/photos/twilight
+              - link "atmosphere" [ref=f50e161] [cursor=pointer]:
+                - /url: /s/photos/atmosphere
+              - link "orange sky" [ref=f50e162] [cursor=pointer]:
+                - /url: /s/photos/orange-sky
+              - link "Historical images" [ref=f50e163] [cursor=pointer]:
+                - /url: /images/stock/historical
+        - generic [ref=f50e166]:
+          - paragraph [ref=f50e169]: Browse premium related images on iStock | Save 20% with code UNSPLASH20
+          - generic [ref=f50e180]:
+            - heading "Related images" [level=4] [ref=f50e182]
+            - generic [ref=f50e186]:
+              - generic [ref=f50e187]:
+                - figure [ref=f50e188]:
+                  - link [ref=f50e191]:
+                    - /url: /photos/the-sun-is-setting-over-the-ocean-with-a-boat-in-the-distance-9sleTyjrPmI
+                    - img "the sun is setting over the ocean with a boat in the distance" [ref=f50e192]
+                - figure [ref=f50e193]:
+                  - generic [ref=f50e195]:
+                    - link [ref=f50e196]:
+                      - /url: /photos/the-sun-is-setting-over-the-water-at-the-beach--MdQyRrSbfo
+                      - img "the sun is setting over the water at the beach" [ref=f50e197]
+                    - link [ref=f50e198] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fthe-sun-is-setting-over-the-water-at-the-beach--MdQyRrSbfo
+                - figure [ref=f50e201]:
+                  - link [ref=f50e204]:
+                    - /url: /photos/the-sun-is-setting-over-the-ocean-on-the-beach-SOtpasCL7Bw
+                    - img "the sun is setting over the ocean on the beach" [ref=f50e205]
+                - figure [ref=f50e206]:
+                  - generic [ref=f50e208]:
+                    - link [ref=f50e209]:
+                      - /url: /photos/low-sun-over-ocean-waves-DpiPxrIMUH4
+                      - img "Cannon Beach located on the Oregon Coast is a famous location where most notably The Goonies was filmed but is home to the most beautiful longest sunsets along the west coast." [ref=f50e210]
+                    - link [ref=f50e211] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Flow-sun-over-ocean-waves-DpiPxrIMUH4
+                - figure [ref=f50e214]:
+                  - link [ref=f50e217]:
+                    - /url: /photos/the-sun-is-setting-over-the-ocean-on-the-beach-_4Py_1jhAYs
+                    - img "the sun is setting over the ocean on the beach" [ref=f50e218]
+                - figure [ref=f50e219]:
+                  - link [ref=f50e222]:
+                    - /url: /photos/body-of-water-during-sunset-R72-ViOVn18
+                    - img "body of water during sunset" [ref=f50e223]
+                - figure [ref=f50e224]:
+                  - link [ref=f50e227]:
+                    - /url: /photos/the-sun-is-setting-over-the-ocean-on-a-beach-6XO37N1JNL8
+                    - img "the sun is setting over the ocean on a beach" [ref=f50e228]
+                - figure [ref=f50e229]:
+                  - generic [ref=f50e231]:
+                    - link [ref=f50e232]:
+                      - /url: /photos/the-sun-is-setting-over-the-ocean-on-a-cloudy-day-IHay1lblW1U
+                      - img "the sun is setting over the ocean on a cloudy day" [ref=f50e233]
+                    - link [ref=f50e234] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fthe-sun-is-setting-over-the-ocean-on-a-cloudy-day-IHay1lblW1U
+                - figure [ref=f50e237]:
+                  - link [ref=f50e240]:
+                    - /url: /photos/a-sunset-over-the-ocean-QkREF7oimNQ
+                    - img "a sunset over the ocean" [ref=f50e241]
+                - figure [ref=f50e242]:
+                  - generic [ref=f50e244]:
+                    - link [ref=f50e245]:
+                      - /url: /photos/vibrant-orange-sunset-over-calm-ocean-water-9wv8jdZ2_cg
+                      - img "Vibrant orange sunset over calm ocean water" [ref=f50e246]
+                    - link [ref=f50e247] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fvibrant-orange-sunset-over-calm-ocean-water-9wv8jdZ2_cg
+              - generic [ref=f50e250]:
+                - figure [ref=f50e251]:
+                  - link [ref=f50e254]:
+                    - /url: /photos/the-sun-is-setting-over-the-ocean-on-the-beach-U6gwk5QluqI
+                    - img "the sun is setting over the ocean on the beach" [ref=f50e255]
+                - figure [ref=f50e256]:
+                  - link [ref=f50e259]:
+                    - /url: /photos/the-sun-is-setting-over-the-ocean-on-the-beach-UFXJ8rDl-GY
+                    - img "the sun is setting over the ocean on the beach" [ref=f50e260]
+                - figure [ref=f50e261]:
+                  - link [ref=f50e264]:
+                    - /url: /photos/the-sun-is-setting-over-the-ocean-on-a-beach-pQigq0LLjYc
+                    - img "the sun is setting over the ocean on a beach" [ref=f50e265]
+                - figure [ref=f50e266]:
+                  - link [ref=f50e269]:
+                    - /url: /photos/the-sun-is-setting-over-the-water-at-the-beach-0g4SBLRzz8s
+                    - img "The sun is setting over the water at the beach" [ref=f50e270]
+                - figure [ref=f50e271]:
+                  - link [ref=f50e274]:
+                    - /url: /photos/sea-waves-crashing-on-shore-during-sunset-8Tw9XXLeay4
+                    - img "sea waves crashing on shore during sunset" [ref=f50e275]
+                - figure [ref=f50e276]:
+                  - generic [ref=f50e278]:
+                    - link [ref=f50e279]:
+                      - /url: /photos/the-sun-is-setting-over-the-ocean-with-waves-5E4nu1ZJXeg
+                      - img "the sun is setting over the ocean with waves" [ref=f50e280]
+                    - link [ref=f50e281] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fthe-sun-is-setting-over-the-ocean-with-waves-5E4nu1ZJXeg
+                - figure [ref=f50e284]:
+                  - link [ref=f50e287]:
+                    - /url: /photos/the-sun-is-setting-over-the-water-at-the-beach-SUKBKdI9Zjc
+                    - img "the sun is setting over the water at the beach" [ref=f50e288]
+                - figure [ref=f50e289]:
+                  - link [ref=f50e292]:
+                    - /url: /photos/the-sun-is-setting-over-the-water-at-the-beach-AeTfTsIkUAg
+                    - img "The sun is setting over the water at the beach" [ref=f50e293]
+                - figure [ref=f50e294]:
+                  - link [ref=f50e297]:
+                    - /url: /photos/the-sun-is-setting-over-the-ocean-on-a-beach-x7GATWW57zM
+                    - img "the sun is setting over the ocean on a beach" [ref=f50e298]
+                - figure [ref=f50e299]:
+                  - link [ref=f50e302]:
+                    - /url: /photos/the-sun-is-setting-over-the-ocean-on-the-beach-hrrViwO81xs
+                    - img "the sun is setting over the ocean on the beach" [ref=f50e303]
+    - generic:
+      - region "Notifications"

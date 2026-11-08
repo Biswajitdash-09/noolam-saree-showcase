@@ -1,0 +1,223 @@
+- generic [ref=f30e5]:
+  - navigation [ref=f30e6]:
+    - generic [ref=f30e7]:
+      - generic [ref=f30e8]:
+        - link "Unsplash Home" [ref=f30e9] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=f30e10]
+        - link "Photos" [ref=f30e12] [cursor=pointer]:
+          - /url: /
+        - link "Illustrations" [ref=f30e15] [cursor=pointer]:
+          - /url: /illustrations
+      - generic [ref=f30e18]:
+        - button "Explore" [ref=f30e19] [cursor=pointer]
+        - button "Collections" [ref=f30e22] [cursor=pointer]
+        - button "Download History" [ref=f30e25] [cursor=pointer]
+      - button "Bookmarks" [ref=f30e29] [cursor=pointer]
+    - generic [ref=f30e32]:
+      - link "Log in / Sign up" [ref=f30e33] [cursor=pointer]:
+        - /url: /login?referrer=%2Fphotos%2Fbrick-buildings-line-a-city-street-with-a-person-walking-MkZs6F2-_II
+      - button "Language" [ref=f30e36] [cursor=pointer]
+      - button "Menu" [ref=f30e39] [cursor=pointer]
+  - generic [ref=f30e42]:
+    - generic [ref=f30e43]:
+      - navigation [ref=f30e44]:
+        - search "Find visuals sitewide" [ref=f30e46]:
+          - button "Search Unsplash" [ref=f30e47] [cursor=pointer]
+          - combobox [ref=f30e50]:
+            - searchbox "Search Unsplash" [ref=f30e51]
+            - listbox
+          - button "Visual Search" [ref=f30e53] [cursor=pointer]
+        - generic [ref=f30e56]:
+          - link "Get Unsplash+" [ref=f30e57] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=f30e58] [cursor=pointer]:
+            - /url: /login?referrer=%2Fphotos%2Fbrick-buildings-line-a-city-street-with-a-person-walking-MkZs6F2-_II
+        - button "Submit an image" [ref=f30e60] [cursor=pointer]
+      - generic [ref=f30e61]:
+        - generic [ref=f30e62]:
+          - banner [ref=f30e64]:
+            - generic [ref=f30e66]:
+              - link [ref=f30e67] [cursor=pointer]:
+                - /url: /@sarguninder
+              - generic [ref=f30e70]:
+                - link "Sarguninder Singh" [ref=f30e71] [cursor=pointer]:
+                  - /url: /@sarguninder
+                - link "sarguninder" [ref=f30e73] [cursor=pointer]:
+                  - /url: /@sarguninder
+            - generic [ref=f30e74]:
+              - button "Bookmark" [ref=f30e75] [cursor=pointer]
+              - button "Add to Collection" [ref=f30e78] [cursor=pointer]
+              - button "Edit image" [ref=f30e81] [cursor=pointer]
+              - generic [ref=f30e85]:
+                - link "Download free" [ref=f30e86] [cursor=pointer]:
+                  - /url: https://unsplash.com/photos/MkZs6F2-_II/download?force=true
+                - button "Choose download size" [ref=f30e88] [cursor=pointer]
+          - button "Zoom in on this image" [ref=f30e94]:
+            - img "Brick buildings line a city street with a person walking" [ref=f30e95]
+          - generic [ref=f30e96]:
+            - generic [ref=f30e97]:
+              - generic [ref=f30e98]:
+                - generic [ref=f30e99]:
+                  - heading "Views" [level=3] [ref=f30e100]
+                  - text: 1,534
+                - generic [ref=f30e101]:
+                  - heading "Downloads" [level=3] [ref=f30e102]
+                  - text: "24"
+              - generic [ref=f30e103]:
+                - button "Share this image" [ref=f30e104] [cursor=pointer]:
+                  - generic [ref=f30e107]: Share
+                - button "Stats about this image" [ref=f30e108] [cursor=pointer]:
+                  - generic [ref=f30e111]: Info
+                - button "More Actions" [ref=f30e112] [cursor=pointer]
+            - generic [ref=f30e116]:
+              - heading "Brick buildings line a city street with a person walking" [level=1] [ref=f30e118]
+              - paragraph [ref=f30e122]: Download this free HD photo of architecture, purple, cityscape, and street light by Sarguninder Singh (@sarguninder)
+              - generic [ref=f30e124]:
+                - generic [ref=f30e129]:
+                  - text: Published on
+                  - time [ref=f30e130]: March 23, 2026
+                - button "Canon, EOS R100" [ref=f30e135] [cursor=pointer]
+                - generic [ref=f30e139]:
+                  - text: Free to use under the
+                  - link "Unsplash License" [ref=f30e140] [cursor=pointer]:
+                    - /url: /license
+            - generic [ref=f30e142]:
+              - link "architecture" [ref=f30e143] [cursor=pointer]:
+                - /url: /s/photos/architecture
+              - link "purple" [ref=f30e144] [cursor=pointer]:
+                - /url: /s/photos/purple
+              - link "cityscape" [ref=f30e145] [cursor=pointer]:
+                - /url: /s/photos/cityscape
+              - link "street light" [ref=f30e146] [cursor=pointer]:
+                - /url: /s/photos/street-light
+              - link "city street" [ref=f30e147] [cursor=pointer]:
+                - /url: /s/photos/city-street
+              - link "winter scene" [ref=f30e148] [cursor=pointer]:
+                - /url: /s/photos/winter-scene
+              - link "downtown" [ref=f30e149] [cursor=pointer]:
+                - /url: /s/photos/downtown
+              - link "sidewalk" [ref=f30e150] [cursor=pointer]:
+                - /url: /s/photos/sidewalk
+              - link "urban landscape" [ref=f30e151] [cursor=pointer]:
+                - /url: /s/photos/urban-landscape
+              - link "old buildings" [ref=f30e152] [cursor=pointer]:
+                - /url: /s/photos/old-buildings
+              - link "street view" [ref=f30e153] [cursor=pointer]:
+                - /url: /s/photos/street-view
+              - link "building facade" [ref=f30e154] [cursor=pointer]:
+                - /url: /s/photos/building-facade
+              - link "brick building" [ref=f30e155] [cursor=pointer]:
+                - /url: /s/photos/brick-building
+              - link "urban decay" [ref=f30e156] [cursor=pointer]:
+                - /url: /s/photos/urban-decay
+              - link "bare tree" [ref=f30e157] [cursor=pointer]:
+                - /url: /s/photos/bare-tree
+              - link "historic architecture" [ref=f30e158] [cursor=pointer]:
+                - /url: /s/photos/historic-architecture
+              - link "urban scene" [ref=f30e159] [cursor=pointer]:
+                - /url: /s/photos/urban-scene
+        - generic [ref=f30e162]:
+          - paragraph [ref=f30e165]: Browse premium related images on iStock | Save 20% with code UNSPLASH20
+          - generic [ref=f30e176]:
+            - heading "Related images" [level=4] [ref=f30e178]
+            - generic [ref=f30e182]:
+              - generic [ref=f30e183]:
+                - figure [ref=f30e184]:
+                  - link [ref=f30e187]:
+                    - /url: /photos/a-city-street-with-people-walking-down-it-FmgJgLmZeVA
+                    - img "a city street with people walking down it" [ref=f30e188]
+                - figure [ref=f30e189]:
+                  - generic [ref=f30e191]:
+                    - link [ref=f30e192]:
+                      - /url: /photos/a-building-with-a-clock-on-the-side-of-it-BjEeUcWDDpw
+                      - img "A building with a clock on the side of it" [ref=f30e193]
+                    - link [ref=f30e194] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fa-building-with-a-clock-on-the-side-of-it-BjEeUcWDDpw
+                - figure [ref=f30e197]:
+                  - link [ref=f30e200]:
+                    - /url: /photos/city-street-with-tall-buildings-and-cars-ZApc09pFAzs
+                    - img "City street with tall buildings and cars" [ref=f30e201]
+                - figure [ref=f30e202]:
+                  - link [ref=f30e205]:
+                    - /url: /photos/cars-on-road-near-brown-concrete-building-during-daytime-_gRU2deApqo
+                    - img "cars on road near brown concrete building during daytime" [ref=f30e206]
+                - figure [ref=f30e207]:
+                  - link [ref=f30e210]:
+                    - /url: /photos/black-metal-bench-near-brown-concrete-building-during-daytime-nnLUIaKh2-c
+                    - img "black metal bench near brown concrete building during daytime" [ref=f30e211]
+                - figure [ref=f30e212]:
+                  - generic [ref=f30e214]:
+                    - link [ref=f30e215]:
+                      - /url: /photos/a-tall-building-with-a-clock-on-the-top-of-it-h2srfy4vsAI
+                      - img "a tall building with a clock on the top of it" [ref=f30e216]
+                    - link [ref=f30e217] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fa-tall-building-with-a-clock-on-the-top-of-it-h2srfy4vsAI
+                - figure [ref=f30e220]:
+                  - link [ref=f30e223]:
+                    - /url: /photos/people-walking-at-pedestrian-lane-lFfvYCTIWDw
+                    - img "people walking at pedestrian lane" [ref=f30e224]
+                - figure [ref=f30e225]:
+                  - generic [ref=f30e227]:
+                    - link [ref=f30e228]:
+                      - /url: /photos/a-city-street-with-buildings-on-both-sides-RAIzlYfEdmM
+                      - img "a city street with buildings on both sides" [ref=f30e229]
+                    - link [ref=f30e230] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fa-city-street-with-buildings-on-both-sides-RAIzlYfEdmM
+                - figure [ref=f30e233]:
+                  - link [ref=f30e236]:
+                    - /url: /photos/a-city-street-with-tall-buildings--XhTmgIdgW4
+                    - img "a city street with tall buildings" [ref=f30e237]
+                - figure [ref=f30e238]:
+                  - generic [ref=f30e240]:
+                    - link [ref=f30e241]:
+                      - /url: /photos/cars-driving-down-city-street-9krzCc_0DqE
+                      - img "Autumn in Downtown Portland Oregon. Focus on Architecture and Buildings and a general realistic view of the urban city life in the Pacific Northwest." [ref=f30e242]
+                    - link [ref=f30e243] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fcars-driving-down-city-street-9krzCc_0DqE
+              - generic [ref=f30e246]:
+                - figure [ref=f30e247]:
+                  - link [ref=f30e250]:
+                    - /url: /photos/people-walking-on-street-near-high-rise-buildings-during-daytime-ndH3qlrq5WI
+                    - img "people walking on street near high rise buildings during daytime" [ref=f30e251]
+                - figure [ref=f30e252]:
+                  - link [ref=f30e255]:
+                    - /url: /photos/a-city-street-with-tall-buildings-in-the-background-fDT22pxY8cY
+                    - img "a city street with tall buildings in the background" [ref=f30e256]
+                - figure [ref=f30e257]:
+                  - link [ref=f30e260]:
+                    - /url: /photos/a-red-building-with-a-clock-on-the-top-of-it-lQ7U6YmJKhE
+                    - img "a red building with a clock on the top of it" [ref=f30e261]
+                - figure [ref=f30e262]:
+                  - generic [ref=f30e264]:
+                    - link [ref=f30e265]:
+                      - /url: /photos/street-scene-with-flowering-tree-branches-and-buildings-CrqHHqOADF8
+                      - img "Street scene with flowering tree branches and buildings" [ref=f30e266]
+                    - link [ref=f30e267] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fstreet-scene-with-flowering-tree-branches-and-buildings-CrqHHqOADF8
+                - figure [ref=f30e270]:
+                  - link [ref=f30e273]:
+                    - /url: /photos/a-group-of-people-walking-down-a-street-next-to-tall-buildings-fmMqzrRA_mk
+                    - img "a group of people walking down a street next to tall buildings" [ref=f30e274]
+                - figure [ref=f30e275]:
+                  - link [ref=f30e278]:
+                    - /url: /photos/a-city-street-lined-with-tall-buildings-under-a-cloudy-sky-PBtopdaxEgs
+                    - img "a city street lined with tall buildings under a cloudy sky" [ref=f30e279]
+                - figure [ref=f30e280]:
+                  - link [ref=f30e283]:
+                    - /url: /photos/a-group-of-buildings-9PvA-G5mRh8
+                    - img "a group of buildings" [ref=f30e284]
+                - figure [ref=f30e285]:
+                  - link [ref=f30e288]:
+                    - /url: /photos/white-building-with-american-flag-on-top-lXaMBB5dmWg
+                    - img "white building with American flag on top" [ref=f30e289]
+                - figure [ref=f30e290]:
+                  - link [ref=f30e293]:
+                    - /url: /photos/a-street-corner-with-a-traffic-light-and-a-building-47R4CiQtOPg
+                    - img "a street corner with a traffic light and a building" [ref=f30e294]
+                - figure [ref=f30e295]:
+                  - link [ref=f30e298]:
+                    - /url: /photos/a-bunch-of-bikes-parked-in-front-of-a-building-xr8MRLxbv3E
+                    - img "a bunch of bikes parked in front of a building" [ref=f30e299]
+    - generic:
+      - region "Notifications"

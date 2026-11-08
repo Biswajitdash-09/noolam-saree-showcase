@@ -1,0 +1,125 @@
+- generic [ref=f5e4]:
+  - navigation [ref=f5e5]:
+    - generic [ref=f5e6]:
+      - generic [ref=f5e7]:
+        - link "Unsplash Home" [ref=f5e8] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=f5e9]
+        - link "Photos" [ref=f5e11] [cursor=pointer]:
+          - /url: /
+        - link "Illustrations" [ref=f5e14] [cursor=pointer]:
+          - /url: /illustrations
+      - generic [ref=f5e17]:
+        - button "Explore" [ref=f5e18] [cursor=pointer]
+        - button "Collections" [ref=f5e21] [cursor=pointer]
+        - button "Download History" [ref=f5e24] [cursor=pointer]
+      - button "Bookmarks" [ref=f5e28] [cursor=pointer]
+    - generic [ref=f5e31]:
+      - link "Log in / Sign up" [ref=f5e32] [cursor=pointer]:
+        - /url: /login?referrer=%2Fphotos%2Fmountain-range-behind-a-dense-pine-forest-KufOmN_wI90
+      - button "Language" [ref=f5e35] [cursor=pointer]
+      - button "Menu" [ref=f5e38] [cursor=pointer]
+  - generic [ref=f5e41]:
+    - generic [ref=f5e42]:
+      - navigation [ref=f5e43]:
+        - search "Find visuals sitewide" [ref=f5e45]:
+          - button "Search Unsplash" [ref=f5e46] [cursor=pointer]
+          - combobox [ref=f5e49]:
+            - searchbox "Search Unsplash" [ref=f5e50]
+            - listbox
+          - button "Visual Search" [ref=f5e52] [cursor=pointer]
+        - generic [ref=f5e55]:
+          - link "Get Unsplash+" [ref=f5e56] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=f5e57] [cursor=pointer]:
+            - /url: /login?referrer=%2Fphotos%2Fmountain-range-behind-a-dense-pine-forest-KufOmN_wI90
+        - button "Submit an image" [ref=f5e59] [cursor=pointer]
+      - generic [ref=f5e60]:
+        - generic [ref=f5e61]:
+          - banner [ref=f5e63]:
+            - generic [ref=f5e65]:
+              - link [ref=f5e66] [cursor=pointer]:
+                - /url: /@ashford_marx
+              - generic [ref=f5e69]:
+                - link "Ashford Marx" [ref=f5e70] [cursor=pointer]:
+                  - /url: /@ashford_marx
+                - link "Available for hire" [ref=f5e72] [cursor=pointer]:
+                  - /url: /@ashford_marx
+            - generic [ref=f5e75]:
+              - button "Bookmark" [ref=f5e76] [cursor=pointer]
+              - button "Add to Collection" [ref=f5e79] [cursor=pointer]
+              - link "Edit image" [ref=f5e82] [cursor=pointer]:
+                - /url: /plus?referrer=%2Fphotos%2Fmountain-range-behind-a-dense-pine-forest-KufOmN_wI90
+              - generic [ref=f5e86]:
+                - link "Download free" [ref=f5e87] [cursor=pointer]:
+                  - /url: https://unsplash.com/photos/KufOmN_wI90/download?force=true
+                - button "Choose download size" [ref=f5e89] [cursor=pointer]
+          - button "Zoom in on this image" [disabled] [ref=f5e95]:
+            - img "Mountain range behind a dense pine forest" [ref=f5e96]
+          - generic [ref=f5e97]:
+            - generic [ref=f5e98]:
+              - generic [ref=f5e99]:
+                - generic [ref=f5e100]:
+                  - generic [ref=f5e101]: ––– –– ––
+                  - text: ––– –––– ––––
+                - generic [ref=f5e102]:
+                  - generic [ref=f5e103]: ––– –– ––
+                  - text: ––– –––– ––––
+              - generic [ref=f5e105]:
+                - heading "Featured in" [level=3] [ref=f5e106]
+                - generic [ref=f5e107]:
+                  - link "Photos" [ref=f5e108] [cursor=pointer]:
+                    - /url: /
+                  - text: ","
+                  - link "Nature" [ref=f5e109] [cursor=pointer]:
+                    - /url: /t/nature
+              - generic [ref=f5e110]:
+                - button "Share this image" [ref=f5e111] [cursor=pointer]:
+                  - generic [ref=f5e114]: Share
+                - button "Stats about this image" [ref=f5e115] [cursor=pointer]:
+                  - generic [ref=f5e118]: Info
+                - button "More Actions" [ref=f5e119] [cursor=pointer]
+            - generic [ref=f5e123]:
+              - heading "Mountain range behind a dense pine forest" [level=1] [ref=f5e125]
+              - paragraph [ref=f5e129]: Download this free HD photo of green, mountain landscape, natural beauty, and mountain range by Ashford Marx (@ashford_marx)
+              - generic [ref=f5e131]:
+                - generic [ref=f5e136]:
+                  - text: Published on
+                  - time [ref=f5e137]: March 24, 2026 (UTC)
+                - button "Canon, EOS M50m2" [ref=f5e142] [cursor=pointer]
+                - generic [ref=f5e146]:
+                  - text: Free to use under the
+                  - link "Unsplash License" [ref=f5e147] [cursor=pointer]:
+                    - /url: /license
+            - generic [ref=f5e149]:
+              - link "green" [ref=f5e150] [cursor=pointer]:
+                - /url: /s/photos/green
+              - link "mountain landscape" [ref=f5e151] [cursor=pointer]:
+                - /url: /s/photos/mountain-landscape
+              - link "natural beauty" [ref=f5e152] [cursor=pointer]:
+                - /url: /s/photos/natural-beauty
+              - link "mountain range" [ref=f5e153] [cursor=pointer]:
+                - /url: /s/photos/mountain-range
+              - link "national park" [ref=f5e154] [cursor=pointer]:
+                - /url: /s/photos/national-park
+              - link "pine forest" [ref=f5e155] [cursor=pointer]:
+                - /url: /s/photos/pine-forest
+              - link "wilderness" [ref=f5e156] [cursor=pointer]:
+                - /url: /s/photos/wilderness
+              - link "woodland" [ref=f5e157] [cursor=pointer]:
+                - /url: /s/photos/woodland
+              - link "tranquility" [ref=f5e158] [cursor=pointer]:
+                - /url: /s/photos/tranquility
+              - link "scenic view" [ref=f5e159] [cursor=pointer]:
+                - /url: /s/photos/scenic-view
+              - link "nature scene" [ref=f5e160] [cursor=pointer]:
+                - /url: /s/photos/nature-scene
+              - link "evergreen forest" [ref=f5e161] [cursor=pointer]:
+                - /url: /s/photos/evergreen-forest
+              - link "forest canopy" [ref=f5e162] [cursor=pointer]:
+                - /url: /s/photos/forest-canopy
+              - link "outdoor adventure" [ref=f5e163] [cursor=pointer]:
+                - /url: /s/photos/outdoor-adventure
+        - paragraph [ref=f5e169]: Browse premium related images on iStock | Save 20% with code UNSPLASH20
+    - generic:
+      - region "Notifications"

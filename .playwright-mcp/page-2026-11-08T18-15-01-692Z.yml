@@ -1,0 +1,124 @@
+- generic [ref=f25e4]:
+  - navigation [ref=f25e5]:
+    - generic [ref=f25e6]:
+      - generic [ref=f25e7]:
+        - link "Unsplash Home" [ref=f25e8] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=f25e9]
+        - link "Photos" [ref=f25e11] [cursor=pointer]:
+          - /url: /
+        - link "Illustrations" [ref=f25e14] [cursor=pointer]:
+          - /url: /illustrations
+      - generic [ref=f25e17]:
+        - button "Explore" [ref=f25e18] [cursor=pointer]
+        - button "Collections" [ref=f25e21] [cursor=pointer]
+        - button "Download History" [ref=f25e24] [cursor=pointer]
+      - button "Bookmarks" [ref=f25e28] [cursor=pointer]
+    - generic [ref=f25e31]:
+      - link "Log in / Sign up" [ref=f25e32] [cursor=pointer]:
+        - /url: /login?referrer=%2Fphotos%2Fcity-street-with-tall-buildings-at-dusk-TFZ7YLePsv0
+      - button "Language" [ref=f25e35] [cursor=pointer]
+      - button "Menu" [ref=f25e38] [cursor=pointer]
+  - generic [ref=f25e41]:
+    - generic [ref=f25e42]:
+      - navigation [ref=f25e43]:
+        - search "Find visuals sitewide" [ref=f25e45]:
+          - button "Search Unsplash" [ref=f25e46] [cursor=pointer]
+          - combobox [ref=f25e49]:
+            - searchbox "Search Unsplash" [ref=f25e50]
+            - listbox
+          - button "Visual Search" [ref=f25e52] [cursor=pointer]
+        - generic [ref=f25e55]:
+          - link "Get Unsplash+" [ref=f25e56] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=f25e57] [cursor=pointer]:
+            - /url: /login?referrer=%2Fphotos%2Fcity-street-with-tall-buildings-at-dusk-TFZ7YLePsv0
+        - button "Submit an image" [ref=f25e59] [cursor=pointer]
+      - generic [ref=f25e60]:
+        - generic [ref=f25e61]:
+          - banner [ref=f25e63]:
+            - generic [ref=f25e65]:
+              - link [ref=f25e66] [cursor=pointer]:
+                - /url: /@joshhild
+              - generic [ref=f25e69]:
+                - link "Josh Hild" [ref=f25e70] [cursor=pointer]:
+                  - /url: /@joshhild
+                - link "Available for hire" [ref=f25e72] [cursor=pointer]:
+                  - /url: /@joshhild
+            - generic [ref=f25e75]:
+              - button "Bookmark" [ref=f25e76] [cursor=pointer]
+              - button "Add to Collection" [ref=f25e79] [cursor=pointer]
+              - link "Edit image" [ref=f25e82] [cursor=pointer]:
+                - /url: /plus?referrer=%2Fphotos%2Fcity-street-with-tall-buildings-at-dusk-TFZ7YLePsv0
+              - generic [ref=f25e86]:
+                - link "Download free" [ref=f25e87] [cursor=pointer]:
+                  - /url: https://unsplash.com/photos/TFZ7YLePsv0/download?force=true
+                - button "Choose download size" [ref=f25e89] [cursor=pointer]
+          - button "Zoom in on this image" [disabled] [ref=f25e95]:
+            - img "City street with tall buildings at dusk" [ref=f25e96]
+          - generic [ref=f25e97]:
+            - generic [ref=f25e98]:
+              - generic [ref=f25e99]:
+                - generic [ref=f25e100]:
+                  - generic [ref=f25e101]: ––– –– ––
+                  - text: ––– –––– ––––
+                - generic [ref=f25e102]:
+                  - generic [ref=f25e103]: ––– –– ––
+                  - text: ––– –––– ––––
+              - generic [ref=f25e104]:
+                - button "Share this image" [ref=f25e105] [cursor=pointer]:
+                  - generic [ref=f25e108]: Share
+                - button "Stats about this image" [ref=f25e109] [cursor=pointer]:
+                  - generic [ref=f25e112]: Info
+                - button "More Actions" [ref=f25e113] [cursor=pointer]
+            - generic [ref=f25e117]:
+              - heading "City street with tall buildings at dusk" [level=1] [ref=f25e119]
+              - paragraph [ref=f25e123]: Download this free HD photo of blue, architecture, road, and night by Josh Hild (@joshhild)
+              - generic [ref=f25e125]:
+                - generic [ref=f25e126]: Seattle, WA, USA
+                - generic [ref=f25e135]:
+                  - text: Published on
+                  - time [ref=f25e136]: December 18, 2025 (UTC)
+                - button "SONY, ILCE-7SM3" [ref=f25e141] [cursor=pointer]
+                - generic [ref=f25e145]:
+                  - text: Free to use under the
+                  - link "Unsplash License" [ref=f25e146] [cursor=pointer]:
+                    - /url: /license
+            - generic [ref=f25e148]:
+              - link "blue" [ref=f25e149] [cursor=pointer]:
+                - /url: /s/photos/blue
+              - link "architecture" [ref=f25e150] [cursor=pointer]:
+                - /url: /s/photos/architecture
+              - link "road" [ref=f25e151] [cursor=pointer]:
+                - /url: /s/photos/road
+              - link "night" [ref=f25e152] [cursor=pointer]:
+                - /url: /s/photos/night
+              - link "street" [ref=f25e153] [cursor=pointer]:
+                - /url: /s/photos/street
+              - link "urban" [ref=f25e154] [cursor=pointer]:
+                - /url: /s/photos/urban
+              - link "cityscape" [ref=f25e155] [cursor=pointer]:
+                - /url: /s/photos/cityscape
+              - link "transportation" [ref=f25e156] [cursor=pointer]:
+                - /url: /s/photos/transportation
+              - link "travel destination" [ref=f25e157] [cursor=pointer]:
+                - /url: /s/photos/travel-destination
+              - link "downtown" [ref=f25e158] [cursor=pointer]:
+                - /url: /s/photos/downtown
+              - link "city life" [ref=f25e159] [cursor=pointer]:
+                - /url: /s/photos/city-life
+              - link "modern city" [ref=f25e160] [cursor=pointer]:
+                - /url: /s/photos/modern-city
+              - link "commute" [ref=f25e161] [cursor=pointer]:
+                - /url: /s/photos/commute
+              - link "business district" [ref=f25e162] [cursor=pointer]:
+                - /url: /s/photos/business-district
+              - link "urban exploration" [ref=f25e163] [cursor=pointer]:
+                - /url: /s/photos/urban-exploration
+              - link "metropolis" [ref=f25e164] [cursor=pointer]:
+                - /url: /s/photos/metropolis
+              - link "tall buildings" [ref=f25e165] [cursor=pointer]:
+                - /url: /s/photos/tall-buildings
+        - paragraph [ref=f25e171]: Browse premium related images on iStock | Save 20% with code UNSPLASH20
+    - generic:
+      - region "Notifications"

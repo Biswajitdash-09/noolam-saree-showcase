@@ -1,0 +1,151 @@
+- generic [ref=f55e4]:
+  - navigation [ref=f55e5]:
+    - generic [ref=f55e6]:
+      - generic [ref=f55e7]:
+        - link "Unsplash Home" [ref=f55e8] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=f55e9]
+        - link "Photos" [ref=f55e11] [cursor=pointer]:
+          - /url: /
+        - link "Illustrations" [ref=f55e14] [cursor=pointer]:
+          - /url: /illustrations
+      - generic [ref=f55e17]:
+        - button "Explore" [ref=f55e18] [cursor=pointer]
+        - button "Collections" [ref=f55e21] [cursor=pointer]
+        - button "Download History" [ref=f55e24] [cursor=pointer]
+      - button "Bookmarks" [ref=f55e28] [cursor=pointer]
+    - generic [ref=f55e31]:
+      - link "Log in / Sign up" [ref=f55e32] [cursor=pointer]:
+        - /url: /login?referrer=%2Fphotos%2Fa-group-of-mountains-with-snow-on-them-t2Wt4TNEJYY
+      - button "Language" [ref=f55e35] [cursor=pointer]
+      - button "Menu" [ref=f55e38] [cursor=pointer]
+  - generic [ref=f55e41]:
+    - generic [ref=f55e42]:
+      - navigation [ref=f55e43]:
+        - search "Find visuals sitewide" [ref=f55e45]:
+          - button "Search Unsplash" [ref=f55e46] [cursor=pointer]
+          - combobox [ref=f55e49]:
+            - searchbox "Search Unsplash" [ref=f55e50]
+            - listbox
+          - button "Visual Search" [ref=f55e52] [cursor=pointer]
+        - generic [ref=f55e55]:
+          - link "Get Unsplash+" [ref=f55e56] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=f55e57] [cursor=pointer]:
+            - /url: /login?referrer=%2Fphotos%2Fa-group-of-mountains-with-snow-on-them-t2Wt4TNEJYY
+        - button "Submit an image" [ref=f55e59] [cursor=pointer]
+      - generic [ref=f55e60]:
+        - generic [ref=f55e61]:
+          - banner [ref=f55e63]:
+            - generic [ref=f55e65]:
+              - link [ref=f55e66] [cursor=pointer]:
+                - /url: /@hansott
+              - generic [ref=f55e69]:
+                - link "Hans Ott" [ref=f55e70] [cursor=pointer]:
+                  - /url: /@hansott
+                - generic [ref=f55e71]:
+                  - text: For
+                  - link "Unsplash+" [ref=f55e72] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-group-of-mountains-with-snow-on-them-t2Wt4TNEJYY
+            - generic [ref=f55e73]:
+              - button "Bookmark" [ref=f55e74] [cursor=pointer]
+              - button "Add to Collection" [ref=f55e77] [cursor=pointer]
+              - link "Edit image" [ref=f55e80] [cursor=pointer]:
+                - /url: /plus?referrer=%2Fphotos%2Fa-group-of-mountains-with-snow-on-them-t2Wt4TNEJYY
+              - button "Download" [ref=f55e84] [cursor=pointer]
+          - button "Zoom in on this image" [disabled] [ref=f55e90]:
+            - img "A group of mountains with snow on them" [ref=f55e91]
+          - generic [ref=f55e92]:
+            - generic [ref=f55e94]:
+              - button "Share this image" [ref=f55e95] [cursor=pointer]:
+                - generic [ref=f55e98]: Share
+              - button "More Actions" [ref=f55e99] [cursor=pointer]
+            - generic [ref=f55e103]:
+              - heading "A group of mountains with snow on them" [level=1] [ref=f55e105]
+              - paragraph [ref=f55e109]: Download this HD photo of mountains, snow, mountain landscape, and natural beauty in Iceland by Hans Ott (@hansott)
+              - generic [ref=f55e111]:
+                - generic [ref=f55e112]: Iceland
+                - generic [ref=f55e121]:
+                  - text: Published on
+                  - time [ref=f55e122]: July 3, 2024 (UTC)
+                - button "SONY, ILCE-7M4" [ref=f55e127] [cursor=pointer]
+                - generic [ref=f55e131]:
+                  - text: Licensed under the
+                  - link "Unsplash+ License" [ref=f55e132] [cursor=pointer]:
+                    - /url: /plus/license
+            - generic [ref=f55e134]:
+              - link "mountains" [ref=f55e135] [cursor=pointer]:
+                - /url: /s/photos/mountains
+              - link "snow" [ref=f55e136] [cursor=pointer]:
+                - /url: /s/photos/snow
+              - link "mountain landscape" [ref=f55e137] [cursor=pointer]:
+                - /url: /s/photos/mountain-landscape
+              - link "natural beauty" [ref=f55e138] [cursor=pointer]:
+                - /url: /s/photos/natural-beauty
+              - link "cloudy sky" [ref=f55e139] [cursor=pointer]:
+                - /url: /s/photos/cloudy-sky
+              - link "mountain range" [ref=f55e140] [cursor=pointer]:
+                - /url: /s/photos/mountain-range
+              - link "winter landscape" [ref=f55e141] [cursor=pointer]:
+                - /url: /s/photos/winter-landscape
+              - link "travel destination" [ref=f55e142] [cursor=pointer]:
+                - /url: /s/photos/travel-destination
+              - link "wilderness" [ref=f55e143] [cursor=pointer]:
+                - /url: /s/photos/wilderness
+              - link "adventure travel" [ref=f55e144] [cursor=pointer]:
+                - /url: /s/photos/adventure-travel
+              - link "geology" [ref=f55e145] [cursor=pointer]:
+                - /url: /s/photos/geology
+              - link "snowy mountains" [ref=f55e146] [cursor=pointer]:
+                - /url: /s/photos/snowy-mountains
+              - link "exploration" [ref=f55e147] [cursor=pointer]:
+                - /url: /s/photos/exploration
+              - link "mountain scenery" [ref=f55e148] [cursor=pointer]:
+                - /url: /s/photos/mountain-scenery
+              - link "highlands" [ref=f55e149] [cursor=pointer]:
+                - /url: /s/photos/highlands
+              - link "earth tones" [ref=f55e150] [cursor=pointer]:
+                - /url: /s/photos/earth-tones
+              - link "rocky terrain" [ref=f55e151] [cursor=pointer]:
+                - /url: /s/photos/rocky-terrain
+              - link "dramatic landscape" [ref=f55e152] [cursor=pointer]:
+                - /url: /s/photos/dramatic-landscape
+              - link "barren landscape" [ref=f55e153] [cursor=pointer]:
+                - /url: /s/photos/barren-landscape
+              - link "remote location" [ref=f55e154] [cursor=pointer]:
+                - /url: /s/photos/remote-location
+        - generic [ref=f55e158]:
+          - paragraph [ref=f55e160]: From this series
+          - generic [ref=f55e163]:
+            - generic [ref=f55e164]:
+              - link [ref=f55e165] [cursor=pointer]:
+                - /url: /plus?referrer=%2Fphotos%2Fa-man-riding-a-surfboard-on-top-of-a-wave-qdmAkXbXcYI
+              - link [ref=f55e168]:
+                - /url: /photos/a-man-riding-a-surfboard-on-top-of-a-wave-qdmAkXbXcYI
+                - img "A man riding a surfboard on top of a wave" [ref=f55e169]
+            - generic [ref=f55e170]:
+              - link [ref=f55e171] [cursor=pointer]:
+                - /url: /plus?referrer=%2Fphotos%2Fa-view-of-a-mountain-range-with-a-road-going-through-it-RD5lZENHNIk
+              - link [ref=f55e174]:
+                - /url: /photos/a-view-of-a-mountain-range-with-a-road-going-through-it-RD5lZENHNIk
+                - img "A view of a mountain range with a road going through it" [ref=f55e175]
+            - generic [ref=f55e176]:
+              - link [ref=f55e177] [cursor=pointer]:
+                - /url: /plus?referrer=%2Fphotos%2Fa-man-riding-skis-on-top-of-a-snow-covered-slope-vngvaaV23iY
+              - link [ref=f55e180]:
+                - /url: /photos/a-man-riding-skis-on-top-of-a-snow-covered-slope-vngvaaV23iY
+                - img "A man riding skis on top of a snow covered slope" [ref=f55e181]
+            - generic [ref=f55e182]:
+              - link [ref=f55e183] [cursor=pointer]:
+                - /url: /plus?referrer=%2Fphotos%2Fa-man-standing-on-top-of-a-lush-green-hillside-KIwSN4jR_IE
+              - link [ref=f55e186]:
+                - /url: /photos/a-man-standing-on-top-of-a-lush-green-hillside-KIwSN4jR_IE
+                - img "A man standing on top of a lush green hillside" [ref=f55e187]
+            - generic [ref=f55e188]:
+              - link [ref=f55e189] [cursor=pointer]:
+                - /url: /plus?referrer=%2Fphotos%2Fa-dirt-path-in-the-middle-of-a-grassy-field-SG5h7Hds4xA
+              - link [ref=f55e192]:
+                - /url: /photos/a-dirt-path-in-the-middle-of-a-grassy-field-SG5h7Hds4xA
+                - img "A dirt path in the middle of a grassy field" [ref=f55e193]
+    - generic:
+      - region "Notifications"

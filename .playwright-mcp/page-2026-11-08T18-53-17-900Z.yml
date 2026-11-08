@@ -1,0 +1,532 @@
+- generic [active] [ref=f13e1]:
+  - link "Skip to content" [ref=f13e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f13e3]:
+    - generic [ref=f13e4]:
+      - link "NOOLAM home" [ref=f13e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f13e12]:
+          - generic [ref=f13e13]: Noolam
+          - generic [ref=f13e14]: Kanchipuram Silk
+      - navigation "Primary" [ref=f13e15]:
+        - link "Home" [ref=f13e16] [cursor=pointer]:
+          - /url: /
+        - link "Try the Look" [ref=f13e17] [cursor=pointer]:
+          - /url: /#try-the-look
+        - link "Pick a Silk" [ref=f13e18] [cursor=pointer]:
+          - /url: /#pick-a-silk
+        - link "The Rack" [ref=f13e19] [cursor=pointer]:
+          - /url: /#the-rack
+        - link "The Muse" [ref=f13e20] [cursor=pointer]:
+          - /url: /#the-muse
+        - link "Bridal" [ref=f13e21] [cursor=pointer]:
+          - /url: /bridal
+        - link "The Weave" [ref=f13e22] [cursor=pointer]:
+          - /url: /#the-weave
+      - generic [ref=f13e23]:
+        - button "Wishlist, 0 saved" [ref=f13e24]
+        - button "Bag, 0 pieces" [ref=f13e27]
+        - link "Visit the Store" [ref=f13e31] [cursor=pointer]:
+          - /url: /#the-weave
+  - main [ref=f13e33]:
+    - generic [ref=f13e35]:
+      - navigation "Breadcrumb" [ref=f13e36]:
+        - link "Home" [ref=f13e37] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f13e40]: The collection
+      - generic [ref=f13e41]:
+        - generic [ref=f13e42]:
+          - paragraph [ref=f13e43]: The full rail
+          - heading "Every silk, in one place." [level=1] [ref=f13e44]
+        - paragraph [ref=f13e45]: Twenty-five pieces from the Kanchipuram loom room — bridal pattu, everyday Kanjivaram, half sarees and checked weaves. Filter by the way you drape, then open a piece to see its weave up close.
+      - generic [ref=f13e46]:
+        - generic [ref=f13e47]: Woven on pit looms·Kanchipuram, Tamil Nadu
+        - generic [ref=f13e55]: Silk Mark certified·Pure mulberry silk
+        - generic [ref=f13e60]: Insured delivery·Ships in 3–5 days
+    - main [ref=f13e67]:
+      - generic [ref=f13e68]:
+        - generic [ref=f13e69]:
+          - generic [ref=f13e71]:
+            - generic [ref=f13e72]:
+              - button "All pieces 25" [pressed] [ref=f13e73]:
+                - generic [ref=f13e74]: All pieces
+                - generic [ref=f13e75]: "25"
+              - button "Silk Sarees 9" [ref=f13e76]:
+                - generic [ref=f13e77]: Silk Sarees
+                - generic [ref=f13e78]: "9"
+              - button "Half Sarees 4" [ref=f13e79]:
+                - generic [ref=f13e80]: Half Sarees
+                - generic [ref=f13e81]: "4"
+              - button "Full-Sleeve Blouses 4" [ref=f13e82]:
+                - generic [ref=f13e83]: Full-Sleeve Blouses
+                - generic [ref=f13e84]: "4"
+              - button "Half-Sleeve Blouses 8" [ref=f13e85]:
+                - generic [ref=f13e86]: Half-Sleeve Blouses
+                - generic [ref=f13e87]: "8"
+              - button "Checked Sarees 5" [ref=f13e88]:
+                - generic [ref=f13e89]: Checked Sarees
+                - generic [ref=f13e90]: "5"
+              - button "Zari & Brocade 4" [ref=f13e91]:
+                - generic [ref=f13e92]: Zari & Brocade
+                - generic [ref=f13e93]: "4"
+            - generic [ref=f13e94]:
+              - generic [ref=f13e95]: 25 pieces
+              - generic [ref=f13e97]:
+                - generic [ref=f13e98]: Sort pieces
+                - combobox "Sort pieces" [ref=f13e99]:
+                  - option "Featured" [selected]
+                  - option "Price · low to high"
+                  - option "Price · high to low"
+                  - option "A to Z"
+          - generic [ref=f13e100]:
+            - article [ref=f13e101]:
+              - link "Heirloom View the piece" [ref=f13e102] [cursor=pointer]:
+                - /url: /product/noolam-temple-gold-brocade
+                - generic [ref=f13e116]: Heirloom
+                - generic [ref=f13e117]: View the piece
+              - button "Save Noolam Temple Gold Brocade" [ref=f13e118]
+              - generic [ref=f13e121]:
+                - generic [ref=f13e122]:
+                  - paragraph [ref=f13e123]: Pure Kanjivaram silk
+                  - heading [level=3] [ref=f13e124]:
+                    - link "Noolam Temple Gold Brocade" [ref=f13e125] [cursor=pointer]:
+                      - /url: /product/noolam-temple-gold-brocade
+                - paragraph [ref=f13e127]: ₹32,000
+            - article [ref=f13e128]:
+              - link "View the piece" [ref=f13e129] [cursor=pointer]:
+                - /url: /product/palace-check
+              - button "Save Palace Check" [ref=f13e144]
+              - generic [ref=f13e147]:
+                - generic [ref=f13e148]:
+                  - paragraph [ref=f13e149]: Kanchipuram silk
+                  - heading [level=3] [ref=f13e150]:
+                    - link "Palace Check" [ref=f13e151] [cursor=pointer]:
+                      - /url: /product/palace-check
+                - paragraph [ref=f13e153]: ₹19,900
+            - article [ref=f13e154]:
+              - link "Signature View the piece" [ref=f13e155] [cursor=pointer]:
+                - /url: /product/kanchi-rani
+                - generic [ref=f13e169]: Signature
+                - generic [ref=f13e170]: View the piece
+              - button "Save Kanchi Rani" [ref=f13e171]
+              - generic [ref=f13e174]:
+                - generic [ref=f13e175]:
+                  - paragraph [ref=f13e176]: Pure Kanjivaram silk
+                  - heading [level=3] [ref=f13e177]:
+                    - link "Kanchi Rani" [ref=f13e178] [cursor=pointer]:
+                      - /url: /product/kanchi-rani
+                - paragraph [ref=f13e180]: ₹32,400
+            - article [ref=f13e181]:
+              - link "View the piece" [ref=f13e182] [cursor=pointer]:
+                - /url: /product/ivory-elephant-border
+              - button "Save Ivory Elephant Border" [ref=f13e197]
+              - generic [ref=f13e200]:
+                - generic [ref=f13e201]:
+                  - paragraph [ref=f13e202]: Pure Kanjivaram silk
+                  - heading [level=3] [ref=f13e203]:
+                    - link "Ivory Elephant Border" [ref=f13e204] [cursor=pointer]:
+                      - /url: /product/ivory-elephant-border
+                - paragraph [ref=f13e206]: ₹32,000
+            - article [ref=f13e207]:
+              - link "View the piece" [ref=f13e208] [cursor=pointer]:
+                - /url: /product/bengal-garden
+              - button "Save Bengal Garden" [ref=f13e223]
+              - generic [ref=f13e226]:
+                - generic [ref=f13e227]:
+                  - paragraph [ref=f13e228]: Soft Bengal silk
+                  - heading [level=3] [ref=f13e229]:
+                    - link "Bengal Garden" [ref=f13e230] [cursor=pointer]:
+                      - /url: /product/bengal-garden
+                - paragraph [ref=f13e232]: ₹24,600
+            - article [ref=f13e233]:
+              - link "View the piece" [ref=f13e234] [cursor=pointer]:
+                - /url: /product/magenta-shot-silk
+              - button "Save Magenta Shot Silk" [ref=f13e249]
+              - generic [ref=f13e252]:
+                - generic [ref=f13e253]:
+                  - paragraph [ref=f13e254]: Shot silk
+                  - heading [level=3] [ref=f13e255]:
+                    - link "Magenta Shot Silk" [ref=f13e256] [cursor=pointer]:
+                      - /url: /product/magenta-shot-silk
+                - paragraph [ref=f13e258]: ₹29,800
+            - article [ref=f13e259]:
+              - link "View the piece" [ref=f13e260] [cursor=pointer]:
+                - /url: /product/peacock-blue-kanjivaram
+              - button "Save Peacock Blue Kanjivaram" [ref=f13e275]
+              - generic [ref=f13e278]:
+                - generic [ref=f13e279]:
+                  - paragraph [ref=f13e280]: Pure Kanjivaram silk
+                  - heading [level=3] [ref=f13e281]:
+                    - link "Peacock Blue Kanjivaram" [ref=f13e282] [cursor=pointer]:
+                      - /url: /product/peacock-blue-kanjivaram
+                - paragraph [ref=f13e284]: ₹36,400
+            - article [ref=f13e285]:
+              - link "Limited View the piece" [ref=f13e286] [cursor=pointer]:
+                - /url: /product/ruby-korvai
+                - generic [ref=f13e300]: Limited
+                - generic [ref=f13e301]: View the piece
+              - button "Save Ruby Korvai" [ref=f13e302]
+              - generic [ref=f13e305]:
+                - generic [ref=f13e306]:
+                  - paragraph [ref=f13e307]: Pure Kanjivaram silk
+                  - heading [level=3] [ref=f13e308]:
+                    - link "Ruby Korvai" [ref=f13e309] [cursor=pointer]:
+                      - /url: /product/ruby-korvai
+                - paragraph [ref=f13e311]: ₹41,800
+            - article [ref=f13e312]:
+              - link "View the piece" [ref=f13e313] [cursor=pointer]:
+                - /url: /product/forest-rettaipet
+              - button "Save Forest Green Rettaipet" [ref=f13e328]
+              - generic [ref=f13e331]:
+                - generic [ref=f13e332]:
+                  - paragraph [ref=f13e333]: Kanchipuram silk
+                  - heading [level=3] [ref=f13e334]:
+                    - link "Forest Green Rettaipet" [ref=f13e335] [cursor=pointer]:
+                      - /url: /product/forest-rettaipet
+                - paragraph [ref=f13e337]: ₹18,600
+            - article [ref=f13e338]:
+              - link "View the piece" [ref=f13e339] [cursor=pointer]:
+                - /url: /product/rose-half-saree
+              - button "Save Rose Half Saree" [ref=f13e354]
+              - generic [ref=f13e357]:
+                - generic [ref=f13e358]:
+                  - paragraph [ref=f13e359]: Silk half saree
+                  - heading [level=3] [ref=f13e360]:
+                    - link "Rose Half Saree" [ref=f13e361] [cursor=pointer]:
+                      - /url: /product/rose-half-saree
+                - paragraph [ref=f13e363]: ₹21,900
+            - article [ref=f13e364]:
+              - link "View the piece" [ref=f13e365] [cursor=pointer]:
+                - /url: /product/marigold-half-saree
+              - button "Save Marigold Half Saree" [ref=f13e380]
+              - generic [ref=f13e383]:
+                - generic [ref=f13e384]:
+                  - paragraph [ref=f13e385]: Silk half saree
+                  - heading [level=3] [ref=f13e386]:
+                    - link "Marigold Half Saree" [ref=f13e387] [cursor=pointer]:
+                      - /url: /product/marigold-half-saree
+                - paragraph [ref=f13e389]: ₹18,400
+            - article [ref=f13e390]:
+              - link "New View the piece" [ref=f13e391] [cursor=pointer]:
+                - /url: /product/emerald-half-saree
+                - generic [ref=f13e405]: New
+                - generic [ref=f13e406]: View the piece
+              - button "Save Emerald Half Saree" [ref=f13e407]
+              - generic [ref=f13e410]:
+                - generic [ref=f13e411]:
+                  - paragraph [ref=f13e412]: Silk half saree
+                  - heading [level=3] [ref=f13e413]:
+                    - link "Emerald Half Saree" [ref=f13e414] [cursor=pointer]:
+                      - /url: /product/emerald-half-saree
+                - paragraph [ref=f13e416]: ₹24,200
+            - article [ref=f13e417]:
+              - link "View the piece" [ref=f13e418] [cursor=pointer]:
+                - /url: /product/lilac-half-saree
+              - button "Save Lilac Half Saree" [ref=f13e433]
+              - generic [ref=f13e436]:
+                - generic [ref=f13e437]:
+                  - paragraph [ref=f13e438]: Silk half saree
+                  - heading [level=3] [ref=f13e439]:
+                    - link "Lilac Half Saree" [ref=f13e440] [cursor=pointer]:
+                      - /url: /product/lilac-half-saree
+                - paragraph [ref=f13e442]: ₹14,900
+            - article [ref=f13e443]:
+              - link "View the piece" [ref=f13e444] [cursor=pointer]:
+                - /url: /product/saffron-raw-silk-blouse
+              - button "Save Noolam Saffron Raw Silk Blouse" [ref=f13e455]
+              - generic [ref=f13e458]:
+                - generic [ref=f13e459]:
+                  - paragraph [ref=f13e460]: Blouse
+                  - heading [level=3] [ref=f13e461]:
+                    - link "Noolam Saffron Raw Silk Blouse" [ref=f13e462] [cursor=pointer]:
+                      - /url: /product/saffron-raw-silk-blouse
+                - paragraph [ref=f13e464]: ₹3,600
+            - article [ref=f13e465]:
+              - link "View the piece" [ref=f13e466] [cursor=pointer]:
+                - /url: /product/plum-brocade-blouse
+              - button "Save Plum Brocade Blouse" [ref=f13e477]
+              - generic [ref=f13e480]:
+                - generic [ref=f13e481]:
+                  - paragraph [ref=f13e482]: Blouse
+                  - heading [level=3] [ref=f13e483]:
+                    - link "Plum Brocade Blouse" [ref=f13e484] [cursor=pointer]:
+                      - /url: /product/plum-brocade-blouse
+                - paragraph [ref=f13e486]: ₹5,400
+            - article [ref=f13e487]:
+              - link "View the piece" [ref=f13e488] [cursor=pointer]:
+                - /url: /product/ivory-zari-blouse
+              - button "Save Ivory Zari Blouse" [ref=f13e499]
+              - generic [ref=f13e502]:
+                - generic [ref=f13e503]:
+                  - paragraph [ref=f13e504]: Blouse
+                  - heading [level=3] [ref=f13e505]:
+                    - link "Ivory Zari Blouse" [ref=f13e506] [cursor=pointer]:
+                      - /url: /product/ivory-zari-blouse
+                - paragraph [ref=f13e508]: ₹6,100
+            - article [ref=f13e509]:
+              - link "View the piece" [ref=f13e510] [cursor=pointer]:
+                - /url: /product/teal-silk-blouse
+              - button "Save Teal Silk Blouse" [ref=f13e521]
+              - generic [ref=f13e524]:
+                - generic [ref=f13e525]:
+                  - paragraph [ref=f13e526]: Blouse
+                  - heading [level=3] [ref=f13e527]:
+                    - link "Teal Silk Blouse" [ref=f13e528] [cursor=pointer]:
+                      - /url: /product/teal-silk-blouse
+                - paragraph [ref=f13e530]: ₹4,200
+            - article [ref=f13e531]:
+              - link "View the piece" [ref=f13e532] [cursor=pointer]:
+                - /url: /product/dusty-rose-silk-blouse
+              - button "Save Dusty Rose Silk Blouse" [ref=f13e543]
+              - generic [ref=f13e546]:
+                - generic [ref=f13e547]:
+                  - paragraph [ref=f13e548]: Blouse
+                  - heading [level=3] [ref=f13e549]:
+                    - link "Dusty Rose Silk Blouse" [ref=f13e550] [cursor=pointer]:
+                      - /url: /product/dusty-rose-silk-blouse
+                - paragraph [ref=f13e552]: ₹4,200
+            - article [ref=f13e553]:
+              - link "View the piece" [ref=f13e554] [cursor=pointer]:
+                - /url: /product/gold-tissue-blouse
+              - button "Save Gold Tissue Blouse" [ref=f13e565]
+              - generic [ref=f13e568]:
+                - generic [ref=f13e569]:
+                  - paragraph [ref=f13e570]: Blouse
+                  - heading [level=3] [ref=f13e571]:
+                    - link "Gold Tissue Blouse" [ref=f13e572] [cursor=pointer]:
+                      - /url: /product/gold-tissue-blouse
+                - paragraph [ref=f13e574]: ₹4,800
+            - article [ref=f13e575]:
+              - link "Editor's pick View the piece" [ref=f13e576] [cursor=pointer]:
+                - /url: /product/maroon-velvet-blouse
+                - generic [ref=f13e586]: Editor's pick
+                - generic [ref=f13e587]: View the piece
+              - button "Save Maroon Velvet Blouse" [ref=f13e588]
+              - generic [ref=f13e591]:
+                - generic [ref=f13e592]:
+                  - paragraph [ref=f13e593]: Blouse
+                  - heading [level=3] [ref=f13e594]:
+                    - link "Maroon Velvet Blouse" [ref=f13e595] [cursor=pointer]:
+                      - /url: /product/maroon-velvet-blouse
+                - paragraph [ref=f13e597]: ₹7,200
+            - article [ref=f13e598]:
+              - link "View the piece" [ref=f13e599] [cursor=pointer]:
+                - /url: /product/indigo-cotton-blouse
+              - button "Save Indigo Cotton Blouse" [ref=f13e610]
+              - generic [ref=f13e613]:
+                - generic [ref=f13e614]:
+                  - paragraph [ref=f13e615]: Blouse
+                  - heading [level=3] [ref=f13e616]:
+                    - link "Indigo Cotton Blouse" [ref=f13e617] [cursor=pointer]:
+                      - /url: /product/indigo-cotton-blouse
+                - paragraph [ref=f13e619]: ₹2,900
+            - article [ref=f13e620]:
+              - link "View the piece" [ref=f13e621] [cursor=pointer]:
+                - /url: /product/sand-zari-blouse
+              - button "Save Sand Zari Blouse" [ref=f13e632]
+              - generic [ref=f13e635]:
+                - generic [ref=f13e636]:
+                  - paragraph [ref=f13e637]: Blouse
+                  - heading [level=3] [ref=f13e638]:
+                    - link "Sand Zari Blouse" [ref=f13e639] [cursor=pointer]:
+                      - /url: /product/sand-zari-blouse
+                - paragraph [ref=f13e641]: ₹3,900
+            - article [ref=f13e642]:
+              - link "View the piece" [ref=f13e643] [cursor=pointer]:
+                - /url: /product/wine-brocade-blouse
+              - button "Save Wine Brocade Blouse" [ref=f13e654]
+              - generic [ref=f13e657]:
+                - generic [ref=f13e658]:
+                  - paragraph [ref=f13e659]: Blouse
+                  - heading [level=3] [ref=f13e660]:
+                    - link "Wine Brocade Blouse" [ref=f13e661] [cursor=pointer]:
+                      - /url: /product/wine-brocade-blouse
+                - paragraph [ref=f13e663]: ₹6,400
+            - article [ref=f13e664]:
+              - link "View the piece" [ref=f13e665] [cursor=pointer]:
+                - /url: /product/olive-raw-silk-blouse
+              - button "Save Olive Raw Silk Blouse" [ref=f13e676]
+              - generic [ref=f13e679]:
+                - generic [ref=f13e680]:
+                  - paragraph [ref=f13e681]: Blouse
+                  - heading [level=3] [ref=f13e682]:
+                    - link "Olive Raw Silk Blouse" [ref=f13e683] [cursor=pointer]:
+                      - /url: /product/olive-raw-silk-blouse
+                - paragraph [ref=f13e685]: ₹3,400
+            - article [ref=f13e686]:
+              - link "View the piece" [ref=f13e687] [cursor=pointer]:
+                - /url: /product/black-gold-blouse
+              - button "Save Black Gold Blouse" [ref=f13e698]
+              - generic [ref=f13e701]:
+                - generic [ref=f13e702]:
+                  - paragraph [ref=f13e703]: Blouse
+                  - heading [level=3] [ref=f13e704]:
+                    - link "Black Gold Blouse" [ref=f13e705] [cursor=pointer]:
+                      - /url: /product/black-gold-blouse
+                - paragraph [ref=f13e707]: ₹5,900
+        - generic [ref=f13e708]:
+          - img "Morning mist over the loom country" [ref=f13e709]
+          - generic [ref=f13e711]:
+            - generic [ref=f13e712]:
+              - paragraph [ref=f13e713]: The loom room
+              - heading "Not sure which drape is yours?" [level=2] [ref=f13e714]
+              - paragraph [ref=f13e715]: Send us the occasion and the colours you love. We will put together a short rail of pieces and hold them for three days.
+            - link "Ask the loom room" [ref=f13e716] [cursor=pointer]:
+              - /url: /#the-weave
+    - generic [ref=f13e722]:
+      - generic [ref=f13e723]:
+        - generic [ref=f13e724]:
+          - generic [ref=f13e725]:
+            - paragraph [ref=f13e726]: The Weave
+            - heading "Woven for the divine, kept for the family." [level=2] [ref=f13e727]
+            - paragraph [ref=f13e728]: A NOOLAM saree leaves the loom with the weaver's name in the border. Visit the Kanchipuram loom room, or let us bring the rack to your screen.
+            - generic [ref=f13e729]:
+              - generic [ref=f13e730]: Kanchipuram · Tamil Nadu
+              - generic [ref=f13e734]: care@noolam.example
+              - generic [ref=f13e738]: "@noolam.silk"
+          - generic [ref=f13e742]:
+            - navigation "Shop" [ref=f13e743]:
+              - paragraph [ref=f13e744]: Shop
+              - list [ref=f13e745]:
+                - listitem [ref=f13e746]:
+                  - link "All Silks" [ref=f13e747] [cursor=pointer]:
+                    - /url: /shop
+                - listitem [ref=f13e748]:
+                  - link "The Rack" [ref=f13e749] [cursor=pointer]:
+                    - /url: /shop
+                - listitem [ref=f13e750]:
+                  - link "Bridal Collection" [ref=f13e751] [cursor=pointer]:
+                    - /url: /bridal
+                - listitem [ref=f13e752]:
+                  - link "Blouses" [ref=f13e753] [cursor=pointer]:
+                    - /url: /shop
+            - navigation "The House" [ref=f13e754]:
+              - paragraph [ref=f13e755]: The House
+              - list [ref=f13e756]:
+                - listitem [ref=f13e757]:
+                  - link "Our Looms" [ref=f13e758] [cursor=pointer]:
+                    - /url: /#the-muse
+                - listitem [ref=f13e759]:
+                  - link "Try the Look" [ref=f13e760] [cursor=pointer]:
+                    - /url: /#try-the-look
+                - listitem [ref=f13e761]:
+                  - link "Pick a Silk" [ref=f13e762] [cursor=pointer]:
+                    - /url: /#pick-a-silk
+                - listitem [ref=f13e763]:
+                  - link "The Muse" [ref=f13e764] [cursor=pointer]:
+                    - /url: /#the-muse
+            - navigation "Care" [ref=f13e765]:
+              - paragraph [ref=f13e766]: Care
+              - list [ref=f13e767]:
+                - listitem [ref=f13e768]:
+                  - link "Shipping & Returns" [ref=f13e769] [cursor=pointer]:
+                    - /url: /#the-weave
+                - listitem [ref=f13e770]:
+                  - link "Silk Care" [ref=f13e771] [cursor=pointer]:
+                    - /url: /#the-weave
+                - listitem [ref=f13e772]:
+                  - link "Size Guide" [ref=f13e773] [cursor=pointer]:
+                    - /url: /#the-weave
+                - listitem [ref=f13e774]:
+                  - link "Contact" [ref=f13e775] [cursor=pointer]:
+                    - /url: /#the-weave
+        - generic [ref=f13e776]:
+          - generic [ref=f13e777]:
+            - paragraph [ref=f13e778]: The loom letter
+            - paragraph [ref=f13e779]: "Four letters a year: new weaves, loom notes, and first look at the bridal archive."
+          - generic [ref=f13e780]:
+            - generic [ref=f13e781]: Email address
+            - textbox "Email address" [ref=f13e782]:
+              - /placeholder: Your email address
+            - button "Join" [ref=f13e783]
+      - generic [ref=f13e789]:
+        - generic [ref=f13e790]: © 2026 NOOLAM Kanchipuram Silk
+        - paragraph [ref=f13e797]: Showcase demo. Product imagery is generated; atmosphere photography is free stock, credited in the project README.
+  - generic [ref=f13e801]:
+    - generic [ref=f13e802]:
+      - generic [ref=f13e803]:
+        - generic [ref=f13e804]: ◆
+        - generic [ref=f13e805]: TRY THE LOOK
+        - generic [ref=f13e806]: Eight Kanjivaram looks, styled head to toe
+      - generic [ref=f13e807]:
+        - generic [ref=f13e808]: ◆
+        - generic [ref=f13e809]: PURE ZARI
+        - generic [ref=f13e810]: Silver-core zari woven into every temple border
+      - generic [ref=f13e811]:
+        - generic [ref=f13e812]: ◆
+        - generic [ref=f13e813]: THE RACK
+        - generic [ref=f13e814]: Browse the full rail of silks
+      - generic [ref=f13e815]:
+        - generic [ref=f13e816]: ◆
+        - generic [ref=f13e817]: BRIDAL
+        - generic [ref=f13e818]: Heirloom bridal silks for the day that matters
+      - generic [ref=f13e819]:
+        - generic [ref=f13e820]: ◆
+        - generic [ref=f13e821]: THE LOOMS
+        - generic [ref=f13e822]: Handwoven in Kanchipuram, one saree at a time
+    - generic [ref=f13e823]:
+      - generic [ref=f13e824]:
+        - generic [ref=f13e825]: ◆
+        - generic [ref=f13e826]: TRY THE LOOK
+        - generic [ref=f13e827]: Eight Kanjivaram looks, styled head to toe
+      - generic [ref=f13e828]:
+        - generic [ref=f13e829]: ◆
+        - generic [ref=f13e830]: PURE ZARI
+        - generic [ref=f13e831]: Silver-core zari woven into every temple border
+      - generic [ref=f13e832]:
+        - generic [ref=f13e833]: ◆
+        - generic [ref=f13e834]: THE RACK
+        - generic [ref=f13e835]: Browse the full rail of silks
+      - generic [ref=f13e836]:
+        - generic [ref=f13e837]: ◆
+        - generic [ref=f13e838]: BRIDAL
+        - generic [ref=f13e839]: Heirloom bridal silks for the day that matters
+      - generic [ref=f13e840]:
+        - generic [ref=f13e841]: ◆
+        - generic [ref=f13e842]: THE LOOMS
+        - generic [ref=f13e843]: Handwoven in Kanchipuram, one saree at a time
+    - generic [aria-hidden] [ref=f13e844]:
+      - generic [ref=f13e845]:
+        - generic [ref=f13e846]: ◆
+        - generic [ref=f13e847]: TRY THE LOOK
+        - generic [ref=f13e848]: Eight Kanjivaram looks, styled head to toe
+      - generic [ref=f13e849]:
+        - generic [ref=f13e850]: ◆
+        - generic [ref=f13e851]: PURE ZARI
+        - generic [ref=f13e852]: Silver-core zari woven into every temple border
+      - generic [ref=f13e853]:
+        - generic [ref=f13e854]: ◆
+        - generic [ref=f13e855]: THE RACK
+        - generic [ref=f13e856]: Browse the full rail of silks
+      - generic [ref=f13e857]:
+        - generic [ref=f13e858]: ◆
+        - generic [ref=f13e859]: BRIDAL
+        - generic [ref=f13e860]: Heirloom bridal silks for the day that matters
+      - generic [ref=f13e861]:
+        - generic [ref=f13e862]: ◆
+        - generic [ref=f13e863]: THE LOOMS
+        - generic [ref=f13e864]: Handwoven in Kanchipuram, one saree at a time
+    - generic [aria-hidden] [ref=f13e865]:
+      - generic [ref=f13e866]:
+        - generic [ref=f13e867]: ◆
+        - generic [ref=f13e868]: TRY THE LOOK
+        - generic [ref=f13e869]: Eight Kanjivaram looks, styled head to toe
+      - generic [ref=f13e870]:
+        - generic [ref=f13e871]: ◆
+        - generic [ref=f13e872]: PURE ZARI
+        - generic [ref=f13e873]: Silver-core zari woven into every temple border
+      - generic [ref=f13e874]:
+        - generic [ref=f13e875]: ◆
+        - generic [ref=f13e876]: THE RACK
+        - generic [ref=f13e877]: Browse the full rail of silks
+      - generic [ref=f13e878]:
+        - generic [ref=f13e879]: ◆
+        - generic [ref=f13e880]: BRIDAL
+        - generic [ref=f13e881]: Heirloom bridal silks for the day that matters
+      - generic [ref=f13e882]:
+        - generic [ref=f13e883]: ◆
+        - generic [ref=f13e884]: THE LOOMS
+        - generic [ref=f13e885]: Handwoven in Kanchipuram, one saree at a time
+  - button "Back to top":
+    - generic: "N"
+  - region "Notifications alt+T"

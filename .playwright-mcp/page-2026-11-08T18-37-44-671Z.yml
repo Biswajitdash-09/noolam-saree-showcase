@@ -1,0 +1,177 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "NOOLAM home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e12]:
+          - generic [ref=e13]: Noolam
+          - generic [ref=e14]: Kanchipuram Silk
+      - navigation "Primary" [ref=e15]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+        - link "Try the Look" [ref=e17] [cursor=pointer]:
+          - /url: /#try-the-look
+        - link "Pick a Silk" [ref=e18] [cursor=pointer]:
+          - /url: /#pick-a-silk
+        - link "The Rack" [ref=e19] [cursor=pointer]:
+          - /url: /#the-rack
+        - link "The Muse" [ref=e20] [cursor=pointer]:
+          - /url: /#the-muse
+        - link "Bridal" [ref=e21] [cursor=pointer]:
+          - /url: /bridal
+        - link "The Weave" [ref=e22] [cursor=pointer]:
+          - /url: /#the-weave
+      - generic [ref=e23]:
+        - button "Wishlist, 0 saved" [ref=e24]
+        - button "Bag, 0 pieces" [ref=e27]
+        - link "Visit the Store" [ref=e31] [cursor=pointer]:
+          - /url: /#the-weave
+  - main [ref=e33]:
+    - region "NOOLAM Kanchipuram silk" [ref=e34]:
+      - img "Golden light falling across a silk-draped showroom floor" [ref=e35]
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: Kanchipuram · Pure Zari · Handwoven Silk
+          - heading "Woven for the Divine." [level=1] [ref=e43]
+          - paragraph [ref=e44]: "NOOLAM brings the temple looms of Kanchipuram home: Kanjivaram silk in heritage colours, bordered in real zari and finished by hand."
+          - generic [ref=e45]:
+            - link "Try the Look" [ref=e46] [cursor=pointer]:
+              - /url: /#try-the-look
+            - link "Browse the Rack" [ref=e52] [cursor=pointer]:
+              - /url: /#the-rack
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: Est. 1978
+            - generic [ref=e61]: Silk Mark certified
+            - generic [ref=e62]: Handloom · Kanchipuram
+          - link "Scroll the archive" [ref=e63] [cursor=pointer]:
+            - /url: /#archive
+    - region [ref=e66]:
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - paragraph [ref=e70]: The NOOLAM Archive
+            - heading "Six Moods. Timeless Drapes" [level=2] [ref=e71]
+          - paragraph [ref=e72]: Woven by hand, worn for a lifetime. Six silk stories, from quiet mornings to festive evenings.
+        - generic [ref=e73]:
+          - figure [ref=e74]:
+            - img "Wedding Edit — Muhurtham silks" [ref=e78]
+            - generic [ref=e85]:
+              - paragraph [ref=e86]: Wedding Edit
+              - paragraph [ref=e87]: Muhurtham silks
+          - figure [ref=e88]:
+            - img "Kanchipuram Icons — Temple looms" [ref=e92]
+            - generic [ref=e99]:
+              - paragraph [ref=e100]: Kanchipuram Icons
+              - paragraph [ref=e101]: Temple looms
+          - figure [ref=e102]:
+            - img "Banarasi Heirlooms — Zari and brocade" [ref=e106]
+            - generic [ref=e113]:
+              - paragraph [ref=e114]: Banarasi Heirlooms
+              - paragraph [ref=e115]: Zari and brocade
+          - figure [ref=e116]:
+            - img "Festive Radiance — Evening light" [ref=e120]
+            - generic [ref=e127]:
+              - paragraph [ref=e128]: Festive Radiance
+              - paragraph [ref=e129]: Evening light
+          - figure [ref=e130]:
+            - img "Zari Signatures — Silver-core gold" [ref=e134]
+            - generic [ref=e141]:
+              - paragraph [ref=e142]: Zari Signatures
+              - paragraph [ref=e143]: Silver-core gold
+          - figure [ref=e144]:
+            - img "Bridal Élan — For the vow" [ref=e148]
+            - generic [ref=e155]:
+              - paragraph [ref=e156]: Bridal Élan
+              - paragraph [ref=e157]: For the vow
+  - generic [ref=e161]:
+    - generic [ref=e162]:
+      - generic [ref=e163]:
+        - generic [ref=e164]: ◆
+        - generic [ref=e165]: TRY THE LOOK
+        - generic [ref=e166]: Eight Kanjivaram looks, styled head to toe
+      - generic [ref=e167]:
+        - generic [ref=e168]: ◆
+        - generic [ref=e169]: PURE ZARI
+        - generic [ref=e170]: Silver-core zari woven into every temple border
+      - generic [ref=e171]:
+        - generic [ref=e172]: ◆
+        - generic [ref=e173]: THE RACK
+        - generic [ref=e174]: Browse the full rail of silks
+      - generic [ref=e175]:
+        - generic [ref=e176]: ◆
+        - generic [ref=e177]: BRIDAL
+        - generic [ref=e178]: Heirloom bridal silks for the day that matters
+      - generic [ref=e179]:
+        - generic [ref=e180]: ◆
+        - generic [ref=e181]: THE LOOMS
+        - generic [ref=e182]: Handwoven in Kanchipuram, one saree at a time
+    - generic [ref=e183]:
+      - generic [ref=e184]:
+        - generic [ref=e185]: ◆
+        - generic [ref=e186]: TRY THE LOOK
+        - generic [ref=e187]: Eight Kanjivaram looks, styled head to toe
+      - generic [ref=e188]:
+        - generic [ref=e189]: ◆
+        - generic [ref=e190]: PURE ZARI
+        - generic [ref=e191]: Silver-core zari woven into every temple border
+      - generic [ref=e192]:
+        - generic [ref=e193]: ◆
+        - generic [ref=e194]: THE RACK
+        - generic [ref=e195]: Browse the full rail of silks
+      - generic [ref=e196]:
+        - generic [ref=e197]: ◆
+        - generic [ref=e198]: BRIDAL
+        - generic [ref=e199]: Heirloom bridal silks for the day that matters
+      - generic [ref=e200]:
+        - generic [ref=e201]: ◆
+        - generic [ref=e202]: THE LOOMS
+        - generic [ref=e203]: Handwoven in Kanchipuram, one saree at a time
+    - generic [aria-hidden] [ref=e204]:
+      - generic [ref=e205]:
+        - generic [ref=e206]: ◆
+        - generic [ref=e207]: TRY THE LOOK
+        - generic [ref=e208]: Eight Kanjivaram looks, styled head to toe
+      - generic [ref=e209]:
+        - generic [ref=e210]: ◆
+        - generic [ref=e211]: PURE ZARI
+        - generic [ref=e212]: Silver-core zari woven into every temple border
+      - generic [ref=e213]:
+        - generic [ref=e214]: ◆
+        - generic [ref=e215]: THE RACK
+        - generic [ref=e216]: Browse the full rail of silks
+      - generic [ref=e217]:
+        - generic [ref=e218]: ◆
+        - generic [ref=e219]: BRIDAL
+        - generic [ref=e220]: Heirloom bridal silks for the day that matters
+      - generic [ref=e221]:
+        - generic [ref=e222]: ◆
+        - generic [ref=e223]: THE LOOMS
+        - generic [ref=e224]: Handwoven in Kanchipuram, one saree at a time
+    - generic [aria-hidden] [ref=e225]:
+      - generic [ref=e226]:
+        - generic [ref=e227]: ◆
+        - generic [ref=e228]: TRY THE LOOK
+        - generic [ref=e229]: Eight Kanjivaram looks, styled head to toe
+      - generic [ref=e230]:
+        - generic [ref=e231]: ◆
+        - generic [ref=e232]: PURE ZARI
+        - generic [ref=e233]: Silver-core zari woven into every temple border
+      - generic [ref=e234]:
+        - generic [ref=e235]: ◆
+        - generic [ref=e236]: THE RACK
+        - generic [ref=e237]: Browse the full rail of silks
+      - generic [ref=e238]:
+        - generic [ref=e239]: ◆
+        - generic [ref=e240]: BRIDAL
+        - generic [ref=e241]: Heirloom bridal silks for the day that matters
+      - generic [ref=e242]:
+        - generic [ref=e243]: ◆
+        - generic [ref=e244]: THE LOOMS
+        - generic [ref=e245]: Handwoven in Kanchipuram, one saree at a time
+  - button "Back to top":
+    - generic: "N"
+  - region "Notifications alt+T"
+  - alert [ref=e246]

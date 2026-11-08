@@ -1,0 +1,231 @@
+- generic [ref=f10e5]:
+  - navigation [ref=f10e6]:
+    - generic [ref=f10e7]:
+      - generic [ref=f10e8]:
+        - link "Unsplash Home" [ref=f10e9] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=f10e10]
+        - link "Photos" [ref=f10e12] [cursor=pointer]:
+          - /url: /
+        - link "Illustrations" [ref=f10e15] [cursor=pointer]:
+          - /url: /illustrations
+      - generic [ref=f10e18]:
+        - button "Explore" [ref=f10e19] [cursor=pointer]
+        - button "Collections" [ref=f10e22] [cursor=pointer]
+        - button "Download History" [ref=f10e25] [cursor=pointer]
+      - button "Bookmarks" [ref=f10e29] [cursor=pointer]
+    - generic [ref=f10e32]:
+      - link "Log in / Sign up" [ref=f10e33] [cursor=pointer]:
+        - /url: /login?referrer=%2Fphotos%2Frocky-mountain-landscape-with-distant-plains-and-hills-9KypbmPevsk
+      - button "Language" [ref=f10e36] [cursor=pointer]
+      - button "Menu" [ref=f10e39] [cursor=pointer]
+  - generic [ref=f10e42]:
+    - generic [ref=f10e43]:
+      - navigation [ref=f10e44]:
+        - search "Find visuals sitewide" [ref=f10e46]:
+          - button "Search Unsplash" [ref=f10e47] [cursor=pointer]
+          - combobox [ref=f10e50]:
+            - searchbox "Search Unsplash" [ref=f10e51]
+            - listbox
+          - button "Visual Search" [ref=f10e53] [cursor=pointer]
+        - generic [ref=f10e56]:
+          - link "Get Unsplash+" [ref=f10e57] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=f10e58] [cursor=pointer]:
+            - /url: /login?referrer=%2Fphotos%2Frocky-mountain-landscape-with-distant-plains-and-hills-9KypbmPevsk
+        - button "Submit an image" [ref=f10e60] [cursor=pointer]
+      - generic [ref=f10e61]:
+        - generic [ref=f10e62]:
+          - banner [ref=f10e64]:
+            - generic [ref=f10e66]:
+              - link [ref=f10e67] [cursor=pointer]:
+                - /url: /@cedricletsch
+              - generic [ref=f10e70]:
+                - link "Cedric Letsch" [ref=f10e71] [cursor=pointer]:
+                  - /url: /@cedricletsch
+                - link "Available for hire" [ref=f10e73] [cursor=pointer]:
+                  - /url: /@cedricletsch
+            - generic [ref=f10e76]:
+              - button "Bookmark" [ref=f10e77] [cursor=pointer]
+              - button "Add to Collection" [ref=f10e80] [cursor=pointer]
+              - button "Edit image" [ref=f10e83] [cursor=pointer]
+              - generic [ref=f10e87]:
+                - link "Download free" [ref=f10e88] [cursor=pointer]:
+                  - /url: https://unsplash.com/photos/9KypbmPevsk/download?force=true
+                - button "Choose download size" [ref=f10e90] [cursor=pointer]
+          - button "Zoom in on this image" [ref=f10e96]:
+            - img "Rocky mountain landscape with distant plains and hills" [ref=f10e97]
+          - generic [ref=f10e98]:
+            - generic [ref=f10e99]:
+              - generic [ref=f10e100]:
+                - generic [ref=f10e101]:
+                  - heading "Views" [level=3] [ref=f10e102]
+                  - text: 4,655
+                - generic [ref=f10e103]:
+                  - heading "Downloads" [level=3] [ref=f10e104]
+                  - text: "61"
+              - generic [ref=f10e105]:
+                - button "Share this image" [ref=f10e106] [cursor=pointer]:
+                  - generic [ref=f10e109]: Share
+                - button "Stats about this image" [ref=f10e110] [cursor=pointer]:
+                  - generic [ref=f10e113]: Info
+                - button "More Actions" [ref=f10e114] [cursor=pointer]
+            - generic [ref=f10e118]:
+              - heading "Rocky mountain landscape with distant plains and hills" [level=1] [ref=f10e120]
+              - paragraph [ref=f10e124]: Download this free HD photo of purple, mountain landscape, natural beauty, and mountain range in United States by Cedric Letsch (@cedricletsch)
+              - generic [ref=f10e126]:
+                - generic [ref=f10e127]: Pikes Peak, Colorado, USA
+                - generic [ref=f10e136]:
+                  - text: Published on
+                  - time [ref=f10e137]: October 3, 2025
+                - generic [ref=f10e141]:
+                  - text: Free to use under the
+                  - link "Unsplash License" [ref=f10e142] [cursor=pointer]:
+                    - /url: /license
+            - generic [ref=f10e144]:
+              - link "purple" [ref=f10e145] [cursor=pointer]:
+                - /url: /s/photos/purple
+              - link "mountain landscape" [ref=f10e146] [cursor=pointer]:
+                - /url: /s/photos/mountain-landscape
+              - link "natural beauty" [ref=f10e147] [cursor=pointer]:
+                - /url: /s/photos/natural-beauty
+              - link "mountain range" [ref=f10e148] [cursor=pointer]:
+                - /url: /s/photos/mountain-range
+              - link "road trip" [ref=f10e149] [cursor=pointer]:
+                - /url: /s/photos/road-trip
+              - link "national park" [ref=f10e150] [cursor=pointer]:
+                - /url: /s/photos/national-park
+              - link "travel destination" [ref=f10e151] [cursor=pointer]:
+                - /url: /s/photos/travel-destination
+              - link "mountain peak" [ref=f10e152] [cursor=pointer]:
+                - /url: /s/photos/mountain-peak
+              - link "wilderness" [ref=f10e153] [cursor=pointer]:
+                - /url: /s/photos/wilderness
+              - link "mountain road" [ref=f10e154] [cursor=pointer]:
+                - /url: /s/photos/mountain-road
+              - link "rocky mountains" [ref=f10e155] [cursor=pointer]:
+                - /url: /s/photos/rocky-mountains
+              - link "travel photography" [ref=f10e156] [cursor=pointer]:
+                - /url: /s/photos/travel-photography
+              - link "nature photography" [ref=f10e157] [cursor=pointer]:
+                - /url: /s/photos/nature-photography
+              - link "winding road" [ref=f10e158] [cursor=pointer]:
+                - /url: /s/photos/winding-road
+              - link "adventure travel" [ref=f10e159] [cursor=pointer]:
+                - /url: /s/photos/adventure-travel
+              - link "summit" [ref=f10e160] [cursor=pointer]:
+                - /url: /s/photos/summit
+              - link "scenic view" [ref=f10e161] [cursor=pointer]:
+                - /url: /s/photos/scenic-view
+              - link "exploration" [ref=f10e162] [cursor=pointer]:
+                - /url: /s/photos/exploration
+              - link "mountain scenery" [ref=f10e163] [cursor=pointer]:
+                - /url: /s/photos/mountain-scenery
+              - link "mountain trail" [ref=f10e164] [cursor=pointer]:
+                - /url: /s/photos/mountain-trail
+              - link "PNG images" [ref=f10e165] [cursor=pointer]:
+                - /url: /images/stock/png
+        - generic [ref=f10e168]:
+          - paragraph [ref=f10e171]: Browse premium related images on iStock | Save 20% with code UNSPLASH20
+          - generic [ref=f10e182]:
+            - heading "Related images" [level=4] [ref=f10e184]
+            - generic [ref=f10e188]:
+              - generic [ref=f10e189]:
+                - figure [ref=f10e190]:
+                  - link [ref=f10e193]:
+                    - /url: /photos/a-view-of-a-mountain-range-from-the-top-of-a-hill-1gBdxcw3Bkk
+                    - img "a view of a mountain range from the top of a hill" [ref=f10e194]
+                - figure [ref=f10e195]:
+                  - link [ref=f10e198]:
+                    - /url: /photos/a-view-of-a-mountain-range-from-the-top-of-a-hill-9MBc9OmgZ2E
+                    - img "a view of a mountain range from the top of a hill" [ref=f10e199]
+                - figure [ref=f10e200]:
+                  - link [ref=f10e203]:
+                    - /url: /photos/rocky-volcanic-slope-overlooking-a-barren-landscape-AmyiMzeYJqA
+                    - img "Rocky volcanic slope overlooking a barren landscape" [ref=f10e204]
+                - figure [ref=f10e205]:
+                  - generic [ref=f10e207]:
+                    - link [ref=f10e208]:
+                      - /url: /photos/sunlight-breaks-over-distant-mountain-peaks-at-dawn-fqiPtp24KVk
+                      - img "Sunlight breaks over distant mountain peaks at dawn" [ref=f10e209]
+                    - link [ref=f10e210] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fsunlight-breaks-over-distant-mountain-peaks-at-dawn-fqiPtp24KVk
+                - figure [ref=f10e213]:
+                  - link [ref=f10e216]:
+                    - /url: /photos/a-landscape-with-hills-and-mountains-in-the-background-ES0ZyjH9ons
+                    - img "a landscape with hills and mountains in the background" [ref=f10e217]
+                - figure [ref=f10e218]:
+                  - link [ref=f10e221]:
+                    - /url: /photos/a-mountain-with-a-snow-capped-mountain-in-the-distance-Xn7JC4lyP-E
+                    - img "a mountain with a snow capped mountain in the distance" [ref=f10e222]
+                - figure [ref=f10e223]:
+                  - link [ref=f10e226]:
+                    - /url: /photos/a-view-of-a-mountain-range-with-snow-capped-mountains-in-the-background-Ei2dal5N5aI
+                    - img "a view of a mountain range with snow capped mountains in the background" [ref=f10e227]
+                - figure [ref=f10e228]:
+                  - link [ref=f10e231]:
+                    - /url: /photos/a-rocky-landscape-with-mountains-in-the-background-sEjwWAObRvY
+                    - img "a rocky landscape with mountains in the background" [ref=f10e232]
+                - figure [ref=f10e233]:
+                  - link [ref=f10e236]:
+                    - /url: /photos/rugged-mountain-peaks-with-patches-of-snow-and-distant-valley-JemeBChGnCQ
+                    - img "Rugged mountain peaks with patches of snow and distant valley" [ref=f10e237]
+                - figure [ref=f10e238]:
+                  - link [ref=f10e241]:
+                    - /url: /photos/a-scenic-view-of-a-winding-road-in-the-mountains-OU9N_pkGjzI
+                    - img "a scenic view of a winding road in the mountains" [ref=f10e242]
+                - figure [ref=f10e243]:
+                  - generic [ref=f10e245]:
+                    - link [ref=f10e246]:
+                      - /url: /photos/rugged-mountain-slopes-with-snow-1-2XeaIULEs
+                      - img "Rugged dark mountain slopes with patches of snow under low light" [ref=f10e247]
+                    - link [ref=f10e248] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Frugged-mountain-slopes-with-snow-1-2XeaIULEs
+              - generic [ref=f10e251]:
+                - figure [ref=f10e252]:
+                  - link [ref=f10e255]:
+                    - /url: /photos/arid-landscape-with-rolling-hills-kDtMGv5j76Q
+                    - img "A vast arid landscape with rolling hills and a distant desert plain" [ref=f10e256]
+                - figure [ref=f10e257]:
+                  - generic [ref=f10e259]:
+                    - link [ref=f10e260]:
+                      - /url: /photos/a-sheep-standing-on-top-of-a-lush-green-hillside-jy3SjtzvyvM
+                      - img "a sheep standing on top of a lush green hillside" [ref=f10e261]
+                    - link [ref=f10e262] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Fa-sheep-standing-on-top-of-a-lush-green-hillside-jy3SjtzvyvM
+                - figure [ref=f10e265]:
+                  - link [ref=f10e268]:
+                    - /url: /photos/rugged-mountain-peaks-overlook-a-distant-valley-and-cloudy-sky-iD3Lmjb2Dic
+                    - img "Rugged mountain peaks overlook a distant valley and cloudy sky" [ref=f10e269]
+                - figure [ref=f10e270]:
+                  - link [ref=f10e273]:
+                    - /url: /photos/a-view-of-the-mountains-from-the-top-of-a-mountain-GyJnyjcK-5g
+                    - img "a view of the mountains from the top of a mountain" [ref=f10e274]
+                - figure [ref=f10e275]:
+                  - link [ref=f10e278]:
+                    - /url: /photos/a-view-of-the-mountains-from-a-high-point-of-view-yXrE1Gw2KHY
+                    - img "a view of the mountains from a high point of view" [ref=f10e279]
+                - figure [ref=f10e280]:
+                  - generic [ref=f10e282]:
+                    - link [ref=f10e283]:
+                      - /url: /photos/rocky-mountain-ridge-with-hiking-trail-EjwMhZoM2xY
+                      - img "A rocky mountain ridge with a narrow hiking trail under a clear blue sky" [ref=f10e284]
+                    - link [ref=f10e285] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Frocky-mountain-ridge-with-hiking-trail-EjwMhZoM2xY
+                - figure [ref=f10e288]:
+                  - link [ref=f10e291]:
+                    - /url: /photos/a-snow-covered-mountain-with-a-blue-sky-in-the-background-RDVgzZz-eVs
+                    - img "A snow covered mountain with a blue sky in the background" [ref=f10e292]
+                - figure [ref=f10e293]:
+                  - generic [ref=f10e295]:
+                    - link [ref=f10e296]:
+                      - /url: /photos/rugged-mountain-slopes-in-black-white-We6fkJfvLZY
+                      - img "A black and white landscape of rugged mountain slopes under a clear sky" [ref=f10e297]
+                    - link [ref=f10e298] [cursor=pointer]:
+                      - /url: /plus?referrer=%2Fphotos%2Frugged-mountain-slopes-in-black-white-We6fkJfvLZY
+                - figure [ref=f10e301]:
+                  - link [ref=f10e304]:
+                    - /url: /photos/rocky-mountain-landscape-with-shadows-and-sunlight-IEkkefLRBgc
+                    - img "Rocky mountain landscape with shadows and sunlight" [ref=f10e305]
+    - generic:
+      - region "Notifications"
