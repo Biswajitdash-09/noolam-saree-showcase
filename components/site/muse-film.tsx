@@ -4,18 +4,19 @@ import * as React from "react";
 import Image from "next/image";
 import { Volume2, VolumeX } from "lucide-react";
 
+import { SplitLines } from "@/components/motion/split-lines";
 import { ArrowPill } from "@/components/site/arrow-pill";
 
 const leftFrames = [
-  { src: "/images/muse-film/left-1.jpg", caption: "The drape", alt: "Red and gold saree drape" },
-  { src: "/images/muse-film/left-2.jpg", caption: "Golden hour", alt: "Model in mustard silk saree" },
-  { src: "/images/muse-film/left-3.jpg", caption: "Temple bells", alt: "Two women adorned in silk sarees" },
+  { src: "/images/clean/film-drape.jpg", caption: "The drape", alt: "Red and gold Kanjivaram pallu beside a carved stand" },
+  { src: "/images/clean/film-golden.jpg", caption: "Golden hour", alt: "Model resting on grass in a mustard silk saree" },
+  { src: "/images/clean/film-bells.jpg", caption: "Temple bells", alt: "Two women in silk sarees under marigold strings" },
 ];
 
 const rightFrames = [
-  { src: "/images/muse-film/right-1.jpg", caption: "Feels right", alt: "Silk fabric showcase" },
-  { src: "/images/muse-film/right-2.jpg", caption: "The laughter", alt: "Women sharing laughter in silk sarees" },
-  { src: "/images/muse-film/right-3.jpg", caption: "For the vow", alt: "Bridal silk saree with heirloom jewelry" },
+  { src: "/images/clean/film-zari.jpg", caption: "Pearl and zari", alt: "Pearl strands over a pale yellow silk blouse" },
+  { src: "/images/clean/film-laughter.jpg", caption: "The laughter", alt: "Two women laughing in teal and peacock-blue silk" },
+  { src: "/images/clean/film-vow.jpg", caption: "For the vow", alt: "Bridal silk saree with heirloom temple jewellery" },
 ];
 
 const grades = {
@@ -24,27 +25,6 @@ const grades = {
 
 export function MuseFilm() {
   const [sound, setSound] = React.useState(false);
-  const [offset, setOffset] = React.useState(0);
-
-  React.useEffect(() => {
-    let frame = 0;
-    const onScroll = () => {
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        const el = document.getElementById("the-muse");
-        if (!el) return;
-        const rect = el.getBoundingClientRect();
-        const progress = Math.min(1, Math.max(0, (window.innerHeight - rect.top) / (rect.height + window.innerHeight)));
-        setOffset((progress - 0.5) * 2);
-      });
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-    return () => {
-      cancelAnimationFrame(frame);
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, []);
 
   return (
     <section
@@ -59,11 +39,13 @@ export function MuseFilm() {
           {leftFrames.map((frame, index) => (
             <figure
               key={frame.src}
-              className="group relative overflow-hidden rounded-xl bg-cream shadow-[0_18px_40px_-24px_rgba(44,5,11,0.5)]"
-              style={{
-                transform: `translateY(${offset * (index % 2 === 0 ? -14 : 16)}px)`,
-                transition: "transform 200ms linear",
-              }}
+              className="sd-parallax group relative overflow-hidden rounded-xl bg-cream shadow-[0_18px_40px_-24px_rgba(44,5,11,0.5)]"
+              style={
+                {
+                  "--sd-from": index % 2 === 0 ? "70px" : "-40px",
+                  "--sd-to": index % 2 === 0 ? "-70px" : "40px",
+                } as React.CSSProperties
+              }
             >
               <div className="relative aspect-[4/3]">
                 <Image
@@ -86,7 +68,7 @@ export function MuseFilm() {
           <div className="text-center">
             <p className="eyebrow justify-center before:hidden">The Muse Film</p>
             <h2 id="muse-title" className="display mt-4 text-[clamp(2.3rem,5.6vw,4.8rem)]">
-              Feel the <span className="text-gradient-warm">drape</span>
+              <SplitLines lines={["Feel the", <span key="d" className="text-gradient-warm">drape</span>]} />
             </h2>
           </div>
 
@@ -96,9 +78,9 @@ export function MuseFilm() {
             <span className="pointer-events-none absolute -bottom-3 -left-3 size-7 border-b border-l border-gold-500/70" />
             <span className="pointer-events-none absolute -bottom-3 -right-3 size-7 border-b border-r border-gold-500/70" />
 
-            <div className="group relative aspect-[16/10] overflow-hidden rounded-[14px] bg-maroon-950 shadow-[0_40px_80px_-40px_rgba(44,5,11,0.65)] sm:aspect-[16/9]">
+            <div className="sd-mask group relative aspect-[16/10] overflow-hidden rounded-[14px] bg-maroon-950 shadow-[0_40px_80px_-40px_rgba(44,5,11,0.65)] sm:aspect-[16/9]">
               <Image
-                src="/images/muse-film/center-film.jpg"
+                src="/images/clean/film-still.jpg"
                 alt="NOOLAM Muse — Feel the drape"
                 fill
                 priority
@@ -135,11 +117,13 @@ export function MuseFilm() {
           {rightFrames.map((frame, index) => (
             <figure
               key={frame.src}
-              className="group relative overflow-hidden rounded-xl bg-cream shadow-[0_18px_40px_-24px_rgba(44,5,11,0.5)]"
-              style={{
-                transform: `translateY(${offset * (index % 2 === 0 ? 16 : -14)}px)`,
-                transition: "transform 200ms linear",
-              }}
+              className="sd-parallax group relative overflow-hidden rounded-xl bg-cream shadow-[0_18px_40px_-24px_rgba(44,5,11,0.5)]"
+              style={
+                {
+                  "--sd-from": index % 2 === 0 ? "-50px" : "70px",
+                  "--sd-to": index % 2 === 0 ? "50px" : "-70px",
+                } as React.CSSProperties
+              }
             >
               <div className="relative aspect-[4/3]">
                 <Image

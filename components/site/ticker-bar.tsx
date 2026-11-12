@@ -20,7 +20,7 @@ function Run({ hidden = false }: { hidden?: boolean }) {
 
 export function TickerBar() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40">
+    <div className="fixed inset-x-0 bottom-0 z-40" style={{ viewTransitionName: "site-ticker" }}>
       <div className="relative h-9 overflow-hidden border-t border-gold-500/25 bg-[linear-gradient(90deg,#2c050b_0%,#5c0d17_28%,#4a0a12_62%,#2c050b_100%)] sm:h-10">
         <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-10 bg-gradient-to-r from-maroon-950 to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-maroon-950 to-transparent" />

@@ -2,17 +2,18 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { ArrowUpRight, AtSign, Mail, MapPin } from "lucide-react";
+import { ArrowUpRight, AtSign, Mail, MapPin, Phone } from "lucide-react";
 import { toast } from "sonner";
 
 import { LotusMark } from "@/components/site/logo";
+import { shop, telHref } from "@/lib/shop";
 
 const columns = [
   {
     title: "Shop",
     links: [
       { label: "All Silks", href: "/shop" },
-      { label: "The Rack", href: "/shop" },
+      { label: "The Rack", href: "/#the-rack" },
       { label: "Bridal Collection", href: "/bridal" },
       { label: "Blouses", href: "/shop" },
     ],
@@ -29,10 +30,10 @@ const columns = [
   {
     title: "Care",
     links: [
-      { label: "Shipping & Returns", href: "/#the-weave" },
-      { label: "Silk Care", href: "/#the-weave" },
-      { label: "Size Guide", href: "/#the-weave" },
-      { label: "Contact", href: "/#the-weave" },
+      { label: "Shipping & Returns", href: "/care#shipping" },
+      { label: "Silk Care", href: "/care#silk-care" },
+      { label: "Size Guide", href: "/care#size-guide" },
+      { label: "Contact", href: "/care#contact" },
     ],
   },
 ];
@@ -41,7 +42,7 @@ export function SiteFooter() {
   const [email, setEmail] = React.useState("");
 
   return (
-    <footer id="the-weave" className="relative overflow-hidden bg-maroon-950 text-white">
+    <footer id="the-weave" className="relative -mb-12 overflow-hidden bg-maroon-950 pb-12 text-white">
       <div className="pointer-events-none absolute -left-32 top-0 size-[420px] rounded-full bg-gold-500/8 blur-[110px]" />
       <div className="pointer-events-none absolute -right-24 bottom-0 size-[360px] rounded-full bg-maroon-500/25 blur-[120px]" />
       <div className="pointer-events-none absolute inset-0 opacity-[0.05] [background-image:repeating-linear-gradient(90deg,#fff_0_1px,transparent_1px_64px)]" />
@@ -55,20 +56,28 @@ export function SiteFooter() {
             </h2>
             <p className="mt-5 max-w-[38ch] text-sm leading-relaxed text-white/60">
               A NOOLAM saree leaves the loom with the weaver&apos;s name in the
-              border. Visit the Kanchipuram loom room, or let us bring the rack
+              border. Visit the {shop.address.city} loom room, or let us bring the rack
               to your screen.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4 text-[10px] uppercase tracking-[0.24em] text-white/50">
               <span className="inline-flex items-center gap-2">
-                <MapPin className="size-3.5 text-gold-400" /> Kanchipuram · Tamil Nadu
+                <MapPin className="size-3.5 text-gold-400" /> {shop.address.city} · {shop.address.region}
               </span>
-              <span className="inline-flex items-center gap-2">
-                <Mail className="size-3.5 text-gold-400" /> care@noolam.example
-              </span>
-              <span className="inline-flex items-center gap-2">
-                <AtSign className="size-3.5 text-gold-400" /> @noolam.silk
-              </span>
+              <a href={telHref} className="inline-flex items-center gap-2 transition hover:text-gold-300">
+                <Phone className="size-3.5 text-gold-400" /> {shop.phone}
+              </a>
+              <a href={"mailto:" + shop.email} className="inline-flex items-center gap-2 transition hover:text-gold-300">
+                <Mail className="size-3.5 text-gold-400" /> {shop.email}
+              </a>
+              <a
+                href={"https://instagram.com/" + shop.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 transition hover:text-gold-300"
+              >
+                <AtSign className="size-3.5 text-gold-400" /> @{shop.instagram}
+              </a>
             </div>
           </div>
 
@@ -142,11 +151,20 @@ export function SiteFooter() {
         </div>
       </div>
 
+      <div aria-hidden className="pointer-events-none relative select-none overflow-clip">
+        <p
+          className="sd-parallax text-center text-[clamp(4.5rem,21vw,20rem)] font-bold uppercase leading-[0.8] tracking-[-0.04em] text-transparent [-webkit-text-stroke:1px_rgba(215,181,81,0.32)]"
+          style={{ "--sd-from": "35%", "--sd-to": "0%" } as React.CSSProperties}
+        >
+          {shop.name}
+        </p>
+      </div>
+
       <div className="relative border-t border-white/10">
         <div className="shell flex flex-col gap-4 py-6 text-[10px] uppercase tracking-[0.22em] text-white/40 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
             <LotusMark className="h-7 w-8" />
-            <span>© {new Date().getFullYear()} NOOLAM Kanchipuram Silk</span>
+            <span>© {new Date().getFullYear()} {shop.legalName}</span>
           </div>
           <p className="max-w-[46ch] normal-case tracking-[0.08em] text-white/35">
             Showcase demo. Product imagery is generated; atmosphere photography

@@ -6,6 +6,9 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Heart, ShoppingBag } from "lucide-react";
 import { toast } from "sonner";
 
+import { SplitLines } from "@/components/motion/split-lines";
+import { AvailabilityBadge } from "@/components/site/availability-badge";
+import { EnquiryButton } from "@/components/site/enquiry-dialog";
 import { useStore } from "@/components/site/store";
 import { bridal } from "@/lib/data";
 import { cn, formatINR } from "@/lib/utils";
@@ -41,7 +44,7 @@ export function BridalCarousel() {
             For the muhurtham and every vow after
           </p>
           <h2 id="bridal-title" className="display mt-4 text-[clamp(2.4rem,6vw,5rem)]">
-            The Bridal <span className="text-maroon-700">Collection</span>
+            <SplitLines lines={["The Bridal", <span key="c" className="text-maroon-700">Collection</span>]} />
           </h2>
         </div>
       </div>
@@ -151,6 +154,7 @@ export function BridalCarousel() {
                 {formatINR(item.price)}
               </span>
             </div>
+            <AvailabilityBadge item={item} className="mt-2.5" detailed />
           </div>
 
           <div className="mt-4 flex items-center gap-2.5">
@@ -169,7 +173,7 @@ export function BridalCarousel() {
               className="inline-flex h-11 items-center gap-2 rounded-full bg-maroon-700 px-7 text-[12px] font-medium uppercase tracking-[0.14em] text-white transition hover:bg-maroon-800"
             >
               <ShoppingBag className="size-3.5" />
-              Add to cart
+              Reserve in bag
             </button>
 
             <button
@@ -207,6 +211,9 @@ export function BridalCarousel() {
               <ArrowRight className="size-4" />
             </button>
           </div>
+          <EnquiryButton type="appointment" product={item.name} variant="link" className="mt-5">
+            Book a fitting for this saree
+          </EnquiryButton>
 
           <div className="mt-5 flex items-center gap-3 text-[10px] uppercase tracking-[0.24em] text-ink-soft/60">
             <span className="tabular-nums">

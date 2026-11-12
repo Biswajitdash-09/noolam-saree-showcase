@@ -1,11 +1,13 @@
 "use client";
 
 import * as React from "react";
-import Image from "next/image";
 import { Heart, Plus } from "lucide-react";
 import { toast } from "sonner";
 
-import { useDragScroll } from "@/hooks/use-drag-scroll";
+import { motion, useTransform } from "motion/react";
+
+import { ScrollRail, useRail, useRailDistance } from "@/components/site/scroll-rail";
+import { SilkArt } from "@/components/site/silk-fabric";
 import { useStore } from "@/components/site/store";
 import { products, type Product } from "@/lib/data";
 import { cn, formatINR } from "@/lib/utils";
@@ -13,30 +15,32 @@ import { cn, formatINR } from "@/lib/utils";
 type SilkCard = {
   slug: string;
   lines: string[];
-  media: string;
-  model?: string;
   tone: "light" | "dark";
 };
 
 const silks: SilkCard[] = [
-  { slug: "magenta-shot-silk", lines: ["MAGENTA", "SHOT SILK"], media: "/images/editorial/city-brick.jpg", model: "/images/pick-silk/model-magenta.png", tone: "light" },
-  { slug: "palace-check", lines: ["PALACE", "CHECK"], media: "/images/editorial/city-dusk.jpg", model: "/images/pick-silk/model-palace.png", tone: "light" },
-  { slug: "bengal-garden", lines: ["BENGAL", "GARDEN"], media: "/images/editorial/rocky-plains.jpg", model: "/images/pick-silk/model-bengal.png", tone: "dark" },
-  { slug: "kanchi-rani", lines: ["KANCHI", "RANI"], media: "/images/editorial/ocean-sunset.jpg", model: "/images/pick-silk/model-kanchi.png", tone: "light" },
-  { slug: "noolam-temple-gold-brocade", lines: ["TEMPLE", "GOLD"], media: "/images/editorial/misty-ridge.jpg", model: "/images/pick-silk/model-benares.png", tone: "dark" },
-  { slug: "forest-rettaipet", lines: ["FOREST", "RETTAI"], media: "/images/editorial/mountain-pines.jpg", model: "/images/pick-silk/model-korvai.png", tone: "light" },
-  { slug: "ruby-korvai", lines: ["RUBY", "KORVAI"], media: "/images/editorial/city-fog.jpg", model: "/images/pick-silk/model-palace.png", tone: "light" },
+  { slug: "magenta-shot-silk", lines: ["MAGENTA", "SHOT SILK"], tone: "light" },
+  { slug: "palace-check", lines: ["PALACE", "CHECK"], tone: "light" },
+  { slug: "bengal-garden", lines: ["BENGAL", "GARDEN"], tone: "dark" },
+  { slug: "kanchi-rani", lines: ["KANCHI", "RANI"], tone: "light" },
+  { slug: "noolam-temple-gold-brocade", lines: ["TEMPLE", "GOLD"], tone: "dark" },
+  { slug: "forest-rettaipet", lines: ["FOREST", "RETTAI"], tone: "light" },
+  { slug: "ruby-korvai", lines: ["RUBY", "KORVAI"], tone: "light" },
 ];
 
-function SilkCardItem({ card, index, total }: { card: SilkCard; index: number; total: number }) {
+function SilkCardItem({ card, index }: { card: SilkCard; index: number }) {
   const { addToCart, toggleWish, isWished } = useStore();
   const product = products.find((item: Product) => item.slug === card.slug);
   const [tilt, setTilt] = React.useState({ x: 0, y: 0 });
   const [pressed, setPressed] = React.useState(false);
+  const itemRef = React.useRef<HTMLDivElement>(null);
+  const distance = useRailDistance(itemRef);
+  // Cards ride a shallow arc: level and lifted at the centre, dipping and
+  // leaning outward toward the edges of the screen.
+  const y = useTransform(distance, (d) => d * d * 46);
+  const rotate = useTransform(distance, (d) => d * 5.5);
+  const scale = useTransform(distance, (d) => 1 - Math.min(1, Math.abs(d)) * 0.06);
   if (!product) return null;
-
-  const center = (total - 1) / 2;
-  const offset = index - center;
 
   const handleMove = (event: React.PointerEvent<HTMLDivElement>) => {
     if (event.pointerType !== "mouse") return;
@@ -58,9 +62,11 @@ function SilkCardItem({ card, index, total }: { card: SilkCard; index: number; t
   };
 
   return (
-    <div
+    <motion.div
+      ref={itemRef}
+      data-rail-item
       className="w-[236px] shrink-0 sm:w-[262px]"
-      style={{ transform: `translateY(${Math.abs(offset) * 16}px)` }}
+      style={{ y, rotate, scale, transformOrigin: "50% 120%" }}
     >
       <div
         role="group"
@@ -72,24 +78,17 @@ function SilkCardItem({ card, index, total }: { card: SilkCard; index: number; t
         className="group relative select-none overflow-hidden rounded-[22px] p-2 shadow-[0_30px_60px_-34px_rgba(30,4,8,0.55)] transition-transform duration-300 ease-out"
         style={{
           background: `linear-gradient(168deg, ${product.swatch.base} 0%, ${product.swatch.base} 45%, ${product.swatch.deep} 100%)`,
-          transform: `perspective(1100px) rotate(${offset * 1.35}deg) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) scale(${pressed ? 0.975 : 1})`,
+          transform: `perspective(1100px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) scale(${pressed ? 0.975 : 1})`,
         }}
       >
         <div className="relative h-[368px] overflow-hidden rounded-[16px] sm:h-[402px]">
-          <Image
-            src={card.media}
-            alt={`${product.name} editorial`}
-            fill
-            sizes="262px"
-            draggable={false}
-            className="object-cover opacity-70 mix-blend-luminosity transition-transform duration-700 group-hover:scale-[1.04]"
-          />
           <div
             className="absolute inset-0"
             style={{
-              background: `linear-gradient(180deg, ${product.swatch.base}f2 0%, ${product.swatch.base}33 34%, ${product.swatch.deep}00 55%, ${product.swatch.deep}d9 100%)`,
+              background: `radial-gradient(70% 46% at 50% 60%, rgba(255,255,255,0.34) 0%, rgba(255,255,255,0) 70%), linear-gradient(180deg, ${product.swatch.base} 0%, ${product.swatch.deep} 100%)`,
             }}
           />
+          <div className="absolute inset-x-8 bottom-[62px] h-6 rounded-[50%] bg-black/35 blur-lg" />
 
           <div className="absolute inset-1.5 rounded-[13px] border border-dashed border-white/30" />
 
@@ -106,18 +105,14 @@ function SilkCardItem({ card, index, total }: { card: SilkCard; index: number; t
             ))}
           </h3>
 
-          {card.model && (
-            <div className="pointer-events-none absolute inset-x-0 bottom-4 top-14 z-[2] overflow-hidden">
-              <Image
-                src={card.model}
-                alt={product.name}
-                fill
-                sizes="262px"
-                draggable={false}
-                className="object-contain object-bottom drop-shadow-[0_14px_18px_rgba(0,0,0,0.35)]"
-              />
-            </div>
-          )}
+          <div className="pointer-events-none absolute inset-x-0 bottom-[68px] top-[92px] z-[2] flex items-end justify-center">
+            <SilkArt
+              swatch={product.swatch}
+              shape={product.kind === "blouse" ? "blouse" : "drape"}
+              flip={index % 2 === 1}
+              className="h-full max-h-[270px] w-[188px] drop-shadow-[0_18px_16px_rgba(20,3,6,0.5)] transition-transform duration-500 ease-out group-hover:-translate-y-1.5"
+            />
+          </div>
 
           <button
             type="button"
@@ -163,50 +158,60 @@ function SilkCardItem({ card, index, total }: { card: SilkCard; index: number; t
           </div>
         </div>
       </div>
+    </motion.div>
+  );
+}
+
+function RailThread() {
+  const rail = useRail();
+  if (!rail?.pinned) return null;
+  return (
+    <div className="shell mt-2" aria-hidden>
+      <div className="relative mx-auto h-px max-w-[420px] bg-ink/10">
+        <motion.div
+          className="absolute inset-y-0 left-0 w-full origin-left bg-[linear-gradient(90deg,var(--color-maroon-600),var(--color-gold-500))]"
+          style={{ scaleX: rail.progress }}
+        />
+      </div>
     </div>
   );
 }
 
 export function PickSilk() {
-  const { ref, dragProps } = useDragScroll<HTMLDivElement>();
-
   return (
     <section
       id="pick-a-silk"
       aria-labelledby="pick-title"
-      className="overflow-hidden bg-[linear-gradient(180deg,#ffffff_0%,#fbf7f2_100%)] py-20 md:py-24"
+      className="overflow-x-clip bg-[linear-gradient(180deg,#ffffff_0%,#fbf7f2_100%)] py-20 md:py-24"
     >
-      <div className="shell">
-        <div className="flex flex-wrap items-end justify-between gap-6">
-          <div>
-            <p className="eyebrow">The colour wall</p>
-            <h2 id="pick-title" className="display mt-5 text-[clamp(2.2rem,5.4vw,4.4rem)]">
-              Pick a <span className="text-gradient-warm">Silk</span>
-            </h2>
-          </div>
-          <p className="max-w-[300px] text-sm leading-relaxed text-ink-soft lg:text-right">
-            Tilt a card, press it, poke the silk. Hit{" "}
-            <span className="inline-flex size-4 translate-y-0.5 items-center justify-center rounded-full bg-ink text-[9px] text-white">
-              +
-            </span>{" "}
-            to drop a saree into your bag.
-          </p>
-        </div>
-      </div>
-
-      <div className="mt-14">
-        <div
-          ref={ref}
-          {...dragProps}
-          className="no-scrollbar flex cursor-grab snap-x snap-mandatory items-start gap-4 overflow-x-auto px-5 pb-16 pt-2 active:cursor-grabbing sm:gap-6 md:px-10 xl:px-14"
-        >
-          {silks.map((card, index) => (
-            <div key={card.slug} className="snap-center">
-              <SilkCardItem card={card} index={index} total={silks.length} />
+      <ScrollRail
+        label="Silk colour wall. Scroll to move through the silks."
+        head={
+          <div className="shell">
+            <div className="flex flex-wrap items-end justify-between gap-6">
+              <div>
+                <p className="eyebrow">The colour wall</p>
+                <h2 id="pick-title" className="display mt-5 text-[clamp(2.2rem,5.4vw,4.4rem)]">
+                  Pick a <span className="text-gradient-warm">Silk</span>
+                </h2>
+              </div>
+              <p className="max-w-[300px] text-sm leading-relaxed text-ink-soft lg:text-right">
+                Scroll to walk the wall. Tilt a card, press it, then hit{" "}
+                <span className="inline-flex size-4 translate-y-0.5 items-center justify-center rounded-full bg-ink text-[9px] text-white">
+                  +
+                </span>{" "}
+                to drop a saree into your bag.
+              </p>
             </div>
-          ))}
-        </div>
-      </div>
+          </div>
+        }
+        foot={<RailThread />}
+        trackClassName="items-start gap-5 px-[calc(50vw-118px)] pb-14 pt-10 sm:gap-8 sm:px-[calc(50vw-131px)]"
+      >
+        {silks.map((card, index) => (
+          <SilkCardItem key={card.slug} card={card} index={index} />
+        ))}
+      </ScrollRail>
     </section>
   );
 }

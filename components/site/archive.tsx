@@ -1,5 +1,7 @@
+import type * as React from "react";
 import Image from "next/image";
 
+import { SplitLines } from "@/components/motion/split-lines";
 import { moods } from "@/lib/data";
 
 export function Archive() {
@@ -13,8 +15,9 @@ export function Archive() {
               id="archive-title"
               className="display mt-5 text-[clamp(2.1rem,5.2vw,4.6rem)]"
             >
-              Six Moods.{" "}
-              <span className="text-gradient-warm">Timeless Drapes</span>
+              <SplitLines
+                lines={["Six Moods.", <span key="b" className="text-gradient-warm">Timeless Drapes</span>]}
+              />
             </h2>
           </div>
           <p className="max-w-[19rem] text-sm leading-relaxed text-ink-soft lg:pb-2 lg:text-right">
@@ -24,8 +27,12 @@ export function Archive() {
         </div>
 
         <div className="mt-14 grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-6 lg:gap-x-5">
-          {moods.map((mood) => (
-            <figure key={mood.label} className="group flex flex-col items-center">
+          {moods.map((mood, index) => (
+            <figure
+              key={mood.label}
+              className="sd-rise group flex flex-col items-center"
+              style={{ "--i": index % 6 } as React.CSSProperties}
+            >
               <div className="relative w-full max-w-[220px] pt-3">
                 <div className="relative aspect-[213/342] w-full transition-all duration-500 ease-out group-hover:-translate-y-2.5 group-hover:drop-shadow-[0_22px_34px_rgba(74,10,18,0.22)]">
                   <Image

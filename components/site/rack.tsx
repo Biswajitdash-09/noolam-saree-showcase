@@ -6,6 +6,7 @@ import { AnimatePresence, LayoutGroup, motion } from "motion/react";
 import { HangerProduct } from "@/components/site/hanger";
 import { RackDetail } from "@/components/site/rack-detail";
 import { CATEGORIES, categoryCount, products, type CategoryId, type Product } from "@/lib/data";
+import { ScrollRail } from "@/components/site/scroll-rail";
 import { cn, formatINR } from "@/lib/utils";
 
 type FilterId = "all" | CategoryId;
@@ -28,7 +29,11 @@ export function Rack() {
   const caption = hovered ?? items[0];
 
   return (
-    <section id="the-rack" aria-labelledby="rack-title" className="bg-white py-20 md:py-24">
+    <section id="the-rack" aria-labelledby="rack-title" className="overflow-x-clip bg-white py-20 md:py-24">
+      <ScrollRail
+        label="The rack. Scroll to move along the rail."
+        trackClassName="pb-2"
+        head={
       <div className="shell">
         <div className="text-center">
           <p className="eyebrow justify-center before:hidden">The Collection</p>
@@ -70,10 +75,29 @@ export function Rack() {
           })}
         </div>
       </div>
-
-      <div className="relative mt-10">
-        <div className="no-scrollbar overflow-x-auto pb-2">
-          <div className="relative mx-auto min-w-max px-6 sm:px-10">
+        }
+        foot={
+          <>
+            <div className="shell mt-2 flex flex-col items-center">
+              <div className="flex h-14 items-center justify-center text-center">
+                {caption ? (
+                  <p className="text-[11px] uppercase tracking-[0.22em] text-ink-soft">
+                    <span className="text-ink">{caption.name}</span>
+                    <span className="mx-2 text-gold-500">·</span>
+                    <span className="tabular-nums">{formatINR(caption.price)}.00</span>
+                  </p>
+                ) : null}
+              </div>
+            </div>
+            <div className="shell mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-ink/10 pt-4 text-[9px] uppercase tracking-[0.24em] text-ink-soft/70">
+              <span>Explore the collection · {items.length} pieces</span>
+              <span className="hidden sm:inline">Click a hanger to lift it off the rail</span>
+              <span>Editorial stock imagery · demo collection</span>
+            </div>
+          </>
+        }
+      >
+          <div className="relative mx-auto mt-10 px-6 sm:px-10">
             <div className="pointer-events-none absolute inset-x-4 top-[34px] h-[6px] rounded-full bg-[linear-gradient(180deg,#f3f3f3_0%,#c9c9c9_35%,#8f8f8f_55%,#e6e6e6_75%,#a8a8a8_100%)] shadow-[0_3px_6px_rgba(0,0,0,0.18)] sm:inset-x-8" />
             <div className="pointer-events-none absolute left-2 top-[29px] size-4 rounded-full bg-[linear-gradient(140deg,#f2f2f2,#9a9a9a)] shadow sm:left-6" />
             <div className="pointer-events-none absolute right-2 top-[29px] size-4 rounded-full bg-[linear-gradient(140deg,#f2f2f2,#9a9a9a)] shadow sm:right-6" />
@@ -84,6 +108,7 @@ export function Rack() {
                   {items.map((product, index) => (
                     <motion.div
                       key={product.id}
+                      data-rail-item
                       layout
                       initial={{ opacity: 0, y: 24 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -122,26 +147,7 @@ export function Rack() {
               </motion.div>
             </LayoutGroup>
           </div>
-        </div>
-
-        <div className="shell mt-2 flex flex-col items-center">
-          <div className="flex h-14 items-center justify-center text-center">
-            {caption ? (
-              <p className="text-[11px] uppercase tracking-[0.22em] text-ink-soft">
-                <span className="text-ink">{caption.name}</span>
-                <span className="mx-2 text-gold-500">·</span>
-                <span className="tabular-nums">{formatINR(caption.price)}.00</span>
-              </p>
-            ) : null}
-          </div>
-        </div>
-      </div>
-
-      <div className="shell mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-ink/10 pt-4 text-[9px] uppercase tracking-[0.24em] text-ink-soft/70">
-        <span>Explore the collection · {items.length} pieces</span>
-        <span className="hidden sm:inline">Click a hanger to lift it off the rail</span>
-        <span>Editorial stock imagery · demo collection</span>
-      </div>
+      </ScrollRail>
 
       <RackDetail
         items={items}

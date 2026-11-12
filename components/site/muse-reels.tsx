@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ArrowLeft, ArrowRight, Pause, Play, Volume2, VolumeX } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 
+import { SplitLines } from "@/components/motion/split-lines";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { reels } from "@/lib/data";
 import { cn } from "@/lib/utils";
@@ -58,7 +59,7 @@ export function MuseReels() {
           <div>
             <p className="eyebrow">The Muse Reels</p>
             <h2 id="reels-title" className="display mt-5 text-[clamp(2.3rem,5.6vw,4.8rem)]">
-              Silk, <span className="text-gradient-warm">in motion.</span>
+              <SplitLines lines={["Silk,", <span key="m" className="text-gradient-warm">in motion.</span>]} />
             </h2>
           </div>
           <div className="flex flex-col gap-5 lg:items-end lg:text-right">
