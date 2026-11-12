@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Image from "next/image";
-import { ArrowLeft, ArrowRight, Heart, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, Heart, MessageCircle, X } from "lucide-react";
 import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
@@ -15,7 +15,11 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { HangerProduct } from "@/components/site/hanger";
 import { SilkArt } from "@/components/site/silk-fabric";
 import { useStore } from "@/components/site/store";
-import type { Product } from "@/lib/data";
+import { useAddToBag } from "@/components/site/use-add-to-bag";
+import { AvailabilityBadge } from "@/components/site/availability-badge";
+import { availability, type Product } from "@/lib/data";
+import { shop } from "@/lib/shop";
+import { productMessage, reweaveMessage, waLink } from "@/lib/whatsapp";
 import { cn, formatINR } from "@/lib/utils";
 
 type RackDetailProps = {
@@ -32,7 +36,8 @@ export function RackDetail({ items, index, onIndexChange, onClose }: RackDetailP
   const [size, setSize] = React.useState<number | null>(null);
   const [flip, setFlip] = React.useState(false);
   const [showAvailability, setShowAvailability] = React.useState(false);
-  const { addToCart, toggleWish, isWished } = useStore();
+  const { toggleWish, isWished } = useStore();
+  const addToBag = useAddToBag();
 
   React.useEffect(() => {
     setSize(null);
@@ -155,23 +160,25 @@ export function RackDetail({ items, index, onIndexChange, onClose }: RackDetailP
                 ))}
               </div>
 
+              <AvailabilityBadge item={product} className="mt-4" detailed />
               <div className="mt-5 flex items-center gap-3">
+                {availability(product) === "sold" ? (
+                  <a
+                    href={waLink(reweaveMessage(product))}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex h-11 min-w-[190px] items-center justify-center gap-2 rounded-full bg-[#1f8f4e] px-6 text-[13px] font-medium text-white transition hover:bg-[#187a42]"
+                  >
+                    <MessageCircle className="size-4" />
+                    Ask for a re-weave
+                  </a>
+                ) : (
                 <Button
                   size="lg"
                   disabled={!size}
                   onClick={() => {
                     if (!size) return;
-                    addToCart({
-                      id: product.id,
-                      name: product.name,
-                      meta: `Size ${size} · ${product.fabric.split(" · ")[0]}`,
-                      price: product.price,
-                      swatch: product.swatch,
-                      size,
-                    });
-                    toast.success("Added to bag", {
-                      description: `${product.name} · size ${size}`,
-                    });
+                    addToBag(product, size);
                   }}
                   className={cn(
                     "h-11 min-w-[190px] px-7 text-[12px] uppercase tracking-[0.16em]",
@@ -180,6 +187,7 @@ export function RackDetail({ items, index, onIndexChange, onClose }: RackDetailP
                 >
                   {size ? "Add to bag" : "Select a size"}
                 </Button>
+                )}
                 <button
                   type="button"
                   aria-label={`${isWished(product.id) ? "Remove" : "Save"} ${product.name}`}
@@ -216,8 +224,17 @@ export function RackDetail({ items, index, onIndexChange, onClose }: RackDetailP
               </button>
               {showAvailability && (
                 <p className="mt-3 max-w-[320px] text-[11px] leading-relaxed text-ink-soft">
-                  In the Chennai flagship and the Kanchipuram loom room. Ships in
-                  3–5 working days with insured delivery.
+                  {availability(product) === "made"
+                    ? `Woven to order in ${shop.shipping.madeToOrderWeeks}.`
+                    : `At the ${shop.address.city} shop. Ships in ${shop.shipping.readyDays} with insured delivery.`}{" "}
+                  <a
+                    href={waLink(productMessage(product, size))}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-maroon-700 underline decoration-gold-500/60 underline-offset-4"
+                  >
+                    Ask on WhatsApp
+                  </a>
                 </p>
               )}
               <p className="mt-5 max-w-[340px] text-[11px] leading-relaxed text-ink-soft/80">

@@ -7,8 +7,12 @@ import { ArrowPill } from "@/components/site/arrow-pill";
 import { ProductBuy } from "@/components/site/product-buy";
 import { ProductCard } from "@/components/site/product-card";
 import { ProductStage } from "@/components/site/product-stage";
+import { RecentlyViewed, RecordView } from "@/components/site/recently-viewed";
 import { SiteFooter } from "@/components/site/site-footer";
 import { getProduct, products } from "@/lib/data";
+import { shop } from "@/lib/shop";
+import { jsonLd, productJsonLd } from "@/lib/structured-data";
+import { PageTransition } from "@/components/motion/page-transition";
 
 type Params = { slug: string };
 
@@ -45,7 +49,11 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
     .slice(0, 4);
 
   return (
-    <>
+    <PageTransition>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(productJsonLd(product)) }}
+      />
       <div className="bg-[linear-gradient(180deg,#fdfbf7_0%,#faf6ef_100%)] pb-16 pt-28 md:pt-32">
         <div className="shell">
           <nav
@@ -73,7 +81,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
       </div>
 
       <section className="border-y border-ink/8 bg-white py-12">
-        <div className="shell grid gap-6 text-[12px] sm:grid-cols-3">
+        <div className="shell grid gap-6 text-[12px] sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
               title: "Woven in Kanchipuram",
@@ -84,8 +92,12 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
               text: "Silver-core zari, tested and certified. No imitation thread, ever.",
             },
             {
-              title: "Kept, not worn out",
-              text: "The loom room will re-pleat the saree once, free of charge, after its first wash.",
+              title: "Free insured shipping",
+              text: `${shop.shipping.note} Ready pieces leave the shop in ${shop.shipping.readyDays}.`,
+            },
+            {
+              title: `${shop.returns.days}-day returns`,
+              text: shop.returns.note,
             },
           ].map((note) => (
             <div key={note.title}>
@@ -115,14 +127,16 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
 
             <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-9 sm:gap-x-6 lg:grid-cols-4">
               {related.map((item) => (
-                <ProductCard key={item.id} product={item} />
+                <ProductCard key={item.id} product={item} morph />
               ))}
             </div>
           </div>
         </section>
       )}
 
+      <RecentlyViewed exclude={product.slug} />
+      <RecordView slug={product.slug} />
       <SiteFooter />
-    </>
+    </PageTransition>
   );
 }

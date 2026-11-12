@@ -5,7 +5,9 @@ import { ChevronRight, Gem, Ruler, Sparkles } from "lucide-react";
 
 import { ArrowPill } from "@/components/site/arrow-pill";
 import { BridalGrid } from "@/components/site/bridal-grid";
+import { EnquiryButton } from "@/components/site/enquiry-dialog";
 import { SiteFooter } from "@/components/site/site-footer";
+import { PageTransition } from "@/components/motion/page-transition";
 
 export const metadata: Metadata = {
   title: "The Bridal Collection",
@@ -33,7 +35,7 @@ const promises = [
 
 export default function BridalPage() {
   return (
-    <>
+    <PageTransition>
       <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fdfbf7_0%,#f8f1e6_65%,#f4ebdc_100%)] pb-16 pt-28 md:pb-20 md:pt-32">
         <div className="pointer-events-none absolute -left-32 top-24 size-[460px] rounded-full bg-gold-300/20 blur-[120px]" />
         <div className="shell relative">
@@ -65,9 +67,9 @@ export default function BridalPage() {
                 <ArrowPill href="#bridal-rail" variant="maroon">
                   See the seven pieces
                 </ArrowPill>
-                <ArrowPill href="/#the-weave" variant="outline">
+                <EnquiryButton type="appointment" variant="outline">
                   Book a fitting
-                </ArrowPill>
+                </EnquiryButton>
               </div>
 
               <dl className="mt-10 grid max-w-[440px] grid-cols-3 gap-4 border-t border-ink/10 pt-5">
@@ -182,9 +184,9 @@ export default function BridalPage() {
               </div>
 
               <div className="mt-9 flex flex-wrap items-center gap-4">
-                <ArrowPill href="/#the-weave" variant="maroon">
+                <EnquiryButton type="appointment" variant="maroon">
                   Book a bridal appointment
-                </ArrowPill>
+                </EnquiryButton>
                 <Link
                   href="/shop"
                   className="text-[10px] uppercase tracking-[0.22em] text-ink-soft underline decoration-gold-500/60 underline-offset-4 transition hover:text-maroon-700"
@@ -198,6 +200,6 @@ export default function BridalPage() {
       </section>
 
       <SiteFooter />
-    </>
+    </PageTransition>
   );
 }

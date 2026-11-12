@@ -43,15 +43,104 @@ type StoreValue = {
   setCartOpen: (open: boolean) => void;
   wishOpen: boolean;
   setWishOpen: (open: boolean) => void;
+  /** Product ids picked for side-by-side comparison (up to 3). */
+  compare: string[];
+  /** Returns false when the list is already full. */
+  toggleCompare: (id: string) => boolean;
+  clearCompare: () => void;
+  /** Slug of the product open in the quick-view sheet. */
+  quickView: string | null;
+  setQuickView: (slug: string | null) => void;
+  /** Recently viewed product slugs, newest first (up to 8). */
+  recent: string[];
+  recordView: (slug: string) => void;
+  searchOpen: boolean;
+  setSearchOpen: (open: boolean) => void;
 };
 
+export const COMPARE_LIMIT = 3;
+
 const StoreContext = React.createContext<StoreValue | null>(null);
+
+const STORAGE_KEY = "noolam-bag-v1";
+
+type Saved = { cart: CartItem[]; wishlist: WishItem[]; compare: string[]; recent: string[] };
+
+const strings = (value: unknown, max: number) =>
+  Array.isArray(value) ? value.filter((v): v is string => typeof v === "string").slice(0, max) : [];
+
+function readSaved(): Saved {
+  const empty: Saved = { cart: [], wishlist: [], compare: [], recent: [] };
+  try {
+    const raw = window.localStorage.getItem(STORAGE_KEY);
+    if (!raw) return empty;
+    const data = JSON.parse(raw) as {
+      cart?: unknown;
+      wishlist?: unknown;
+      compare?: unknown;
+      recent?: unknown;
+    };
+    const cart = Array.isArray(data.cart)
+      ? (data.cart as CartItem[]).filter(
+          (line) => typeof line?.key === "string" && typeof line.price === "number" && line.qty > 0,
+        )
+      : [];
+    const wishlist = Array.isArray(data.wishlist)
+      ? (data.wishlist as WishItem[]).filter((item) => typeof item?.id === "string")
+      : [];
+    return { cart, wishlist, compare: strings(data.compare, 3), recent: strings(data.recent, 8) };
+  } catch {
+    return empty;
+  }
+}
 
 export function StoreProvider({ children }: { children: React.ReactNode }) {
   const [cart, setCart] = React.useState<CartItem[]>([]);
   const [wishlist, setWishlist] = React.useState<WishItem[]>([]);
   const [cartOpen, setCartOpen] = React.useState(false);
   const [wishOpen, setWishOpen] = React.useState(false);
+  const [compare, setCompare] = React.useState<string[]>([]);
+  const [recent, setRecent] = React.useState<string[]>([]);
+  const [quickView, setQuickView] = React.useState<string | null>(null);
+  const [searchOpen, setSearchOpen] = React.useState(false);
+  const loaded = React.useRef(false);
+
+  // Restore the bag and wishlist after mount (not during render) so the
+  // server HTML and the first client render still match.
+  React.useEffect(() => {
+    const saved = readSaved();
+    if (saved.cart.length) setCart(saved.cart);
+    if (saved.wishlist.length) setWishlist(saved.wishlist);
+    if (saved.compare.length) setCompare(saved.compare);
+    if (saved.recent.length) setRecent((current) => [...new Set([...current, ...saved.recent])].slice(0, 8));
+    loaded.current = true;
+  }, []);
+
+  React.useEffect(() => {
+    if (!loaded.current) return;
+    try {
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify({ cart, wishlist, compare, recent }));
+    } catch {
+      // Storage can be unavailable (private mode, blocked site data); the bag still works for this visit.
+    }
+  }, [cart, wishlist, compare, recent]);
+
+  const compareRef = React.useRef(compare);
+  compareRef.current = compare;
+  const toggleCompare = React.useCallback((id: string) => {
+    const current = compareRef.current;
+    if (current.includes(id)) {
+      setCompare(current.filter((item) => item !== id));
+      return true;
+    }
+    if (current.length >= COMPARE_LIMIT) return false;
+    setCompare([...current, id]);
+    return true;
+  }, []);
+  const clearCompare = React.useCallback(() => setCompare([]), []);
+  const recordView = React.useCallback((slug: string) => {
+    setRecent((current) => [slug, ...current.filter((item) => item !== slug)].slice(0, 8));
+  }, []);
 
   const addToCart = React.useCallback<StoreValue["addToCart"]>((item) => {
     const qty = item.qty ?? 1;
@@ -130,6 +219,15 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     setCartOpen,
     wishOpen,
     setWishOpen,
+    compare,
+    toggleCompare,
+    clearCompare,
+    quickView,
+    setQuickView,
+    recent,
+    recordView,
+    searchOpen,
+    setSearchOpen,
   };
 
   return <StoreContext.Provider value={value}>{children}</StoreContext.Provider>;

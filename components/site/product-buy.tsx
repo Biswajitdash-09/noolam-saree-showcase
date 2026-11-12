@@ -2,21 +2,30 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Heart, Minus, Plus, ShoppingBag } from "lucide-react";
+import { Heart, MessageCircle, Minus, Plus, ShoppingBag } from "lucide-react";
 import { toast } from "sonner";
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { AvailabilityBadge } from "@/components/site/availability-badge";
+import { EnquiryButton } from "@/components/site/enquiry-dialog";
 import { useStore } from "@/components/site/store";
-import type { Product } from "@/lib/data";
+import { useAddToBag } from "@/components/site/use-add-to-bag";
+import { availability, type Product } from "@/lib/data";
+import { shop } from "@/lib/shop";
+import { productMessage, reweaveMessage, waLink } from "@/lib/whatsapp";
 import { cn, formatINR } from "@/lib/utils";
 
 export function ProductBuy({ product }: { product: Product }) {
   const [size, setSize] = React.useState<number | null>(null);
   const [qty, setQty] = React.useState(1);
-  const { addToCart, toggleWish, isWished } = useStore();
+  const { toggleWish, isWished } = useStore();
+  const addToBag = useAddToBag();
   const wished = isWished(product.id);
   const label = product.kind === "blouse" ? "Blouse size" : "Blouse size (with the saree)";
+  const state = availability(product);
+  const soldOut = state === "sold";
+  const maxQty = product.stock && product.stock > 0 ? Math.min(4, product.stock) : 4;
 
   return (
     <div>
@@ -44,6 +53,7 @@ export function ProductBuy({ product }: { product: Product }) {
           Inclusive of all taxes
         </span>
       </div>
+      <AvailabilityBadge item={product} className="mt-3" detailed />
 
       <p className="mt-5 max-w-[52ch] text-sm leading-relaxed text-ink-soft">
         {product.description}
@@ -117,30 +127,30 @@ export function ProductBuy({ product }: { product: Product }) {
           <button
             type="button"
             aria-label="Increase quantity"
-            onClick={() => setQty((value) => Math.min(4, value + 1))}
+            onClick={() => setQty((value) => Math.min(maxQty, value + 1))}
             className="flex size-11 items-center justify-center text-ink-soft transition hover:text-ink"
           >
             <Plus className="size-3.5" />
           </button>
         </div>
 
+        {soldOut ? (
+          <a
+            href={waLink(reweaveMessage(product))}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-12 min-w-[190px] flex-1 items-center justify-center gap-2 rounded-full bg-[#1f8f4e] px-7 text-[13px] font-medium text-white transition hover:bg-[#187a42] sm:flex-none"
+          >
+            <MessageCircle className="size-4" />
+            Ask for a re-weave
+          </a>
+        ) : (
         <Button
           size="lg"
           disabled={!size}
           onClick={() => {
             if (!size) return;
-            addToCart({
-              id: product.id,
-              name: product.name,
-              meta: `Size ${size} · ${product.fabric.split(" · ")[0]}`,
-              price: product.price,
-              swatch: product.swatch,
-              size,
-              qty,
-            });
-            toast.success("Added to bag", {
-              description: `${product.name} · size ${size} · qty ${qty}`,
-            });
+            addToBag(product, size, qty);
           }}
           className={cn(
             "h-12 min-w-[190px] flex-1 px-7 text-[12px] uppercase tracking-[0.16em] sm:flex-none",
@@ -150,6 +160,7 @@ export function ProductBuy({ product }: { product: Product }) {
           <ShoppingBag className="size-4" />
           {size ? "Add to bag" : "Select a size"}
         </Button>
+        )}
 
         <button
           type="button"
@@ -178,9 +189,25 @@ export function ProductBuy({ product }: { product: Product }) {
         </button>
       </div>
 
+      <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-3">
+        <a
+          href={waLink(productMessage(product, size))}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-[13px] font-medium text-maroon-700 underline decoration-gold-500/60 underline-offset-4 transition hover:text-maroon-800"
+        >
+          <MessageCircle className="size-4" />
+          Ask about this saree on WhatsApp
+        </a>
+        <EnquiryButton type="video-call" product={product.name} variant="link">
+          See it on a video call
+        </EnquiryButton>
+      </div>
+
       <p className="mt-4 text-[11px] leading-relaxed text-ink-soft/75">
-        Ships in 3–5 working days with insured delivery. One of each piece is
-        woven; the loom room will confirm the exact pallu before dispatch.
+        {state === "made"
+          ? `Woven after you order, in ${shop.shipping.madeToOrderWeeks}. We confirm the colours with you before the loom starts.`
+          : `Ships in ${shop.shipping.readyDays} with insured delivery. We confirm the exact pallu with you before dispatch.`}
       </p>
 
       <Accordion type="single" collapsible className="mt-7">
@@ -203,21 +230,19 @@ export function ProductBuy({ product }: { product: Product }) {
         <AccordionItem value="shipping">
           <AccordionTrigger className="text-[13px]">Shipping &amp; returns</AccordionTrigger>
           <AccordionContent className="text-[12.5px] leading-relaxed">
-            Insured shipping across India in 3–5 working days. Returns are
-            accepted within seven days of delivery on unworn pieces with the
-            tag and loom note intact. Bridal pieces are made to order and are
-            final sale.
+            {shop.shipping.note} Ready pieces ship in {shop.shipping.readyDays}.{" "}
+            {shop.returns.note}
           </AccordionContent>
         </AccordionItem>
       </Accordion>
 
       <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-[9.5px] uppercase tracking-[0.2em] text-ink-soft/60">
         <span>Need it sooner?</span>
-        <Link href="/#the-weave" className="text-maroon-700 transition hover:text-maroon-800">
+        <Link href="/care#contact" className="text-maroon-700 transition hover:text-maroon-800">
           Write to the loom room
         </Link>
         <span className="text-gold-500">·</span>
-        <span>Chennai flagship pickup</span>
+        <span>Pick up at the {shop.address.city} shop</span>
       </div>
     </div>
   );

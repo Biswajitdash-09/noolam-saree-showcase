@@ -1,7 +1,10 @@
 "use client";
 
-import { Minus, Plus, ShoppingBag, Trash2 } from "lucide-react";
-import { toast } from "sonner";
+import * as React from "react";
+import { Mail, MessageCircle, Minus, Plus, ShoppingBag, Trash2 } from "lucide-react";
+
+import { EnquiryDialog } from "@/components/site/enquiry-dialog";
+import { orderMessage, waLink } from "@/lib/whatsapp";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -12,13 +15,23 @@ import {
 } from "@/components/ui/sheet";
 import { SilkArt } from "@/components/site/silk-fabric";
 import { useStore } from "@/components/site/store";
+import { shop } from "@/lib/shop";
 import { formatINR } from "@/lib/utils";
 
 export function CartSheet() {
   const { cart, cartOpen, setCartOpen, cartSubtotal, setQty, removeCart, clearCart, cartCount } =
     useStore();
+  const [emailOpen, setEmailOpen] = React.useState(false);
+  const orderText = orderMessage(cart, cartSubtotal);
 
   return (
+    <>
+    <EnquiryDialog
+      type="order"
+      order={orderText}
+      open={emailOpen}
+      onOpenChange={setEmailOpen}
+    />
     <Sheet open={cartOpen} onOpenChange={setCartOpen}>
       <SheetContent side="right" className="max-w-[440px]">
         <div className="border-b border-ink/10 px-6 pb-5 pt-7">
@@ -114,19 +127,29 @@ export function CartSheet() {
                 <span className="text-lg font-medium tabular-nums">{formatINR(cartSubtotal)}</span>
               </div>
               <p className="mt-1 text-[11px] text-ink-soft">
-                Complimentary insured shipping across India.
+                {shop.shipping.note}
               </p>
-              <Button
-                className="mt-5 w-full"
-                size="lg"
-                onClick={() =>
-                  toast("This is a showcase store", {
-                    description: "Checkout and payments are disabled in this demo.",
-                  })
-                }
+              <a
+                href={waLink(orderText)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#1f8f4e] text-[14px] font-medium text-white transition hover:bg-[#187a42]"
               >
-                Proceed to checkout
+                <MessageCircle className="size-4" />
+                Order on WhatsApp
+              </a>
+              <Button
+                variant="outline"
+                className="mt-2.5 w-full"
+                size="lg"
+                onClick={() => setEmailOpen(true)}
+              >
+                <Mail className="size-4" />
+                Email this order instead
               </Button>
+              <p className="mt-3 text-center text-[11.5px] leading-relaxed text-ink-soft">
+                We confirm stock and delivery, then send you a secure payment link.
+              </p>
               <button
                 type="button"
                 onClick={() => setCartOpen(false)}
@@ -139,5 +162,6 @@ export function CartSheet() {
         )}
       </SheetContent>
     </Sheet>
+    </>
   );
 }

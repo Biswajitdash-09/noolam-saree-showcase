@@ -6,6 +6,7 @@ import { ChevronRight, Scissors, ShieldCheck, Truck } from "lucide-react";
 import { ArrowPill } from "@/components/site/arrow-pill";
 import { ShopGrid } from "@/components/site/shop-grid";
 import { SiteFooter } from "@/components/site/site-footer";
+import { PageTransition } from "@/components/motion/page-transition";
 
 export const metadata: Metadata = {
   title: "Shop all silks",
@@ -21,7 +22,7 @@ const notes = [
 
 export default function ShopPage() {
   return (
-    <>
+    <PageTransition>
       <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fdfbf7_0%,#f7f1e8_100%)] pb-10 pt-28 md:pt-32">
         <div className="pointer-events-none absolute -right-24 top-0 size-[420px] rounded-full bg-gold-300/20 blur-[110px]" />
         <div className="shell relative">
@@ -64,7 +65,7 @@ export default function ShopPage() {
         </div>
       </section>
 
-      <main className="bg-ivory pb-24">
+      <div className="bg-ivory pb-24">
         <div className="shell relative -mt-2">
           <ShopGrid />
 
@@ -88,15 +89,15 @@ export default function ShopPage() {
                   together a short rail of pieces and hold them for three days.
                 </p>
               </div>
-              <ArrowPill href="/#the-weave" variant="light">
+              <ArrowPill href="/care#contact" variant="light">
                 Ask the loom room
               </ArrowPill>
             </div>
           </div>
         </div>
-      </main>
+      </div>
 
       <SiteFooter />
-    </>
+    </PageTransition>
   );
 }

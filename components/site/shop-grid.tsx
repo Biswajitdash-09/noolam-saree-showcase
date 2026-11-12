@@ -108,8 +108,14 @@ export function ShopGrid({ initialFilter = "all" }: { initialFilter?: FilterId }
         </p>
       ) : (
         <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
-          {items.map((product) => (
-            <ProductCard key={product.id} product={product} />
+          {items.map((product, index) => (
+            <div
+              key={product.id}
+              className="sd-rise"
+              style={{ "--i": index % 4 } as React.CSSProperties}
+            >
+              <ProductCard product={product} morph />
+            </div>
           ))}
         </div>
       )}

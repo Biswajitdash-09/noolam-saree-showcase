@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { ViewTransition } from "react";
 
 import { ProductArt } from "@/components/site/product-art";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -12,12 +13,14 @@ export function ProductStage({ product }: { product: Product }) {
   return (
     <div>
       <div className="relative overflow-hidden rounded-[26px] border border-ink/8">
-        <ProductArt
-          product={product}
-          flip={flip}
-          className="aspect-[4/4.3] w-full sm:aspect-[4/4.5]"
-          artClassName="h-[320px] w-[252px] sm:h-[400px] sm:w-[316px] lg:h-[460px] lg:w-[364px]"
-        />
+        <ViewTransition name={`product-${product.slug}`} share="morph" default="none">
+          <ProductArt
+            product={product}
+            flip={flip}
+            className="aspect-[4/4.3] w-full sm:aspect-[4/4.5]"
+            artClassName="h-[320px] w-[252px] sm:h-[400px] sm:w-[316px] lg:h-[460px] lg:w-[364px]"
+          />
+        </ViewTransition>
         <div className="absolute inset-x-0 bottom-0 flex items-center justify-between px-5 pb-5">
           <span className="text-[9px] uppercase tracking-[0.24em] text-ink-soft/70">
             {flip ? "Reverse · zari selvedge" : "The drape · front"}
