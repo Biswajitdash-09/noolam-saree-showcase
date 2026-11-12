@@ -40,7 +40,32 @@ export type Product = {
   description: string;
   badge?: string;
   isBridal?: boolean;
+  /**
+   * Pieces in the shop right now. Leave it out if you don't track stock.
+   * 0 = sold out, 1–2 = shows "Only N left".
+   */
+  stock?: number;
+  /** Woven only after an order is placed. */
+  madeToOrder?: boolean;
 };
+
+export type Availability = "in" | "low" | "sold" | "made";
+
+export function availability(item: { stock?: number; madeToOrder?: boolean }): Availability {
+  if (item.madeToOrder) return "made";
+  if (item.stock === undefined) return "in";
+  if (item.stock <= 0) return "sold";
+  if (item.stock <= 2) return "low";
+  return "in";
+}
+
+export function availabilityLabel(item: { stock?: number; madeToOrder?: boolean }) {
+  const state = availability(item);
+  if (state === "sold") return "Sold out";
+  if (state === "low") return `Only ${item.stock} left`;
+  if (state === "made") return "Made to order";
+  return null;
+}
 
 export type Category = {
   id: "all" | CategoryId;
@@ -66,6 +91,7 @@ export const products: Product[] = [
   {
     id: "p01",
     slug: "noolam-temple-gold-brocade",
+    stock: 1,
     name: "Noolam Temple Gold Brocade",
     kind: "saree",
     categories: ["silk", "zari"],
@@ -87,6 +113,7 @@ export const products: Product[] = [
   {
     id: "p02",
     slug: "palace-check",
+    stock: 6,
     name: "Palace Check",
     kind: "saree",
     categories: ["silk", "checked"],
@@ -107,6 +134,7 @@ export const products: Product[] = [
   {
     id: "p03",
     slug: "kanchi-rani",
+    stock: 2,
     name: "Kanchi Rani",
     kind: "saree",
     categories: ["silk", "zari"],
@@ -168,6 +196,7 @@ export const products: Product[] = [
   {
     id: "p06",
     slug: "magenta-shot-silk",
+    stock: 0,
     name: "Magenta Shot Silk",
     kind: "saree",
     categories: ["silk"],
@@ -188,6 +217,7 @@ export const products: Product[] = [
   {
     id: "p07",
     slug: "peacock-blue-kanjivaram",
+    stock: 4,
     name: "Peacock Blue Kanjivaram",
     kind: "saree",
     categories: ["silk", "checked"],
@@ -208,6 +238,7 @@ export const products: Product[] = [
   {
     id: "p08",
     slug: "ruby-korvai",
+    madeToOrder: true,
     name: "Ruby Korvai",
     kind: "saree",
     categories: ["silk"],
@@ -249,6 +280,7 @@ export const products: Product[] = [
   {
     id: "p10",
     slug: "rose-half-saree",
+    stock: 1,
     name: "Rose Half Saree",
     kind: "saree",
     categories: ["half"],
@@ -425,6 +457,7 @@ export const products: Product[] = [
   {
     id: "p19",
     slug: "gold-tissue-blouse",
+    stock: 0,
     name: "Gold Tissue Blouse",
     kind: "blouse",
     categories: ["blouse-half"],
@@ -605,7 +638,7 @@ export const looks: Look[] = [
     name: "Ivory Elephant",
     subtitle: "Temple ivory, antique gold",
     media: "/images/editorial/ocean-gold.jpg",
-    model: "/images/try-look/model-3.png",
+    model: "/images/try-look/clean/ivory-elephant.png",
     pieces: [
       piece("l1a", "saree", "NOOLAM · Saree", "Ivory Kanjivaram with Elephant Border", 32000, {
         name: "Temple Ivory",
@@ -633,7 +666,7 @@ export const looks: Look[] = [
     name: "Emerald Nayika",
     subtitle: "Forest silk, ruby border",
     media: "/images/editorial/mountain-pines.jpg",
-    model: "/images/try-look/model-2.png",
+    model: "/images/try-look/clean/emerald-nayika.png",
     pieces: [
       piece("l2a", "saree", "NOOLAM · Saree", "Forest Green Rettaipet", 18600, {
         name: "Forest",
@@ -661,7 +694,7 @@ export const looks: Look[] = [
     name: "Rani Court",
     subtitle: "Rani pink, temple gold",
     media: "/images/editorial/city-dusk.jpg",
-    model: "/images/try-look/model-1.png",
+    model: "/images/try-look/clean/rani-court.png",
     pieces: [
       piece("l3a", "saree", "NOOLAM · Saree", "Kanchi Rani", 32400, {
         name: "Rani Pink",
@@ -689,7 +722,7 @@ export const looks: Look[] = [
     name: "Indigo Monsoon",
     subtitle: "Palace check, pearl drops",
     media: "/images/editorial/city-fog.jpg",
-    model: "/images/try-look/model-6.png",
+    model: "/images/try-look/clean/indigo-monsoon.png",
     pieces: [
       piece("l4a", "saree", "NOOLAM · Saree", "Palace Check", 19900, {
         name: "Indigo Palace",
@@ -717,7 +750,7 @@ export const looks: Look[] = [
     name: "Marigold Bazaar",
     subtitle: "Market gold, glass bangles",
     media: "/images/editorial/rocky-plains.jpg",
-    model: "/images/try-look/model-4.png",
+    model: "/images/try-look/clean/marigold-bazaar.png",
     pieces: [
       piece("l5a", "saree", "NOOLAM · Saree", "Marigold Half Saree", 18400, {
         name: "Marigold",
@@ -745,7 +778,7 @@ export const looks: Look[] = [
     name: "Peacock Hour",
     subtitle: "Blue silk, emerald drops",
     media: "/images/editorial/city-brick.jpg",
-    model: "/images/try-look/model-2.png",
+    model: "/images/try-look/clean/peacock-hour.png",
     pieces: [
       piece("l6a", "saree", "NOOLAM · Saree", "Peacock Blue Kanjivaram", 36400, {
         name: "Peacock",
@@ -773,7 +806,7 @@ export const looks: Look[] = [
     name: "Sandalwood Dawn",
     subtitle: "Sand silk, antique gold",
     media: "/images/editorial/misty-ridge.jpg",
-    model: "/images/try-look/model-3.png",
+    model: "/images/try-look/clean/sandalwood-dawn.png",
     pieces: [
       piece("l7a", "saree", "NOOLAM · Saree", "Bengal Garden", 24600, {
         name: "Sandal Garden",
@@ -801,7 +834,7 @@ export const looks: Look[] = [
     name: "Ruby Muhurtham",
     subtitle: "Bridal ruby, full gold",
     media: "/images/editorial/ocean-sunset.jpg",
-    model: "/images/try-look/model-5.png",
+    model: "/images/try-look/clean/ruby-muhurtham.png",
     pieces: [
       piece("l8a", "saree", "NOOLAM · Saree", "Ruby Korvai", 41800, {
         name: "Ruby",
@@ -859,7 +892,7 @@ export const reels: Reel[] = [
     fabric: "Tissue Kanjivaram",
     title: "Ponni Kanjivaram",
     location: "Lamp room, Kanchipuram",
-    media: "/images/reels/reel-01.png",
+    media: "/images/clean/reel-ponni.jpg",
   },
   {
     id: "r2",
@@ -868,7 +901,7 @@ export const reels: Reel[] = [
     fabric: "Hand-block Cotton",
     title: "Marina Morning",
     location: "Mylapore to the sea",
-    media: "/images/reels/reel-02.png",
+    media: "/images/clean/reel-marina.jpg",
   },
   {
     id: "r3",
@@ -877,16 +910,16 @@ export const reels: Reel[] = [
     fabric: "Banarasi Katan",
     title: "Kaali Banarasi",
     location: "Studio, Varanasi red",
-    media: "/images/reels/reel-03.png",
+    media: "/images/clean/reel-kaali.jpg",
   },
   {
     id: "r4",
     number: "04",
     duration: "0:15",
     fabric: "Kanjivaram Silk",
-    title: "Pachai Pattu",
+    title: "Arakku Pattu",
     location: "The bride's chamber",
-    media: "/images/reels/reel-04.png",
+    media: "/images/clean/film-vow.jpg",
   },
   {
     id: "r5",
@@ -895,7 +928,7 @@ export const reels: Reel[] = [
     fabric: "Georgette Silk",
     title: "Galli Sindoor",
     location: "Old-city lanes",
-    media: "/images/reels/reel-05.png",
+    media: "/images/clean/reel-galli.jpg",
   },
 ];
 
@@ -910,6 +943,7 @@ export type Bridal = {
   discount?: string;
   media: string;
   swatch: Swatch;
+  madeToOrder?: boolean;
 };
 
 export const bridal: Bridal[] = [
@@ -917,6 +951,7 @@ export const bridal: Bridal[] = [
     id: "b1",
     slug: "manjal-kalyanam-pattu",
     name: "Manjal Kalyanam Pattu",
+    madeToOrder: true,
     fabric: "Pattu",
     pallu: "Red-gold pallu",
     price: 27300,
@@ -927,66 +962,72 @@ export const bridal: Bridal[] = [
     id: "b2",
     slug: "rakta-muhurtham",
     name: "Rakta Muhurtham",
+    madeToOrder: true,
     fabric: "Kanjivaram silk",
     pallu: "Temple korvai pallu",
     price: 38600,
     compareAt: 42900,
     discount: "-10%",
-    media: "/images/bridal/piece-5.png",
+    media: "/images/moods/mood-wedding-edit.jpg",
     swatch: { name: "Rakta", base: "#8a1622", deep: "#3c060c", light: "#cf4a52", pattern: "temple" },
   },
   {
     id: "b3",
-    slug: "ivory-vow",
-    name: "Ivory Vow",
-    fabric: "Pure silk",
-    pallu: "Elephant and mango pallu",
+    slug: "pista-vow",
+    name: "Pista Vow",
+    madeToOrder: true,
+    fabric: "Organza silk",
+    pallu: "Rose and pistachio pallu",
     price: 41200,
-    media: "/images/bridal/piece-3.png",
-    swatch: { name: "Ivory", base: "#e0d3b6", deep: "#a99872", light: "#f7efdd", pattern: "buta" },
+    media: "/images/clean/bridal-pista.jpg",
+    swatch: { name: "Pista", base: "#b9c9a4", deep: "#6f8459", light: "#e6eedb", pattern: "buta" },
   },
   {
     id: "b4",
     slug: "malligai-bride",
     name: "Malligai Bride",
-    fabric: "Soft silk",
+    madeToOrder: true,
+    fabric: "Bandhani silk",
     pallu: "Jasmine vine border",
     price: 33400,
     compareAt: 39300,
     discount: "-15%",
-    media: "/images/bridal/piece-6.png",
-    swatch: { name: "Malligai", base: "#e8e2d2", deep: "#b3a88f", light: "#fbf7ef", pattern: "buta" },
+    media: "/images/clean/bridal-malligai.jpg",
+    swatch: { name: "Malligai", base: "#c8323a", deep: "#7a1219", light: "#ee8a8a", pattern: "buta" },
   },
   {
     id: "b5",
     slug: "neelambari",
     name: "Neelambari",
+    madeToOrder: true,
     fabric: "Kanjivaram silk",
     pallu: "Peacock zari pallu",
     price: 29800,
-    media: "/images/bridal/piece-2.png",
+    media: "/images/clean/bridal-neelambari.jpg",
     swatch: { name: "Neelambari", base: "#0d3f6b", deep: "#041d34", light: "#4d87bd", pattern: "zari" },
   },
   {
     id: "b6",
     slug: "sandhya-ragam",
     name: "Sandhya Ragam",
+    madeToOrder: true,
     fabric: "Tissue silk",
-    pallu: "Gold tissue pallu",
+    pallu: "Coral body, gold tissue pallu",
     price: 35200,
-    media: "/images/bridal/piece-7.png",
+    media: "/images/clean/bridal-sandhya.jpg",
     swatch: { name: "Sandhya", base: "#c9a75a", deep: "#7f6222", light: "#f0dda6", pattern: "brocade" },
   },
   {
     id: "b7",
     slug: "thanga-malar",
     name: "Thanga Malar",
+    madeToOrder: true,
     fabric: "Pure Kanjivaram",
     pallu: "Gold flower pallu",
     price: 44000,
     compareAt: 48900,
     discount: "-10%",
-    media: "/images/bridal/piece-1.png",
+    media: "/images/clean/bridal-thanga.jpg",
     swatch: { name: "Thanga", base: "#b98d1b", deep: "#6b4a08", light: "#efd68e", pattern: "zari" },
   },
 ];
