@@ -42,3 +42,12 @@ ocean-sunset.jpg — Photo by <name> — https://unsplash.com/photos/<id>
    resolves.
 
 Keep files reasonably small (under ~400 KB) since they are served locally.
+
+## Cleaned crops
+
+`public/images/clean/` and `public/images/try-look/clean/` hold crops taken from
+the reference screenshots with the baked-in UI removed: titles, prices, play
+buttons, discount tags and rotated card edges. Five of the eight Try the Look
+models are colour variants of one cutout; only the saree's hue band was shifted,
+so skin and gold stay true. Pick a Silk uses the procedural `SilkArt` drape
+instead of photos. The original extracted files are kept for reference.
