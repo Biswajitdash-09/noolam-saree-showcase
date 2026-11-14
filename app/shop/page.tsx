@@ -11,7 +11,7 @@ import { PageTransition } from "@/components/motion/page-transition";
 export const metadata: Metadata = {
   title: "Shop all silks",
   description:
-    "Browse the full NOOLAM rail: Kanjivaram silk sarees, half sarees, checked weaves, zari brocades and blouses, priced by the loom.",
+    "Browse the full Saree House rail: Kanjivaram silk sarees, half sarees, checked weaves, zari brocades and blouses, priced by the loom.",
 };
 
 const notes = [

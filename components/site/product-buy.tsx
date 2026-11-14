@@ -30,7 +30,7 @@ export function ProductBuy({ product }: { product: Product }) {
   return (
     <div>
       <p className="text-[11px] uppercase tracking-[0.26em] text-ink-soft/70">
-        NOOLAM · {product.kind === "blouse" ? "Silk blouse" : "Silk saree"}
+        Saree House · {product.kind === "blouse" ? "Silk blouse" : "Silk saree"}
       </p>
       <h1 className="display mt-3 text-[clamp(1.9rem,3.2vw,2.9rem)] text-ink">
         {product.name}
@@ -170,7 +170,7 @@ export function ProductBuy({ product }: { product: Product }) {
             toggleWish({
               id: product.id,
               name: product.name,
-              meta: `NOOLAM · ${product.kind === "blouse" ? "Blouse" : "Silk Saree"}`,
+              meta: `Saree House · ${product.kind === "blouse" ? "Blouse" : "Silk Saree"}`,
               price: product.price,
               swatch: product.swatch,
             });

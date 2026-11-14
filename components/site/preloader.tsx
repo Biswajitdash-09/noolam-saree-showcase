@@ -14,7 +14,7 @@ export function Preloader() {
       <div className="flex w-[min(420px,76vw)] flex-col items-center">
         <LotusMark className="preloader__word h-8 w-auto text-gold-400" />
         <p className="preloader__word mt-5 text-[13px] font-semibold uppercase tracking-[0.32em] text-white">
-          Noolam
+          Saree House
         </p>
         <span className="preloader__thread mt-6 block h-px w-full bg-[linear-gradient(90deg,transparent,var(--color-gold-400)_18%,var(--color-gold-300)_50%,var(--color-gold-400)_82%,transparent)]" />
         <p className="preloader__word mt-4 text-[11px] uppercase tracking-[0.3em] text-white/60">

@@ -238,7 +238,7 @@ export function MuseReels() {
 
                   <div className="absolute inset-x-0 top-0 flex items-center justify-between px-5 py-5 sm:px-8">
                     <p className="text-[11px] uppercase tracking-[0.28em] text-white/60">
-                      NOOLAM · Muse Reel {openReel.number}
+                      Saree House · Muse Reel {openReel.number}
                     </p>
                     <div className="flex items-center gap-2">
                       <button

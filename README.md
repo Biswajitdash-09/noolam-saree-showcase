@@ -1,4 +1,4 @@
-# NOOLAM — Kanchipuram Silk Saree Website
+# Saree House — Kanchipuram Silk Saree Website
 
 A showcase website for a fictional Kanchipuram silk house, built from the ten
 reference screens in [`screenshots/`](screenshots). Dark maroon, temple gold and

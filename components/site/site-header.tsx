@@ -97,7 +97,7 @@ export function SiteHeader() {
           className="pointer-events-none absolute inset-x-8 bottom-0 h-px origin-left bg-[linear-gradient(90deg,transparent,var(--color-gold-400)_12%,var(--color-gold-300)_88%,transparent)]"
           style={{ scaleX: thread }}
         />
-        <Link href="/" aria-label="NOOLAM home" className="flex min-h-11 shrink-0 items-center pl-2 sm:pl-3">
+        <Link href="/" aria-label="Saree House home" className="flex min-h-11 shrink-0 items-center pl-2 sm:pl-3">
           <Wordmark />
         </Link>
 
@@ -179,7 +179,7 @@ export function SiteHeader() {
             </SheetTrigger>
             <SheetContent side="right" className="max-w-[340px] bg-maroon-950 text-white">
               <div className="border-b border-white/10 px-6 pb-6 pt-7">
-                <SheetTitle className="sr-only">NOOLAM menu</SheetTitle>
+                <SheetTitle className="sr-only">Saree House menu</SheetTitle>
                 <Wordmark />
               </div>
               <nav aria-label="Mobile" className="flex flex-col px-3 py-4">

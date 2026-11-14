@@ -72,7 +72,7 @@ export function CartSheet() {
                         <div className="min-w-0">
                           <p className="truncate text-sm font-medium">{line.name}</p>
                           <p className="mt-0.5 text-[11px] uppercase tracking-[0.2em] text-ink-soft">
-                            {line.meta ?? "NOOLAM · Saree"}
+                            {line.meta ?? "Saree House · Saree"}
                           </p>
                         </div>
                         <button

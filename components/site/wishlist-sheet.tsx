@@ -55,7 +55,7 @@ export function WishlistSheet() {
                   <div className="flex min-w-0 flex-1 flex-col">
                     <p className="truncate text-sm font-medium">{item.name}</p>
                     <p className="mt-0.5 text-[11px] uppercase tracking-[0.2em] text-ink-soft">
-                      {item.meta ?? "NOOLAM · Saree"}
+                      {item.meta ?? "Saree House · Saree"}
                     </p>
                     <p className="mt-2 text-sm tabular-nums">{formatINR(item.price)}</p>
                     <div className="mt-auto flex items-center gap-3 pt-3">

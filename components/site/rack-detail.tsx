@@ -121,7 +121,7 @@ export function RackDetail({ items, index, onIndexChange, onClose }: RackDetailP
 
             <div className="mt-2 flex flex-col items-center text-center sm:mt-4">
               <p className="text-[11px] uppercase tracking-[0.3em] text-ink-soft/70">
-                NOOLAM · {product.kind === "blouse" ? "Blouse" : "Silk Saree"}
+                Saree House · {product.kind === "blouse" ? "Blouse" : "Silk Saree"}
               </p>
               <h3 className="mt-2 text-[18px] font-medium uppercase tracking-[0.14em] text-ink">
                 {product.name}
@@ -196,7 +196,7 @@ export function RackDetail({ items, index, onIndexChange, onClose }: RackDetailP
                     toggleWish({
                       id: product.id,
                       name: product.name,
-                      meta: "NOOLAM · Silk",
+                      meta: "Saree House · Silk",
                       price: product.price,
                       swatch: product.swatch,
                     });

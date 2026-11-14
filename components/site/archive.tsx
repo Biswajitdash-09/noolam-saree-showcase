@@ -10,7 +10,7 @@ export function Archive() {
       <div className="shell">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="eyebrow">The NOOLAM Archive</p>
+            <p className="eyebrow">The Saree House Archive</p>
             <h2
               id="archive-title"
               className="display mt-5 text-[clamp(2.1rem,5.2vw,4.6rem)]"

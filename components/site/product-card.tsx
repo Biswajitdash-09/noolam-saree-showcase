@@ -67,7 +67,7 @@ export function ProductCard({ product, morph = false }: ProductCardProps) {
             toggleWish({
               id: product.id,
               name: product.name,
-              meta: `NOOLAM · ${product.kind === "blouse" ? "Blouse" : "Silk Saree"}`,
+              meta: `Saree House · ${product.kind === "blouse" ? "Blouse" : "Silk Saree"}`,
               price: product.price,
               swatch: product.swatch,
             });

@@ -45,11 +45,11 @@ export function Wordmark({ inverted = false }: { inverted?: boolean }) {
       <span className="flex flex-col leading-none">
         <span
           className={cn(
-            "text-[19px] font-semibold uppercase tracking-[0.34em]",
+            "text-[15px] font-semibold uppercase tracking-[0.2em] sm:text-[17px] sm:tracking-[0.26em]",
             inverted ? "text-white" : "text-white",
           )}
         >
-          Noolam
+          Saree House
         </span>
         <span className="mt-1 text-[7.5px] font-medium uppercase tracking-[0.42em] text-white/60">
           Kanchipuram Silk

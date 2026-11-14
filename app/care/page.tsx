@@ -13,7 +13,7 @@ import { PageTransition } from "@/components/motion/page-transition";
 export const metadata: Metadata = {
   title: "Care & help",
   description:
-    "Shipping, returns, silk care, blouse sizes and how to reach the NOOLAM loom room in Kanchipuram.",
+    "Shipping, returns, silk care, blouse sizes and how to reach the Saree House loom room in Kanchipuram.",
 };
 
 const sections = [

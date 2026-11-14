@@ -92,7 +92,7 @@ export const products: Product[] = [
     id: "p01",
     slug: "noolam-temple-gold-brocade",
     stock: 1,
-    name: "Noolam Temple Gold Brocade",
+    name: "Saree House Temple Gold Brocade",
     kind: "saree",
     categories: ["silk", "zari"],
     price: 32000,
@@ -362,7 +362,7 @@ export const products: Product[] = [
   {
     id: "p14",
     slug: "saffron-raw-silk-blouse",
-    name: "Noolam Saffron Raw Silk Blouse",
+    name: "Saree House Saffron Raw Silk Blouse",
     kind: "blouse",
     categories: ["blouse-full"],
     price: 3600,
@@ -640,24 +640,24 @@ export const looks: Look[] = [
     media: "/images/editorial/ocean-gold.jpg",
     model: "/images/try-look/clean/ivory-elephant.png",
     pieces: [
-      piece("l1a", "saree", "NOOLAM · Saree", "Ivory Kanjivaram with Elephant Border", 32000, {
+      piece("l1a", "saree", "Saree House · Saree", "Ivory Kanjivaram with Elephant Border", 32000, {
         name: "Temple Ivory",
         base: "#e0d3b6",
         deep: "#a99872",
         light: "#f7efdd",
         pattern: "buta",
       }, "/images/try-look/thumb-1.png"),
-      piece("l1b", "blouse", "NOOLAM · Blouse", "Dusty Rose Silk Blouse", 4200, {
+      piece("l1b", "blouse", "Saree House · Blouse", "Dusty Rose Silk Blouse", 4200, {
         name: "Dusty Rose",
         base: "#b5626f",
         deep: "#6f2f3a",
         light: "#e3a2ac",
         pattern: "plain",
       }, "/images/try-look/thumb-2.png"),
-      piece("l1c", "choker", "NOOLAM · Choker", "Pink Stone Temple Choker", 9400, jewel("Ruby & Gold", "#a51e2c", "#5c0810", "#d7b551"), "/images/try-look/thumb-3.png"),
-      piece("l1d", "jhumkas", "NOOLAM · Jhumkas", "Jhumkas with Pearl Drops", 4600, jewel("Pearl Gold", "#c9a227", "#7a5a10", "#f2e3b8"), "/images/try-look/thumb-4.png"),
-      piece("l1e", "ottiyanam", "NOOLAM · Ottiyanam", "Elephant Motif Ottiyanam", 15000, jewel("Antique Gold", "#b98d1b", "#6b4a08", "#efd68e"), "/images/try-look/thumb-5.png"),
-      piece("l1f", "bangles", "NOOLAM · Bangles", "Gold and Dusty Rose Bangle Stack", 3800, jewel("Rose Gold", "#b5626f", "#6f2f3a", "#e3c08a"), "/images/try-look/thumb-6.png"),
+      piece("l1c", "choker", "Saree House · Choker", "Pink Stone Temple Choker", 9400, jewel("Ruby & Gold", "#a51e2c", "#5c0810", "#d7b551"), "/images/try-look/thumb-3.png"),
+      piece("l1d", "jhumkas", "Saree House · Jhumkas", "Jhumkas with Pearl Drops", 4600, jewel("Pearl Gold", "#c9a227", "#7a5a10", "#f2e3b8"), "/images/try-look/thumb-4.png"),
+      piece("l1e", "ottiyanam", "Saree House · Ottiyanam", "Elephant Motif Ottiyanam", 15000, jewel("Antique Gold", "#b98d1b", "#6b4a08", "#efd68e"), "/images/try-look/thumb-5.png"),
+      piece("l1f", "bangles", "Saree House · Bangles", "Gold and Dusty Rose Bangle Stack", 3800, jewel("Rose Gold", "#b5626f", "#6f2f3a", "#e3c08a"), "/images/try-look/thumb-6.png"),
     ],
   },
   {
@@ -668,24 +668,24 @@ export const looks: Look[] = [
     media: "/images/editorial/mountain-pines.jpg",
     model: "/images/try-look/clean/emerald-nayika.png",
     pieces: [
-      piece("l2a", "saree", "NOOLAM · Saree", "Forest Green Rettaipet", 18600, {
+      piece("l2a", "saree", "Saree House · Saree", "Forest Green Rettaipet", 18600, {
         name: "Forest",
         base: "#1f5138",
         deep: "#0b2619",
         light: "#5f9678",
         pattern: "check",
       }),
-      piece("l2b", "blouse", "NOOLAM · Blouse", "Black Gold Blouse", 5900, {
+      piece("l2b", "blouse", "Saree House · Blouse", "Black Gold Blouse", 5900, {
         name: "Black Gold",
         base: "#211a18",
         deep: "#0a0706",
         light: "#6b5748",
         pattern: "zari",
       }),
-      piece("l2c", "choker", "NOOLAM · Choker", "Emerald Drop Choker", 11200, jewel("Emerald", "#146b4e", "#043325", "#c9a227")),
-      piece("l2d", "jhumkas", "NOOLAM · Jhumkas", "Green Glass Jhumkas", 3900, jewel("Emerald Glass", "#1a7a58", "#063827", "#8fd0b6")),
-      piece("l2e", "ottiyanam", "NOOLAM · Ottiyanam", "Lakshmi Coin Ottiyanam", 16800, jewel("Temple Gold", "#c9a227", "#7a5a10", "#efdda2")),
-      piece("l2f", "bangles", "NOOLAM · Bangles", "Emerald and Gold Bangles", 4300, jewel("Emerald", "#146b4e", "#043325", "#d7b551")),
+      piece("l2c", "choker", "Saree House · Choker", "Emerald Drop Choker", 11200, jewel("Emerald", "#146b4e", "#043325", "#c9a227")),
+      piece("l2d", "jhumkas", "Saree House · Jhumkas", "Green Glass Jhumkas", 3900, jewel("Emerald Glass", "#1a7a58", "#063827", "#8fd0b6")),
+      piece("l2e", "ottiyanam", "Saree House · Ottiyanam", "Lakshmi Coin Ottiyanam", 16800, jewel("Temple Gold", "#c9a227", "#7a5a10", "#efdda2")),
+      piece("l2f", "bangles", "Saree House · Bangles", "Emerald and Gold Bangles", 4300, jewel("Emerald", "#146b4e", "#043325", "#d7b551")),
     ],
   },
   {
@@ -696,24 +696,24 @@ export const looks: Look[] = [
     media: "/images/editorial/city-dusk.jpg",
     model: "/images/try-look/clean/rani-court.png",
     pieces: [
-      piece("l3a", "saree", "NOOLAM · Saree", "Kanchi Rani", 32400, {
+      piece("l3a", "saree", "Saree House · Saree", "Kanchi Rani", 32400, {
         name: "Rani Pink",
         base: "#a51e4a",
         deep: "#560a26",
         light: "#e86a95",
         pattern: "zari",
       }),
-      piece("l3b", "blouse", "NOOLAM · Blouse", "Maroon Velvet Blouse", 7200, {
+      piece("l3b", "blouse", "Saree House · Blouse", "Maroon Velvet Blouse", 7200, {
         name: "Maroon Velvet",
         base: "#5f0f21",
         deep: "#29040b",
         light: "#98374a",
         pattern: "plain",
       }),
-      piece("l3c", "choker", "NOOLAM · Choker", "Kemp Stone Choker", 12800, jewel("Kemp", "#8a1622", "#3c060c", "#d7b551")),
-      piece("l3d", "jhumkas", "NOOLAM · Jhumkas", "Temple Jhumkas", 5200, jewel("Gold", "#c9a227", "#7a5a10", "#efdda2")),
-      piece("l3e", "ottiyanam", "NOOLAM · Ottiyanam", "Ruby Waist Chain", 15400, jewel("Ruby", "#8a1622", "#3c060c", "#efd68e")),
-      piece("l3f", "bangles", "NOOLAM · Bangles", "Ruby Bangle Stack", 4600, jewel("Ruby", "#a51e4a", "#560a26", "#e8a0b5")),
+      piece("l3c", "choker", "Saree House · Choker", "Kemp Stone Choker", 12800, jewel("Kemp", "#8a1622", "#3c060c", "#d7b551")),
+      piece("l3d", "jhumkas", "Saree House · Jhumkas", "Temple Jhumkas", 5200, jewel("Gold", "#c9a227", "#7a5a10", "#efdda2")),
+      piece("l3e", "ottiyanam", "Saree House · Ottiyanam", "Ruby Waist Chain", 15400, jewel("Ruby", "#8a1622", "#3c060c", "#efd68e")),
+      piece("l3f", "bangles", "Saree House · Bangles", "Ruby Bangle Stack", 4600, jewel("Ruby", "#a51e4a", "#560a26", "#e8a0b5")),
     ],
   },
   {
@@ -724,24 +724,24 @@ export const looks: Look[] = [
     media: "/images/editorial/city-fog.jpg",
     model: "/images/try-look/clean/indigo-monsoon.png",
     pieces: [
-      piece("l4a", "saree", "NOOLAM · Saree", "Palace Check", 19900, {
+      piece("l4a", "saree", "Saree House · Saree", "Palace Check", 19900, {
         name: "Indigo Palace",
         base: "#2b3a72",
         deep: "#141d40",
         light: "#7585c7",
         pattern: "check",
       }),
-      piece("l4b", "blouse", "NOOLAM · Blouse", "Indigo Cotton Blouse", 2900, {
+      piece("l4b", "blouse", "Saree House · Blouse", "Indigo Cotton Blouse", 2900, {
         name: "Indigo",
         base: "#2b4170",
         deep: "#13203d",
         light: "#6b83b7",
         pattern: "stripe",
       }),
-      piece("l4c", "choker", "NOOLAM · Choker", "Pearl and Gold Choker", 8600, jewel("Pearl", "#ded8c8", "#8f8776", "#ffffff")),
-      piece("l4d", "jhumkas", "NOOLAM · Jhumkas", "Pearl Drop Jhumkas", 4400, jewel("Pearl Gold", "#c9a227", "#7a5a10", "#f2e3b8")),
-      piece("l4e", "ottiyanam", "NOOLAM · Ottiyanam", "Fine Gold Waist Chain", 13200, jewel("Gold", "#c9a227", "#7a5a10", "#efdda2")),
-      piece("l4f", "bangles", "NOOLAM · Bangles", "Gold Bangle Pair", 3100, jewel("Gold", "#c9a227", "#7a5a10", "#efdda2")),
+      piece("l4c", "choker", "Saree House · Choker", "Pearl and Gold Choker", 8600, jewel("Pearl", "#ded8c8", "#8f8776", "#ffffff")),
+      piece("l4d", "jhumkas", "Saree House · Jhumkas", "Pearl Drop Jhumkas", 4400, jewel("Pearl Gold", "#c9a227", "#7a5a10", "#f2e3b8")),
+      piece("l4e", "ottiyanam", "Saree House · Ottiyanam", "Fine Gold Waist Chain", 13200, jewel("Gold", "#c9a227", "#7a5a10", "#efdda2")),
+      piece("l4f", "bangles", "Saree House · Bangles", "Gold Bangle Pair", 3100, jewel("Gold", "#c9a227", "#7a5a10", "#efdda2")),
     ],
   },
   {
@@ -752,24 +752,24 @@ export const looks: Look[] = [
     media: "/images/editorial/rocky-plains.jpg",
     model: "/images/try-look/clean/marigold-bazaar.png",
     pieces: [
-      piece("l5a", "saree", "NOOLAM · Saree", "Marigold Half Saree", 18400, {
+      piece("l5a", "saree", "Saree House · Saree", "Marigold Half Saree", 18400, {
         name: "Marigold",
         base: "#d68a1f",
         deep: "#844d08",
         light: "#f4c672",
         pattern: "check",
       }),
-      piece("l5b", "blouse", "NOOLAM · Blouse", "Saffron Raw Silk Blouse", 3600, {
+      piece("l5b", "blouse", "Saree House · Blouse", "Saffron Raw Silk Blouse", 3600, {
         name: "Saffron",
         base: "#c97a16",
         deep: "#7d4405",
         light: "#efb35f",
         pattern: "plain",
       }),
-      piece("l5c", "choker", "NOOLAM · Choker", "Lakshmi Coin Choker", 7800, jewel("Coin Gold", "#c9a227", "#7a5a10", "#efdda2")),
-      piece("l5d", "jhumkas", "NOOLAM · Jhumkas", "Marigold Jhumkas", 3600, jewel("Marigold", "#d68a1f", "#844d08", "#f4c672")),
-      piece("l5e", "ottiyanam", "NOOLAM · Ottiyanam", "Coin Motif Ottiyanam", 11800, jewel("Antique Gold", "#b98d1b", "#6b4a08", "#efd68e")),
-      piece("l5f", "bangles", "NOOLAM · Bangles", "Orange Glass Bangles", 1900, jewel("Glass", "#e08b1a", "#8a4d05", "#f7ce85")),
+      piece("l5c", "choker", "Saree House · Choker", "Lakshmi Coin Choker", 7800, jewel("Coin Gold", "#c9a227", "#7a5a10", "#efdda2")),
+      piece("l5d", "jhumkas", "Saree House · Jhumkas", "Marigold Jhumkas", 3600, jewel("Marigold", "#d68a1f", "#844d08", "#f4c672")),
+      piece("l5e", "ottiyanam", "Saree House · Ottiyanam", "Coin Motif Ottiyanam", 11800, jewel("Antique Gold", "#b98d1b", "#6b4a08", "#efd68e")),
+      piece("l5f", "bangles", "Saree House · Bangles", "Orange Glass Bangles", 1900, jewel("Glass", "#e08b1a", "#8a4d05", "#f7ce85")),
     ],
   },
   {
@@ -780,24 +780,24 @@ export const looks: Look[] = [
     media: "/images/editorial/city-brick.jpg",
     model: "/images/try-look/clean/peacock-hour.png",
     pieces: [
-      piece("l6a", "saree", "NOOLAM · Saree", "Peacock Blue Kanjivaram", 36400, {
+      piece("l6a", "saree", "Saree House · Saree", "Peacock Blue Kanjivaram", 36400, {
         name: "Peacock",
         base: "#0d3f6b",
         deep: "#041d34",
         light: "#4d87bd",
         pattern: "check",
       }),
-      piece("l6b", "blouse", "NOOLAM · Blouse", "Teal Silk Blouse", 4200, {
+      piece("l6b", "blouse", "Saree House · Blouse", "Teal Silk Blouse", 4200, {
         name: "Teal",
         base: "#155f66",
         deep: "#042e33",
         light: "#4fa0a6",
         pattern: "plain",
       }),
-      piece("l6c", "choker", "NOOLAM · Choker", "Peacock Motif Choker", 10400, jewel("Peacock", "#0d3f6b", "#041d34", "#c9a227")),
-      piece("l6d", "jhumkas", "NOOLAM · Jhumkas", "Blue Sapphire Jhumkas", 6200, jewel("Sapphire", "#1b3f8a", "#0a1c45", "#7f9de0")),
-      piece("l6e", "ottiyanam", "NOOLAM · Ottiyanam", "Peacock Waist Chain", 16200, jewel("Peacock Gold", "#c9a227", "#7a5a10", "#4d87bd")),
-      piece("l6f", "bangles", "NOOLAM · Bangles", "Blue and Gold Bangles", 4100, jewel("Blue Gold", "#1b3f8a", "#0a1c45", "#d7b551")),
+      piece("l6c", "choker", "Saree House · Choker", "Peacock Motif Choker", 10400, jewel("Peacock", "#0d3f6b", "#041d34", "#c9a227")),
+      piece("l6d", "jhumkas", "Saree House · Jhumkas", "Blue Sapphire Jhumkas", 6200, jewel("Sapphire", "#1b3f8a", "#0a1c45", "#7f9de0")),
+      piece("l6e", "ottiyanam", "Saree House · Ottiyanam", "Peacock Waist Chain", 16200, jewel("Peacock Gold", "#c9a227", "#7a5a10", "#4d87bd")),
+      piece("l6f", "bangles", "Saree House · Bangles", "Blue and Gold Bangles", 4100, jewel("Blue Gold", "#1b3f8a", "#0a1c45", "#d7b551")),
     ],
   },
   {
@@ -808,24 +808,24 @@ export const looks: Look[] = [
     media: "/images/editorial/misty-ridge.jpg",
     model: "/images/try-look/clean/sandalwood-dawn.png",
     pieces: [
-      piece("l7a", "saree", "NOOLAM · Saree", "Bengal Garden", 24600, {
+      piece("l7a", "saree", "Saree House · Saree", "Bengal Garden", 24600, {
         name: "Sandal Garden",
         base: "#d9c294",
         deep: "#9c7f4b",
         light: "#f2e5c5",
         pattern: "buta",
       }),
-      piece("l7b", "blouse", "NOOLAM · Blouse", "Sand Zari Blouse", 3900, {
+      piece("l7b", "blouse", "Saree House · Blouse", "Sand Zari Blouse", 3900, {
         name: "Sand",
         base: "#cbb28b",
         deep: "#8b744e",
         light: "#ecdcbe",
         pattern: "zari",
       }),
-      piece("l7c", "choker", "NOOLAM · Choker", "Antique Gold Choker", 9200, jewel("Antique Gold", "#b98d1b", "#6b4a08", "#efd68e")),
-      piece("l7d", "jhumkas", "NOOLAM · Jhumkas", "Sandalwood Jhumkas", 4100, jewel("Sandal", "#cbb28b", "#8b744e", "#ecdcbe")),
-      piece("l7e", "ottiyanam", "NOOLAM · Ottiyanam", "Antique Waist Chain", 12600, jewel("Antique Gold", "#b98d1b", "#6b4a08", "#efd68e")),
-      piece("l7f", "bangles", "NOOLAM · Bangles", "Matte Gold Bangles", 3200, jewel("Matte Gold", "#b98d1b", "#6b4a08", "#e3cd98")),
+      piece("l7c", "choker", "Saree House · Choker", "Antique Gold Choker", 9200, jewel("Antique Gold", "#b98d1b", "#6b4a08", "#efd68e")),
+      piece("l7d", "jhumkas", "Saree House · Jhumkas", "Sandalwood Jhumkas", 4100, jewel("Sandal", "#cbb28b", "#8b744e", "#ecdcbe")),
+      piece("l7e", "ottiyanam", "Saree House · Ottiyanam", "Antique Waist Chain", 12600, jewel("Antique Gold", "#b98d1b", "#6b4a08", "#efd68e")),
+      piece("l7f", "bangles", "Saree House · Bangles", "Matte Gold Bangles", 3200, jewel("Matte Gold", "#b98d1b", "#6b4a08", "#e3cd98")),
     ],
   },
   {
@@ -836,24 +836,24 @@ export const looks: Look[] = [
     media: "/images/editorial/ocean-sunset.jpg",
     model: "/images/try-look/clean/ruby-muhurtham.png",
     pieces: [
-      piece("l8a", "saree", "NOOLAM · Saree", "Ruby Korvai", 41800, {
+      piece("l8a", "saree", "Saree House · Saree", "Ruby Korvai", 41800, {
         name: "Ruby",
         base: "#8a1622",
         deep: "#3c060c",
         light: "#cf4a52",
         pattern: "temple",
       }),
-      piece("l8b", "blouse", "NOOLAM · Blouse", "Gold Tissue Blouse", 4800, {
+      piece("l8b", "blouse", "Saree House · Blouse", "Gold Tissue Blouse", 4800, {
         name: "Gold Tissue",
         base: "#c9a75a",
         deep: "#7f6222",
         light: "#f0dda6",
         pattern: "brocade",
       }),
-      piece("l8c", "choker", "NOOLAM · Choker", "Bridal Kemp Choker", 18400, jewel("Bridal Kemp", "#8a1622", "#3c060c", "#efdda2")),
-      piece("l8d", "jhumkas", "NOOLAM · Jhumkas", "Bridal Jhumkas", 7600, jewel("Gold", "#c9a227", "#7a5a10", "#efdda2")),
-      piece("l8e", "ottiyanam", "NOOLAM · Ottiyanam", "Bridal Ottiyanam", 22400, jewel("Bridal Gold", "#c9a227", "#7a5a10", "#efdda2")),
-      piece("l8f", "bangles", "NOOLAM · Bangles", "Bridal Bangle Stack", 6800, jewel("Bridal Gold", "#b98d1b", "#6b4a08", "#efd68e")),
+      piece("l8c", "choker", "Saree House · Choker", "Bridal Kemp Choker", 18400, jewel("Bridal Kemp", "#8a1622", "#3c060c", "#efdda2")),
+      piece("l8d", "jhumkas", "Saree House · Jhumkas", "Bridal Jhumkas", 7600, jewel("Gold", "#c9a227", "#7a5a10", "#efdda2")),
+      piece("l8e", "ottiyanam", "Saree House · Ottiyanam", "Bridal Ottiyanam", 22400, jewel("Bridal Gold", "#c9a227", "#7a5a10", "#efdda2")),
+      piece("l8f", "bangles", "Saree House · Bangles", "Bridal Bangle Stack", 6800, jewel("Bridal Gold", "#b98d1b", "#6b4a08", "#efd68e")),
     ],
   },
 ];

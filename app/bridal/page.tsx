@@ -12,7 +12,7 @@ import { PageTransition } from "@/components/motion/page-transition";
 export const metadata: Metadata = {
   title: "The Bridal Collection",
   description:
-    "Heirloom Kanjivaram bridal silks from the NOOLAM loom room — temple korvai pallus, real zari, and a private fitting at the Kanchipuram loom house.",
+    "Heirloom Kanjivaram bridal silks from the Saree House loom room — temple korvai pallus, real zari, and a private fitting at the Kanchipuram loom house.",
 };
 
 const promises = [

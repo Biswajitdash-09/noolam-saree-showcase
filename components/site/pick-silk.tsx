@@ -54,7 +54,7 @@ function SilkCardItem({ card, index }: { card: SilkCard; index: number }) {
     addToCart({
       id: product.id,
       name: product.name,
-      meta: product.kind === "saree" ? "NOOLAM · Saree" : "NOOLAM · Blouse",
+      meta: product.kind === "saree" ? "Saree House · Saree" : "Saree House · Blouse",
       price: product.price,
       swatch: product.swatch,
     });
@@ -120,7 +120,7 @@ function SilkCardItem({ card, index }: { card: SilkCard; index: number }) {
               toggleWish({
                 id: product.id,
                 name: product.name,
-                meta: "NOOLAM · Silk",
+                meta: "Saree House · Silk",
                 price: product.price,
                 swatch: product.swatch,
               });

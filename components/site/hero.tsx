@@ -49,14 +49,14 @@ export function Hero() {
   return (
     <section
       ref={ref}
-      aria-label="NOOLAM Kanchipuram silk"
+      aria-label="Saree House Kanchipuram silk"
       className="relative h-[100svh] bg-white motion-safe:h-[185svh]"
     >
       <div className="sticky top-0 h-[100svh] overflow-hidden bg-maroon-950">
         <motion.div className="absolute inset-0 will-change-transform" style={{ scale: imageScale }}>
           <Image
             src="/images/hero-showroom.jpg"
-            alt="Grand NOOLAM temple silk showroom with carved wooden pillars and silk sarees"
+            alt="Grand Saree House temple silk showroom with carved wooden pillars and silk sarees"
             fill
             priority
             sizes="100vw"
@@ -90,7 +90,7 @@ export function Hero() {
               className="hero-fade mt-[clamp(0.75rem,2.4svh,1.5rem)] max-w-[34rem] text-[15px] leading-relaxed text-white/80 sm:text-base"
               style={{ "--i": 3 } as React.CSSProperties}
             >
-              NOOLAM brings the temple looms of Kanchipuram home: Kanjivaram silk in
+              Saree House brings the temple looms of Kanchipuram home: Kanjivaram silk in
               heritage colours, bordered in real zari and finished by hand.
             </p>
 

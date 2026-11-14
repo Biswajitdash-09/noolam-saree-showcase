@@ -8,8 +8,8 @@
 export type DayHours = { open: string; close: string } | null; // 24h "HH:MM", IST. null = closed
 
 export const shop = {
-  name: "NOOLAM",
-  legalName: "NOOLAM Kanchipuram Silk",
+  name: "Saree House",
+  legalName: "Saree House Kanchipuram Silk",
   tagline: "Kanchipuram silk, woven for the divine",
   description:
     "Kanjivaram silk sarees, bridal pattu and silk blouses, handwoven on the pit looms of Kanchipuram.",
@@ -18,7 +18,7 @@ export const shop = {
   whatsapp: "919000000000",
   /** Phone number shown to customers and used for tap-to-call. */
   phone: "+91 90000 00000",
-  email: "care@noolam.example",
+  email: "care@sareehouse.example",
 
   address: {
     street: "14 Gandhi Road",
@@ -42,7 +42,7 @@ export const shop = {
   } as Record<number, DayHours>,
   hoursNote: "Open daily, 10 am – 8 pm. Closed on Pongal.",
 
-  instagram: "noolam.silk",
+  instagram: "sareehouse.silk",
 
   shipping: {
     readyDays: "3–5 working days",

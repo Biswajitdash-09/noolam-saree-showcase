@@ -81,7 +81,7 @@ export function MuseFilm() {
             <div className="sd-mask group relative aspect-[16/10] overflow-hidden rounded-[14px] bg-maroon-950 shadow-[0_40px_80px_-40px_rgba(44,5,11,0.65)] sm:aspect-[16/9]">
               <Image
                 src="/images/clean/film-still.jpg"
-                alt="NOOLAM Muse — Feel the drape"
+                alt="Saree House Muse — Feel the drape"
                 fill
                 priority
                 sizes="(max-width: 768px) 92vw, 820px"

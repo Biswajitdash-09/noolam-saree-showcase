@@ -8,7 +8,7 @@ import { SiteFooter } from "@/components/site/site-footer";
 
 export const metadata: Metadata = {
   title: "Compare pieces",
-  description: "Compare up to three NOOLAM silks side by side: price, weave, pallu, colour and availability.",
+  description: "Compare up to three Saree House silks side by side: price, weave, pallu, colour and availability.",
   robots: { index: false },
 };
 

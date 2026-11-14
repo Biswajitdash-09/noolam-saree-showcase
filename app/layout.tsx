@@ -26,20 +26,20 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "NOOLAM · Kanchipuram Silk",
-    template: "%s · NOOLAM",
+    default: "Saree House · Kanchipuram Silk",
+    template: "%s · Saree House",
   },
   description:
-    "NOOLAM brings the temple looms of Kanchipuram home: Kanjivaram silk in heritage colours, bordered in real zari and finished by hand.",
+    "Saree House brings the temple looms of Kanchipuram home: Kanjivaram silk in heritage colours, bordered in real zari and finished by hand.",
   keywords: [
     "Kanchipuram saree",
     "Kanjivaram silk",
     "bridal saree",
     "silk blouse",
-    "NOOLAM",
+    "Saree House",
   ],
   openGraph: {
-    title: "NOOLAM · Kanchipuram Silk",
+    title: "Saree House · Kanchipuram Silk",
     description:
       "Woven for the Divine. Kanjivaram silk in heritage colours, bordered in real zari.",
     siteName: shop.legalName,

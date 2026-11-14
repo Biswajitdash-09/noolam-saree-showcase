@@ -55,7 +55,7 @@ export function SiteFooter() {
               Woven for the divine, kept for the family.
             </h2>
             <p className="mt-5 max-w-[38ch] text-sm leading-relaxed text-white/60">
-              A NOOLAM saree leaves the loom with the weaver&apos;s name in the
+              A Saree House saree leaves the loom with the weaver&apos;s name in the
               border. Visit the {shop.address.city} loom room, or let us bring the rack
               to your screen.
             </p>
@@ -165,6 +165,8 @@ export function SiteFooter() {
           <div className="flex items-center gap-3">
             <LotusMark className="h-7 w-8" />
             <span>© {new Date().getFullYear()} {shop.legalName}</span>
+            <span aria-hidden className="text-gold-400">·</span>
+            <span>Developed by Biswajit</span>
           </div>
           <p className="max-w-[46ch] normal-case tracking-[0.08em] text-white/60">
             Showcase demo. Product imagery is generated; atmosphere photography
