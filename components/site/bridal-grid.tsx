@@ -31,7 +31,7 @@ export function BridalGrid() {
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(250,247,242,0.05)_0%,transparent_45%,rgba(44,5,11,0.45)_100%)]" />
 
               {piece.discount && (
-                <span className="absolute right-3 top-10 rounded-full bg-maroon-700 px-2.5 py-1 text-[9px] font-medium tracking-[0.08em] text-white shadow">
+                <span className="absolute right-3 top-10 rounded-full bg-maroon-700 px-2.5 py-1 text-[11px] font-medium tracking-[0.08em] text-white shadow">
                   {piece.discount}
                 </span>
               )}
@@ -49,7 +49,7 @@ export function BridalGrid() {
                     });
                     toast.success("Bridal piece added", { description: piece.name });
                   }}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-white/92 px-3 py-2 text-[9px] font-medium uppercase tracking-[0.14em] text-ink backdrop-blur transition hover:bg-white"
+                  className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-white/92 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.14em] text-ink backdrop-blur transition hover:bg-white"
                 >
                   <ShoppingBag className="size-3" />
                   Add
@@ -81,7 +81,7 @@ export function BridalGrid() {
             </div>
 
             <div className="mt-4">
-              <p className="text-[9px] uppercase tracking-[0.22em] text-ink-soft/65">
+              <p className="text-[11px] uppercase tracking-[0.22em] text-ink-soft/65">
                 {piece.fabric}
               </p>
               <h3 className="mt-1.5 text-[15px] font-medium tracking-tight text-ink">

@@ -120,13 +120,13 @@ export function BridalCarousel() {
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(250,247,242,0.06)_0%,transparent_38%,rgba(44,5,11,0.42)_100%)]" />
 
                   {piece.discount && (
-                    <span className="absolute right-3 top-8 rounded-full bg-maroon-700 px-2.5 py-1 text-[9px] font-medium tracking-[0.08em] text-white shadow">
+                    <span className="absolute right-3 top-8 rounded-full bg-maroon-700 px-2.5 py-1 text-[11px] font-medium tracking-[0.08em] text-white shadow">
                       {piece.discount}
                     </span>
                   )}
 
                   {!isActive && (
-                    <span className="absolute inset-x-4 bottom-5 text-center text-[9px] uppercase tracking-[0.22em] text-white/80">
+                    <span className="absolute inset-x-4 bottom-5 text-center text-[11px] uppercase tracking-[0.22em] text-white/80">
                       {piece.name}
                     </span>
                   )}
@@ -215,12 +215,12 @@ export function BridalCarousel() {
             Book a fitting for this saree
           </EnquiryButton>
 
-          <div className="mt-5 flex items-center gap-3 text-[10px] uppercase tracking-[0.24em] text-ink-soft/60">
+          <div className="mt-5 flex items-center gap-3 text-[11px] uppercase tracking-[0.24em] text-ink-soft/60">
             <span className="tabular-nums">
               {String(active + 1).padStart(2, "0")} / {String(bridal.length).padStart(2, "0")}
             </span>
             <span className="h-px w-16 bg-ink/15" />
-            <Link href="/bridal" className="transition hover:text-maroon-700">
+            <Link href="/bridal" className="inline-flex min-h-11 items-center transition hover:text-maroon-700">
               See the full bridal archive
             </Link>
           </div>

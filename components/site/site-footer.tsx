@@ -60,21 +60,21 @@ export function SiteFooter() {
               to your screen.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4 text-[10px] uppercase tracking-[0.24em] text-white/50">
+            <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4 text-[11px] uppercase tracking-[0.24em] text-white/50">
               <span className="inline-flex items-center gap-2">
                 <MapPin className="size-3.5 text-gold-400" /> {shop.address.city} · {shop.address.region}
               </span>
-              <a href={telHref} className="inline-flex items-center gap-2 transition hover:text-gold-300">
+              <a href={telHref} className="inline-flex min-h-11 items-center gap-2 transition hover:text-gold-300">
                 <Phone className="size-3.5 text-gold-400" /> {shop.phone}
               </a>
-              <a href={"mailto:" + shop.email} className="inline-flex items-center gap-2 transition hover:text-gold-300">
+              <a href={"mailto:" + shop.email} className="inline-flex min-h-11 items-center gap-2 transition hover:text-gold-300">
                 <Mail className="size-3.5 text-gold-400" /> {shop.email}
               </a>
               <a
                 href={"https://instagram.com/" + shop.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 transition hover:text-gold-300"
+                className="inline-flex min-h-11 items-center gap-2 transition hover:text-gold-300"
               >
                 <AtSign className="size-3.5 text-gold-400" /> @{shop.instagram}
               </a>
@@ -84,7 +84,7 @@ export function SiteFooter() {
           <div className="grid gap-10 sm:grid-cols-3">
             {columns.map((column) => (
               <nav key={column.title} aria-label={column.title}>
-                <p className="text-[10px] uppercase tracking-[0.28em] text-gold-400">
+                <p className="text-[11px] uppercase tracking-[0.28em] text-gold-400">
                   {column.title}
                 </p>
                 <ul className="mt-4 space-y-2.5">
@@ -92,7 +92,7 @@ export function SiteFooter() {
                     <li key={link.label}>
                       <Link
                         href={link.href}
-                        className="text-[13px] text-white/65 transition hover:text-gold-300"
+                        className="inline-flex min-h-11 items-center text-[13px] text-white/65 transition hover:text-gold-300"
                       >
                         {link.label}
                       </Link>
@@ -106,7 +106,7 @@ export function SiteFooter() {
 
         <div className="mt-14 grid gap-6 border-t border-white/10 pt-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-center lg:gap-16">
           <div>
-            <p className="text-[10px] uppercase tracking-[0.28em] text-gold-400">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-gold-400">
               The loom letter
             </p>
             <p className="mt-2 max-w-[40ch] text-sm text-white/55">
@@ -136,7 +136,7 @@ export function SiteFooter() {
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               placeholder="Your email address"
-              className="min-w-0 flex-1 bg-transparent px-4 py-2.5 text-[13px] text-white placeholder:text-white/35 focus:outline-none"
+              className="min-w-0 flex-1 bg-transparent px-4 py-2.5 text-[13px] text-white placeholder:text-white/60 focus:outline-none"
             />
             <button
               type="submit"
@@ -161,12 +161,12 @@ export function SiteFooter() {
       </div>
 
       <div className="relative border-t border-white/10">
-        <div className="shell flex flex-col gap-4 py-6 text-[10px] uppercase tracking-[0.22em] text-white/40 md:flex-row md:items-center md:justify-between">
+        <div className="shell flex flex-col gap-4 py-6 text-[11px] uppercase tracking-[0.22em] text-white/60 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
             <LotusMark className="h-7 w-8" />
             <span>© {new Date().getFullYear()} {shop.legalName}</span>
           </div>
-          <p className="max-w-[46ch] normal-case tracking-[0.08em] text-white/35">
+          <p className="max-w-[46ch] normal-case tracking-[0.08em] text-white/60">
             Showcase demo. Product imagery is generated; atmosphere photography
             is free stock, credited in the project README.
           </p>

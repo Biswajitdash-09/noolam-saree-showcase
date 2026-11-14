@@ -67,7 +67,7 @@ export function ShopGrid({ initialFilter = "all" }: { initialFilter?: FilterId }
                   <span>{category.label}</span>
                   <span
                     className={cn(
-                      "text-[9.5px] font-medium tabular-nums",
+                      "text-[11px] font-medium tabular-nums",
                       active ? "text-gold-300" : "text-maroon-700",
                     )}
                   >
@@ -79,7 +79,7 @@ export function ShopGrid({ initialFilter = "all" }: { initialFilter?: FilterId }
           </div>
 
           <div className="flex shrink-0 items-center justify-between gap-3 lg:justify-end">
-            <span className="inline-flex items-center gap-1.5 text-[9px] uppercase tracking-[0.22em] text-ink-soft/70">
+            <span className="inline-flex items-center gap-1.5 text-[11px] uppercase tracking-[0.22em] text-ink-soft/70">
               <SlidersHorizontal className="size-3 text-gold-600" />
               {items.length} pieces
             </span>

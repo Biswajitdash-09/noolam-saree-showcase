@@ -71,7 +71,7 @@ export function CartSheet() {
                       <div className="flex items-start justify-between gap-3">
                         <div className="min-w-0">
                           <p className="truncate text-sm font-medium">{line.name}</p>
-                          <p className="mt-0.5 text-[10px] uppercase tracking-[0.2em] text-ink-soft">
+                          <p className="mt-0.5 text-[11px] uppercase tracking-[0.2em] text-ink-soft">
                             {line.meta ?? "NOOLAM · Saree"}
                           </p>
                         </div>
@@ -115,7 +115,7 @@ export function CartSheet() {
               <button
                 type="button"
                 onClick={clearCart}
-                className="mt-6 text-[10px] uppercase tracking-[0.24em] text-ink-soft underline underline-offset-4 transition hover:text-maroon-700"
+                className="mt-6 text-[11px] uppercase tracking-[0.24em] text-ink-soft underline underline-offset-4 transition hover:text-maroon-700"
               >
                 Empty the bag
               </button>
@@ -153,7 +153,7 @@ export function CartSheet() {
               <button
                 type="button"
                 onClick={() => setCartOpen(false)}
-                className="mt-3 w-full text-center text-[10px] uppercase tracking-[0.24em] text-ink-soft transition hover:text-ink"
+                className="mt-3 w-full text-center text-[11px] uppercase tracking-[0.24em] text-ink-soft transition hover:text-ink"
               >
                 Continue browsing
               </button>

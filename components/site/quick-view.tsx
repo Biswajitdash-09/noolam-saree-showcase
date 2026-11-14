@@ -36,7 +36,7 @@ export function QuickView() {
               artClassName="h-[230px] w-[180px]"
             />
             <div className="flex flex-1 flex-col px-6 pb-7 pt-6">
-              <p className="text-[10px] uppercase tracking-[0.24em] text-ink-soft/70">
+              <p className="text-[11px] uppercase tracking-[0.24em] text-ink-soft/70">
                 {product.kind === "blouse" ? "Silk blouse" : product.fabric.split(" · ")[0]}
               </p>
               <SheetTitle className="display mt-2 text-[1.9rem]">{product.name}</SheetTitle>

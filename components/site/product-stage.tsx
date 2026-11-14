@@ -22,7 +22,7 @@ export function ProductStage({ product }: { product: Product }) {
           />
         </ViewTransition>
         <div className="absolute inset-x-0 bottom-0 flex items-center justify-between px-5 pb-5">
-          <span className="text-[9px] uppercase tracking-[0.24em] text-ink-soft/70">
+          <span className="text-[11px] uppercase tracking-[0.24em] text-ink-soft/70">
             {flip ? "Reverse · zari selvedge" : "The drape · front"}
           </span>
           <Tabs value={flip ? "back" : "front"} onValueChange={(value) => setFlip(value === "back")}>
@@ -54,7 +54,7 @@ export function ProductStage({ product }: { product: Product }) {
                 }
               />
             </div>
-            <p className="mt-1.5 text-center text-[8.5px] uppercase tracking-[0.2em] text-ink-soft/70">
+            <p className="mt-1.5 text-center text-[11px] uppercase tracking-[0.2em] text-ink-soft/70">
               {label}
             </p>
           </div>

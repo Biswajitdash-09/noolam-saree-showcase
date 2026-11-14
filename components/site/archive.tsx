@@ -46,10 +46,10 @@ export function Archive() {
               </div>
 
               <figcaption className="mt-5 text-center">
-                <p className="text-[10px] font-medium uppercase leading-relaxed tracking-[0.2em] text-ink sm:text-[10.5px]">
+                <p className="text-[11px] font-medium uppercase leading-relaxed tracking-[0.2em] text-ink sm:text-[11px]">
                   {mood.label}
                 </p>
-                <p className="mt-1 text-[10px] tracking-wide text-ink-soft/65">
+                <p className="mt-1 text-[11px] tracking-wide text-ink-soft/65">
                   {mood.caption}
                 </p>
               </figcaption>

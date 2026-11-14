@@ -41,9 +41,9 @@ export default function BridalPage() {
         <div className="shell relative">
           <nav
             aria-label="Breadcrumb"
-            className="flex items-center gap-1.5 text-[9.5px] uppercase tracking-[0.24em] text-ink-soft/70"
+            className="flex items-center gap-1.5 text-[11px] uppercase tracking-[0.24em] text-ink-soft/70"
           >
-            <Link href="/" className="transition hover:text-maroon-700">
+            <Link href="/" className="inline-flex min-h-11 items-center transition hover:text-maroon-700">
               Home
             </Link>
             <ChevronRight className="size-3 text-gold-600" />
@@ -80,7 +80,7 @@ export default function BridalPage() {
                 ].map(([value, label]) => (
                   <div key={label}>
                     <dt className="text-[22px] font-medium tabular-nums text-maroon-700">{value}</dt>
-                    <dd className="mt-1 text-[9px] uppercase leading-[1.5] tracking-[0.18em] text-ink-soft/70">
+                    <dd className="mt-1 text-[11px] uppercase leading-[1.5] tracking-[0.18em] text-ink-soft/70">
                       {label}
                     </dd>
                   </div>
@@ -117,7 +117,7 @@ export default function BridalPage() {
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_50%,rgba(44,5,11,0.45))]" />
               </div>
-              <span className="absolute -bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap text-[8.5px] uppercase tracking-[0.26em] text-ink-soft/60">
+              <span className="absolute -bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap text-[11px] uppercase tracking-[0.26em] text-ink-soft/60">
                 The bridal archive · Kanchipuram
               </span>
             </div>
@@ -161,7 +161,7 @@ export default function BridalPage() {
                 className="object-cover sepia-[0.22] saturate-[0.86] brightness-[0.95]"
               />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(30,4,8,0.5))]" />
-              <p className="absolute inset-x-6 bottom-6 text-[9px] uppercase tracking-[0.26em] text-white/75">
+              <p className="absolute inset-x-6 bottom-6 text-[11px] uppercase tracking-[0.26em] text-white/75">
                 Loom 04 · the bridal warp
               </p>
             </div>
@@ -175,7 +175,7 @@ export default function BridalPage() {
                 {promises.map((promise) => (
                   <div key={promise.title}>
                     <promise.icon className="size-4 text-gold-600" />
-                    <p className="mt-3 text-[10px] uppercase tracking-[0.2em] text-gold-700">
+                    <p className="mt-3 text-[11px] uppercase tracking-[0.2em] text-gold-700">
                       {promise.title}
                     </p>
                     <p className="mt-2 text-[12px] leading-relaxed text-ink-soft">{promise.text}</p>
@@ -189,7 +189,7 @@ export default function BridalPage() {
                 </EnquiryButton>
                 <Link
                   href="/shop"
-                  className="text-[10px] uppercase tracking-[0.22em] text-ink-soft underline decoration-gold-500/60 underline-offset-4 transition hover:text-maroon-700"
+                  className="inline-flex min-h-11 items-center text-[11px] uppercase tracking-[0.22em] text-ink-soft underline decoration-gold-500/60 underline-offset-4 transition hover:text-maroon-700"
                 >
                   Or browse the ready rail
                 </Link>

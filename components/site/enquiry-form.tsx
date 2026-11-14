@@ -53,10 +53,10 @@ export function EnquiryForm({
   const field = cn(
     "w-full rounded-2xl border px-4 py-3 text-[13.5px] transition focus:outline-none focus-visible:outline-none",
     dark
-      ? "border-white/15 bg-white/[0.05] text-white placeholder:text-white/35 focus:border-gold-400 [color-scheme:dark]"
-      : "border-ink/15 bg-white text-ink placeholder:text-ink-soft/50 focus:border-maroon-600",
+      ? "border-white/30 bg-white/[0.08] text-white placeholder:text-white/60 focus:border-gold-400 [color-scheme:dark]"
+      : "border-ink/15 bg-white text-ink placeholder:text-ink-soft/70 focus:border-maroon-600",
   );
-  const labelText = cn("mb-1.5 block text-[12px]", dark ? "text-white/60" : "text-ink-soft");
+  const labelText = cn("mb-1.5 block text-[12px]", dark ? "text-white/80" : "text-ink-soft");
   const errorText = cn("mt-1.5 text-[12px]", dark ? "text-gold-300" : "text-maroon-700");
   const errors = state.status === "invalid" ? state.errors : {};
 

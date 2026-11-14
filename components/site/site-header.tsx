@@ -97,7 +97,7 @@ export function SiteHeader() {
           className="pointer-events-none absolute inset-x-8 bottom-0 h-px origin-left bg-[linear-gradient(90deg,transparent,var(--color-gold-400)_12%,var(--color-gold-300)_88%,transparent)]"
           style={{ scaleX: thread }}
         />
-        <Link href="/" aria-label="NOOLAM home" className="shrink-0 pl-2 sm:pl-3">
+        <Link href="/" aria-label="NOOLAM home" className="flex min-h-11 shrink-0 items-center pl-2 sm:pl-3">
           <Wordmark />
         </Link>
 
@@ -136,7 +136,7 @@ export function SiteHeader() {
           >
             <Heart className="size-[17px]" />
             {wishlist.length > 0 && (
-              <span className="absolute -right-0.5 -top-0.5 flex size-4 items-center justify-center rounded-full bg-gold-400 text-[9px] font-semibold text-maroon-950">
+              <span className="absolute -right-0.5 -top-0.5 flex size-4 items-center justify-center rounded-full bg-gold-400 text-[11px] font-semibold text-maroon-950">
                 {wishlist.length}
               </span>
             )}
@@ -149,7 +149,7 @@ export function SiteHeader() {
           >
             <ShoppingBag className="size-[17px]" />
             {cartCount > 0 && (
-              <span className="absolute -right-0.5 -top-0.5 flex size-4 items-center justify-center rounded-full bg-gold-400 text-[9px] font-semibold text-maroon-950">
+              <span className="absolute -right-0.5 -top-0.5 flex size-4 items-center justify-center rounded-full bg-gold-400 text-[11px] font-semibold text-maroon-950">
                 {cartCount}
               </span>
             )}
@@ -196,7 +196,7 @@ export function SiteHeader() {
                     )}
                   >
                     <span>{link.label}</span>
-                    <span className="text-[10px] tracking-[0.2em] text-white/30">
+                    <span className="text-[11px] tracking-[0.2em] text-white/60">
                       0{index + 1}
                     </span>
                   </Link>
@@ -235,7 +235,7 @@ export function SiteHeader() {
                   Visit the Store
                   <ArrowUpRight className="size-4 text-gold-300" />
                 </Link>
-                <p className="mt-4 text-[10px] uppercase tracking-[0.26em] text-white/40">
+                <p className="mt-4 text-[11px] uppercase tracking-[0.26em] text-white/60">
                   {shop.address.city} · {shop.address.region}
                 </p>
               </div>

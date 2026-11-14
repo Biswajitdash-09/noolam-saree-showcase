@@ -29,7 +29,7 @@ export function ProductBuy({ product }: { product: Product }) {
 
   return (
     <div>
-      <p className="text-[9.5px] uppercase tracking-[0.26em] text-ink-soft/70">
+      <p className="text-[11px] uppercase tracking-[0.26em] text-ink-soft/70">
         NOOLAM · {product.kind === "blouse" ? "Silk blouse" : "Silk saree"}
       </p>
       <h1 className="display mt-3 text-[clamp(1.9rem,3.2vw,2.9rem)] text-ink">
@@ -49,7 +49,7 @@ export function ProductBuy({ product }: { product: Product }) {
             {formatINR(product.compareAt)}
           </span>
         )}
-        <span className="pb-1.5 text-[10px] uppercase tracking-[0.2em] text-ink-soft/60">
+        <span className="pb-1.5 text-[11px] uppercase tracking-[0.2em] text-ink-soft/60">
           Inclusive of all taxes
         </span>
       </div>
@@ -61,15 +61,15 @@ export function ProductBuy({ product }: { product: Product }) {
 
       <dl className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 border-y border-ink/10 py-4 text-[12px]">
         <div>
-          <dt className="text-[9px] uppercase tracking-[0.22em] text-ink-soft/60">Weave</dt>
+          <dt className="text-[11px] uppercase tracking-[0.22em] text-ink-soft/60">Weave</dt>
           <dd className="mt-1 text-ink">{product.fabric}</dd>
         </div>
         <div>
-          <dt className="text-[9px] uppercase tracking-[0.22em] text-ink-soft/60">Finish</dt>
+          <dt className="text-[11px] uppercase tracking-[0.22em] text-ink-soft/60">Finish</dt>
           <dd className="mt-1 text-ink">{product.pallu ?? "Hand-finished selvedge"}</dd>
         </div>
         <div>
-          <dt className="text-[9px] uppercase tracking-[0.22em] text-ink-soft/60">Colour</dt>
+          <dt className="text-[11px] uppercase tracking-[0.22em] text-ink-soft/60">Colour</dt>
           <dd className="mt-1 flex items-center gap-2 text-ink">
             <span
               className="size-3 rounded-full ring-1 ring-ink/15"
@@ -79,15 +79,15 @@ export function ProductBuy({ product }: { product: Product }) {
           </dd>
         </div>
         <div>
-          <dt className="text-[9px] uppercase tracking-[0.22em] text-ink-soft/60">Mark</dt>
+          <dt className="text-[11px] uppercase tracking-[0.22em] text-ink-soft/60">Mark</dt>
           <dd className="mt-1 text-ink">Silk Mark · pure zari</dd>
         </div>
       </dl>
 
       <div className="mt-6">
         <div className="flex items-center justify-between">
-          <p className="text-[9.5px] uppercase tracking-[0.24em] text-ink-soft">{label}</p>
-          <button type="button" className="text-[9.5px] uppercase tracking-[0.2em] text-maroon-700 underline decoration-gold-500/60 underline-offset-4">
+          <p className="text-[11px] uppercase tracking-[0.24em] text-ink-soft">{label}</p>
+          <button type="button" className="min-h-11 text-[11px] uppercase tracking-[0.2em] text-maroon-700 underline decoration-gold-500/60 underline-offset-4">
             Size guide
           </button>
         </div>
@@ -154,7 +154,7 @@ export function ProductBuy({ product }: { product: Product }) {
           }}
           className={cn(
             "h-12 min-w-[190px] flex-1 px-7 text-[12px] uppercase tracking-[0.16em] sm:flex-none",
-            !size && "bg-ink/15 text-ink/40 shadow-none",
+            !size && "bg-ink/15 text-ink/60 shadow-none",
           )}
         >
           <ShoppingBag className="size-4" />
@@ -194,7 +194,7 @@ export function ProductBuy({ product }: { product: Product }) {
           href={waLink(productMessage(product, size))}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-[13px] font-medium text-maroon-700 underline decoration-gold-500/60 underline-offset-4 transition hover:text-maroon-800"
+          className="inline-flex min-h-11 items-center gap-2 text-[13px] font-medium text-maroon-700 underline decoration-gold-500/60 underline-offset-4 transition hover:text-maroon-800"
         >
           <MessageCircle className="size-4" />
           Ask about this saree on WhatsApp
@@ -236,9 +236,9 @@ export function ProductBuy({ product }: { product: Product }) {
         </AccordionItem>
       </Accordion>
 
-      <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-[9.5px] uppercase tracking-[0.2em] text-ink-soft/60">
+      <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-[11px] uppercase tracking-[0.2em] text-ink-soft/60">
         <span>Need it sooner?</span>
-        <Link href="/care#contact" className="text-maroon-700 transition hover:text-maroon-800">
+        <Link href="/care#contact" className="inline-flex min-h-11 items-center text-maroon-700 transition hover:text-maroon-800">
           Write to the loom room
         </Link>
         <span className="text-gold-500">·</span>

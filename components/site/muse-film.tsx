@@ -56,7 +56,7 @@ export function MuseFilm() {
                   className={`object-cover ${grades.film}`}
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(44,5,11,0.45)_100%)]" />
-                <figcaption className="absolute inset-x-3 bottom-2.5 text-[8.5px] uppercase tracking-[0.22em] text-white/75">
+                <figcaption className="absolute inset-x-3 bottom-2.5 text-[11px] uppercase tracking-[0.22em] text-white/75">
                   {frame.caption}
                 </figcaption>
               </div>
@@ -94,7 +94,7 @@ export function MuseFilm() {
                   type="button"
                   onClick={() => setSound((value) => !value)}
                   aria-pressed={sound}
-                  className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/35 px-4 py-2 text-[9px] uppercase tracking-[0.28em] text-white/85 backdrop-blur-md transition hover:border-gold-400/60 hover:text-gold-300"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/25 bg-black/35 px-4 py-2 text-[11px] uppercase tracking-[0.28em] text-white/85 backdrop-blur-md transition hover:border-gold-400/60 hover:text-gold-300"
                 >
                   {sound ? <Volume2 className="size-3.5" /> : <VolumeX className="size-3.5" />}
                   {sound ? "Sound on" : "Sound off"}
@@ -103,7 +103,7 @@ export function MuseFilm() {
 
               <div className="absolute left-4 top-4 flex items-center gap-2">
                 <span className="size-1.5 animate-pulse rounded-full bg-gold-400" />
-                <span className="text-[9px] uppercase tracking-[0.26em] text-white/70">Film · 1:24</span>
+                <span className="text-[11px] uppercase tracking-[0.26em] text-white/70">Film · 1:24</span>
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@ export function MuseFilm() {
                   className={`object-cover ${grades.film}`}
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(44,5,11,0.45)_100%)]" />
-                <figcaption className="absolute inset-x-3 bottom-2.5 text-[8.5px] uppercase tracking-[0.22em] text-white/75">
+                <figcaption className="absolute inset-x-3 bottom-2.5 text-[11px] uppercase tracking-[0.22em] text-white/75">
                   {frame.caption}
                 </figcaption>
               </div>

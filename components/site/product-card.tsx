@@ -51,7 +51,7 @@ export function ProductCard({ product, morph = false }: ProductCardProps) {
         )}
 
         {product.badge && (
-          <span className="absolute left-4 top-4 rounded-full bg-maroon-700 px-2.5 py-1 text-[9px] font-medium uppercase tracking-[0.14em] text-white shadow-sm">
+          <span className="absolute left-4 top-4 rounded-full bg-maroon-700 px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-white shadow-sm">
             {product.badge}
           </span>
         )}
@@ -111,7 +111,7 @@ export function ProductCard({ product, morph = false }: ProductCardProps) {
 
       <div className="mt-4 flex items-start justify-between gap-3">
         <div className="min-w-0">
-          <p className="text-[9px] uppercase tracking-[0.22em] text-ink-soft/70">
+          <p className="text-[11px] uppercase tracking-[0.22em] text-ink-soft/70">
             {product.kind === "blouse" ? "Blouse" : product.fabric.split(" · ")[0]}
           </p>
           <h3 className="mt-1.5 truncate text-[15px] font-medium tracking-tight text-ink">

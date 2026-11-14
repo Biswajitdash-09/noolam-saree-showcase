@@ -58,13 +58,13 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
         <div className="shell">
           <nav
             aria-label="Breadcrumb"
-            className="flex flex-wrap items-center gap-1.5 text-[9.5px] uppercase tracking-[0.22em] text-ink-soft/70"
+            className="flex flex-wrap items-center gap-1.5 text-[11px] uppercase tracking-[0.22em] text-ink-soft/70"
           >
-            <Link href="/" className="transition hover:text-maroon-700">
+            <Link href="/" className="inline-flex min-h-11 items-center transition hover:text-maroon-700">
               Home
             </Link>
             <ChevronRight className="size-3 text-gold-600" />
-            <Link href="/shop" className="transition hover:text-maroon-700">
+            <Link href="/shop" className="inline-flex min-h-11 items-center transition hover:text-maroon-700">
               The collection
             </Link>
             <ChevronRight className="size-3 text-gold-600" />
@@ -101,7 +101,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
             },
           ].map((note) => (
             <div key={note.title}>
-              <p className="text-[9.5px] uppercase tracking-[0.24em] text-gold-700">
+              <p className="text-[11px] uppercase tracking-[0.24em] text-gold-700">
                 {note.title}
               </p>
               <p className="mt-2 leading-relaxed text-ink-soft">{note.text}</p>

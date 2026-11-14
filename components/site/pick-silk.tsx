@@ -140,7 +140,7 @@ function SilkCardItem({ card, index }: { card: SilkCard; index: number }) {
 
           <div className="absolute inset-x-4 bottom-4 z-10 flex items-end justify-between">
             <div>
-              <p className="text-[9px] uppercase tracking-[0.22em] text-white/60">
+              <p className="text-[11px] uppercase tracking-[0.22em] text-white/60">
                 {product.fabric.split(" · ")[0]}
               </p>
               <p className="mt-1 text-[13px] font-medium tabular-nums text-white">
@@ -197,7 +197,7 @@ export function PickSilk() {
               </div>
               <p className="max-w-[300px] text-sm leading-relaxed text-ink-soft lg:text-right">
                 Scroll to walk the wall. Tilt a card, press it, then hit{" "}
-                <span className="inline-flex size-4 translate-y-0.5 items-center justify-center rounded-full bg-ink text-[9px] text-white">
+                <span className="inline-flex size-4 translate-y-0.5 items-center justify-center rounded-full bg-ink text-[11px] text-white">
                   +
                 </span>{" "}
                 to drop a saree into your bag.

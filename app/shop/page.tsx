@@ -26,8 +26,8 @@ export default function ShopPage() {
       <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fdfbf7_0%,#f7f1e8_100%)] pb-10 pt-28 md:pt-32">
         <div className="pointer-events-none absolute -right-24 top-0 size-[420px] rounded-full bg-gold-300/20 blur-[110px]" />
         <div className="shell relative">
-          <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-[9.5px] uppercase tracking-[0.24em] text-ink-soft/70">
-            <Link href="/" className="transition hover:text-maroon-700">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-[11px] uppercase tracking-[0.24em] text-ink-soft/70">
+            <Link href="/" className="inline-flex min-h-11 items-center transition hover:text-maroon-700">
               Home
             </Link>
             <ChevronRight className="size-3 text-gold-600" />
@@ -52,7 +52,7 @@ export default function ShopPage() {
             {notes.map((note) => (
               <span key={note.label} className="inline-flex items-center gap-2.5">
                 <note.icon className="size-3.5 text-gold-600" />
-                <span className="text-[10px] uppercase tracking-[0.2em] text-ink-soft">
+                <span className="text-[11px] uppercase tracking-[0.2em] text-ink-soft">
                   {note.label}
                   <span className="mx-1.5 text-gold-500">·</span>
                   <span className="normal-case tracking-[0.04em] text-ink-soft/60">

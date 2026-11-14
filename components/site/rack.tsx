@@ -64,7 +64,7 @@ export function Rack() {
                 <span>{item.label}</span>
                 <span
                   className={cn(
-                    "text-[10px] font-medium tabular-nums",
+                    "text-[11px] font-medium tabular-nums",
                     active ? "text-gold-300" : "text-maroon-700",
                   )}
                 >
@@ -89,10 +89,9 @@ export function Rack() {
                 ) : null}
               </div>
             </div>
-            <div className="shell mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-ink/10 pt-4 text-[9px] uppercase tracking-[0.24em] text-ink-soft/70">
+            <div className="shell mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-ink/10 pt-4 text-[11px] uppercase tracking-[0.24em] text-ink-soft/70">
               <span>Explore the collection · {items.length} pieces</span>
               <span className="hidden sm:inline">Click a hanger to lift it off the rail</span>
-              <span>Editorial stock imagery · demo collection</span>
             </div>
           </>
         }
@@ -137,7 +136,7 @@ export function Rack() {
                               : "drop-shadow-[0_16px_20px_rgba(30,4,8,0.16)]",
                           )}
                         />
-                        <span className="mt-3 line-clamp-2 min-h-[2.2em] max-w-[118px] text-center text-[9.5px] uppercase leading-[1.35] tracking-[0.14em] text-ink-soft/80">
+                        <span className="mt-3 line-clamp-2 min-h-[2.2em] max-w-[118px] text-center text-[11px] uppercase leading-[1.35] tracking-[0.14em] text-ink-soft/80">
                           {product.name}
                         </span>
                       </button>

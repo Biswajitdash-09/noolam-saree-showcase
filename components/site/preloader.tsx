@@ -17,7 +17,7 @@ export function Preloader() {
           Noolam
         </p>
         <span className="preloader__thread mt-6 block h-px w-full bg-[linear-gradient(90deg,transparent,var(--color-gold-400)_18%,var(--color-gold-300)_50%,var(--color-gold-400)_82%,transparent)]" />
-        <p className="preloader__word mt-4 text-[10px] uppercase tracking-[0.3em] text-white/45">
+        <p className="preloader__word mt-4 text-[11px] uppercase tracking-[0.3em] text-white/60">
           Kanchipuram silk
         </p>
       </div>

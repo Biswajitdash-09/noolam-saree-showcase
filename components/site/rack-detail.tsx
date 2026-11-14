@@ -84,14 +84,14 @@ export function RackDetail({ items, index, onIndexChange, onClose }: RackDetailP
 
         <div className="relative z-10 flex min-h-[100svh] flex-col">
           <div className="flex items-center justify-between px-6 py-5 sm:px-10">
-            <p className="text-[10px] uppercase tracking-[0.24em] text-ink-soft/70">
+            <p className="text-[11px] uppercase tracking-[0.24em] text-ink-soft/70">
               The Rack · {String(activeIndex + 1).padStart(2, "0")} /{" "}
               {String(items.length).padStart(2, "0")}
             </p>
             <button
               type="button"
               onClick={onClose}
-              className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.24em] text-ink-soft transition hover:text-maroon-700"
+              className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.24em] text-ink-soft transition hover:text-maroon-700"
             >
               Close <X className="size-3.5" />
             </button>
@@ -120,7 +120,7 @@ export function RackDetail({ items, index, onIndexChange, onClose }: RackDetailP
             </div>
 
             <div className="mt-2 flex flex-col items-center text-center sm:mt-4">
-              <p className="text-[9px] uppercase tracking-[0.3em] text-ink-soft/70">
+              <p className="text-[11px] uppercase tracking-[0.3em] text-ink-soft/70">
                 NOOLAM · {product.kind === "blouse" ? "Blouse" : "Silk Saree"}
               </p>
               <h3 className="mt-2 text-[18px] font-medium uppercase tracking-[0.14em] text-ink">
@@ -182,7 +182,7 @@ export function RackDetail({ items, index, onIndexChange, onClose }: RackDetailP
                   }}
                   className={cn(
                     "h-11 min-w-[190px] px-7 text-[12px] uppercase tracking-[0.16em]",
-                    !size && "bg-ink/15 text-ink/40 shadow-none",
+                    !size && "bg-ink/15 text-ink/60 shadow-none",
                   )}
                 >
                   {size ? "Add to bag" : "Select a size"}
@@ -218,7 +218,7 @@ export function RackDetail({ items, index, onIndexChange, onClose }: RackDetailP
               <button
                 type="button"
                 onClick={() => setShowAvailability((value) => !value)}
-                className="mt-4 text-[9.5px] uppercase tracking-[0.24em] text-ink-soft underline decoration-gold-500/60 underline-offset-4 transition hover:text-maroon-700"
+                className="mt-4 text-[11px] uppercase tracking-[0.24em] text-ink-soft underline decoration-gold-500/60 underline-offset-4 transition hover:text-maroon-700"
               >
                 See availability
               </button>

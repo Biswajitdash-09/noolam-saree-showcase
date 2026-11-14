@@ -92,12 +92,12 @@ function PieceList({ look, className }: { look: Look; className?: string }) {
         <li key={piece.id} className="flex items-center gap-3 py-3">
           <span className="relative h-[68px] w-[54px] shrink-0 overflow-hidden rounded-md bg-cream">
             <PieceThumb piece={piece} />
-            <span className="absolute left-1 top-1 flex size-4 items-center justify-center rounded-full bg-white/85 text-[8px] font-medium text-ink">
+            <span className="absolute left-1 top-1 flex size-4 items-center justify-center rounded-full bg-white/85 text-[11px] font-medium text-ink">
               {index + 1}
             </span>
           </span>
           <div className="min-w-0 flex-1">
-            <p className="text-[8.5px] font-medium uppercase tracking-[0.2em] text-ink-soft/70">{piece.label}</p>
+            <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-ink-soft/70">{piece.label}</p>
             <p className="mt-0.5 truncate text-[13px] leading-snug text-ink">{piece.name}</p>
             <p className="mt-0.5 text-[12px] tabular-nums text-ink-soft">{formatINR(piece.price)}</p>
           </div>
@@ -139,7 +139,7 @@ function BundleRow({ look }: { look: Look }) {
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-ink">Complete the look</p>
-          <p className="mt-1 text-[10px] text-ink-soft">Bundle all 6 pieces · save 10%</p>
+          <p className="mt-1 text-[11px] text-ink-soft">Bundle all 6 pieces · save 10%</p>
         </div>
         <div className="text-right">
           <p className="text-[11px] tabular-nums text-ink-soft/60 line-through">{formatINR(lookTotal(look))}</p>
@@ -333,10 +333,10 @@ export function TryLook() {
                     />
                   </div>
                   <div className="mt-2.5 flex items-center justify-between gap-3">
-                    <p className="text-[10px] uppercase tracking-[0.2em] text-ink-soft" aria-live="polite">
+                    <p className="text-[11px] uppercase tracking-[0.2em] text-ink-soft" aria-live="polite">
                       {active + 1} of {looks.length} · {look.name}
                     </p>
-                    <p className="hidden text-[10px] uppercase tracking-[0.2em] text-ink-soft/60 sm:block">
+                    <p className="hidden text-[11px] uppercase tracking-[0.2em] text-ink-soft/60 sm:block">
                       Scroll to browse
                     </p>
                   </div>
@@ -354,7 +354,7 @@ export function TryLook() {
 
               <div className="mt-5 flex items-center justify-between gap-3 border-t border-ink/10 pt-4 lg:hidden">
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.2em] text-ink-soft">Full look · save 10%</p>
+                  <p className="text-[11px] uppercase tracking-[0.2em] text-ink-soft">Full look · save 10%</p>
                   <p className="mt-0.5 text-[15px] font-medium tabular-nums text-ink">{formatINR(lookBundle(look))}</p>
                 </div>
                 <button
@@ -373,7 +373,7 @@ export function TryLook() {
             <div className="sticky top-0 flex h-[100svh] flex-col justify-center pb-14 pt-24">
               <div className="flex items-center justify-between">
                 <h3 className="text-[11px] font-medium uppercase tracking-[0.24em] text-ink">In this look</h3>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-ink-soft/60">
+                <span className="text-[11px] uppercase tracking-[0.2em] text-ink-soft/60">
                   {look.pieces.length} pieces
                 </span>
               </div>

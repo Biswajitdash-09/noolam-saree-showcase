@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
@@ -76,24 +77,36 @@ export default function CarePage() {
         <div className="shell relative">
           <nav
             aria-label="Breadcrumb"
-            className="flex items-center gap-1.5 text-[9.5px] uppercase tracking-[0.24em] text-ink-soft/70"
+            className="flex items-center gap-1.5 text-[11px] uppercase tracking-[0.24em] text-ink-soft/70"
           >
-            <Link href="/" className="transition hover:text-maroon-700">
+            <Link href="/" className="inline-flex min-h-11 items-center transition hover:text-maroon-700">
               Home
             </Link>
             <ChevronRight className="size-3 text-gold-600" />
             <span className="text-ink">Care &amp; help</span>
           </nav>
 
-          <div className="mt-7 grid gap-8 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] lg:items-end">
-            <h1 className="display text-[clamp(2.5rem,6.4vw,5rem)]">
-              A saree that outlives <span className="text-gradient-warm">the wedding.</span>
-            </h1>
-            <p className="max-w-[44ch] text-sm leading-relaxed text-ink-soft lg:justify-self-end">
-              How your silk reaches you, how to keep its zari bright for
-              decades, which blouse size to pick, and how to reach a person at
-              the loom room.
-            </p>
+          <div className="mt-7 grid items-end gap-8 md:grid-cols-[minmax(0,1fr)_auto] md:gap-12">
+            <div>
+              <h1 className="display text-[clamp(2.5rem,6.4vw,5rem)]">
+                A saree that outlives <span className="text-gradient-warm">the wedding.</span>
+              </h1>
+              <p className="mt-6 max-w-[44ch] text-sm leading-relaxed text-ink-soft">
+                How your silk reaches you, how to keep its zari bright for
+                decades, which blouse size to pick, and how to reach a person at
+                the loom room.
+              </p>
+            </div>
+            <div className="relative aspect-[3/4] w-[200px] overflow-hidden rounded-t-[999px] rounded-b-2xl border border-gold-500/40 shadow-[0_30px_60px_-30px_rgba(44,5,11,0.5)] md:w-[260px] lg:w-[300px]">
+              <Image
+                src="/images/moods/mood-wedding-edit.jpg"
+                alt="A woman draped in a red and gold Kanjivaram saree"
+                fill
+                priority
+                sizes="(min-width: 1024px) 300px, (min-width: 768px) 260px, 200px"
+                className="object-cover object-top"
+              />
+            </div>
           </div>
         </div>
       </section>

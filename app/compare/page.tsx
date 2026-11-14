@@ -19,13 +19,13 @@ export default function ComparePage() {
         <div className="shell">
           <nav
             aria-label="Breadcrumb"
-            className="flex items-center gap-1.5 text-[9.5px] uppercase tracking-[0.24em] text-ink-soft/70"
+            className="flex items-center gap-1.5 text-[11px] uppercase tracking-[0.24em] text-ink-soft/70"
           >
-            <Link href="/" className="transition hover:text-maroon-700">
+            <Link href="/" className="inline-flex min-h-11 items-center transition hover:text-maroon-700">
               Home
             </Link>
             <ChevronRight className="size-3 text-gold-600" />
-            <Link href="/shop" className="transition hover:text-maroon-700">
+            <Link href="/shop" className="inline-flex min-h-11 items-center transition hover:text-maroon-700">
               The collection
             </Link>
             <ChevronRight className="size-3 text-gold-600" />

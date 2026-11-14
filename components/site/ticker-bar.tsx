@@ -5,11 +5,11 @@ function Run({ hidden = false }: { hidden?: boolean }) {
     <div className="flex shrink-0 items-center" aria-hidden={hidden || undefined}>
       {tickerItems.map((item) => (
         <span key={item.title} className="flex items-center whitespace-nowrap">
-          <span className="mx-3 text-[10px] text-gold-500/70">◆</span>
-          <span className="text-[10.5px] font-semibold uppercase tracking-[0.18em] text-gold-300 sm:text-[11.5px]">
+          <span className="mx-3 text-[11px] text-gold-500/70">◆</span>
+          <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-300 sm:text-[11.5px]">
             {item.title}
           </span>
-          <span className="ml-2.5 text-[10.5px] tracking-[0.04em] text-white/55 sm:text-[11.5px]">
+          <span className="ml-2.5 text-[11px] tracking-[0.04em] text-white/55 sm:text-[11.5px]">
             {item.text}
           </span>
         </span>

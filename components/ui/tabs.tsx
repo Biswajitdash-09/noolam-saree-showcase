@@ -29,7 +29,7 @@ function TabsTrigger({
   return (
     <TabsPrimitive.Trigger
       className={cn(
-        "inline-flex h-8 items-center justify-center rounded-full px-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-ink-soft transition data-[state=active]:bg-ink data-[state=active]:text-white",
+        "inline-flex h-10 items-center justify-center rounded-full px-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-ink-soft transition data-[state=active]:bg-ink data-[state=active]:text-white",
         className,
       )}
       {...props}

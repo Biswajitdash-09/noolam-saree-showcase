@@ -54,7 +54,7 @@ export function WishlistSheet() {
                   </div>
                   <div className="flex min-w-0 flex-1 flex-col">
                     <p className="truncate text-sm font-medium">{item.name}</p>
-                    <p className="mt-0.5 text-[10px] uppercase tracking-[0.2em] text-ink-soft">
+                    <p className="mt-0.5 text-[11px] uppercase tracking-[0.2em] text-ink-soft">
                       {item.meta ?? "NOOLAM · Saree"}
                     </p>
                     <p className="mt-2 text-sm tabular-nums">{formatINR(item.price)}</p>
@@ -77,14 +77,14 @@ export function WishlistSheet() {
                             });
                           }
                         }}
-                        className="inline-flex items-center gap-1.5 text-[10px] uppercase tracking-[0.2em] text-maroon-700 transition hover:text-maroon-600"
+                        className="inline-flex items-center gap-1.5 text-[11px] uppercase tracking-[0.2em] text-maroon-700 transition hover:text-maroon-600"
                       >
                         <ShoppingBag className="size-3.5" /> Move to bag
                       </button>
                       <button
                         type="button"
                         onClick={() => removeWish(item.id)}
-                        className="text-[10px] uppercase tracking-[0.2em] text-ink-soft underline underline-offset-4 transition hover:text-ink"
+                        className="text-[11px] uppercase tracking-[0.2em] text-ink-soft underline underline-offset-4 transition hover:text-ink"
                       >
                         Remove
                       </button>

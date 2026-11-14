@@ -70,7 +70,7 @@ export function CompareTray() {
             aria-disabled={items.length < 2}
             className={
               items.length < 2
-                ? "pointer-events-none flex h-10 items-center rounded-full bg-white/10 px-4 text-[13px] font-medium text-white/45"
+                ? "pointer-events-none flex h-10 items-center rounded-full bg-white/10 px-4 text-[13px] font-medium text-white/60"
                 : "flex h-10 items-center rounded-full bg-gold-400 px-4 text-[13px] font-medium text-maroon-950 transition hover:bg-gold-300"
             }
           >

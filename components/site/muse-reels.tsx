@@ -151,7 +151,7 @@ export function MuseReels() {
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,3,6,0.35)_0%,rgba(20,3,6,0.06)_30%,rgba(20,3,6,0.25)_58%,rgba(20,3,6,0.92)_100%)]" />
 
                 <div className="absolute inset-x-3 top-3 flex items-center justify-between">
-                  <span className="inline-flex items-center gap-1.5 rounded-full bg-black/35 px-2.5 py-1 text-[8.5px] uppercase tracking-[0.2em] text-white/85 backdrop-blur">
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-black/35 px-2.5 py-1 text-[11px] uppercase tracking-[0.2em] text-white/85 backdrop-blur">
                     <span
                       className={cn(
                         "size-1.5 rounded-full",
@@ -160,19 +160,19 @@ export function MuseReels() {
                     />
                     Reel {reel.number}
                   </span>
-                  <span className="rounded-full bg-black/30 px-2 py-1 text-[8.5px] tabular-nums text-white/80 backdrop-blur">
+                  <span className="rounded-full bg-black/30 px-2 py-1 text-[11px] tabular-nums text-white/80 backdrop-blur">
                     {reel.duration}
                   </span>
                 </div>
 
                 <div className="absolute inset-x-3 bottom-4">
-                  <p className="text-[8.5px] uppercase tracking-[0.24em] text-gold-300">
+                  <p className="text-[11px] uppercase tracking-[0.24em] text-gold-300">
                     {reel.fabric}
                   </p>
                   <p className="mt-1.5 text-[18px] font-medium leading-tight text-white">
                     {reel.title}
                   </p>
-                  <p className="mt-1 text-[10px] text-white/65">{reel.location}</p>
+                  <p className="mt-1 text-[11px] text-white/65">{reel.location}</p>
 
                   {isActive && (
                     <div className="mt-3 h-[2px] w-full overflow-hidden rounded-full bg-white/20">
@@ -237,7 +237,7 @@ export function MuseReels() {
                   <div className="absolute inset-0 bg-[radial-gradient(120%_90%_at_50%_40%,transparent_20%,rgba(20,3,6,0.65)_100%)]" />
 
                   <div className="absolute inset-x-0 top-0 flex items-center justify-between px-5 py-5 sm:px-8">
-                    <p className="text-[10px] uppercase tracking-[0.28em] text-white/60">
+                    <p className="text-[11px] uppercase tracking-[0.28em] text-white/60">
                       NOOLAM · Muse Reel {openReel.number}
                     </p>
                     <div className="flex items-center gap-2">
@@ -245,7 +245,7 @@ export function MuseReels() {
                         type="button"
                         onClick={() => setSound((value) => !value)}
                         aria-pressed={sound}
-                        className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/30 px-4 py-2 text-[9px] uppercase tracking-[0.26em] text-white/85 backdrop-blur transition hover:border-gold-400/60"
+                        className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/30 px-4 py-2 text-[11px] uppercase tracking-[0.26em] text-white/85 backdrop-blur transition hover:border-gold-400/60"
                       >
                         {sound ? <Volume2 className="size-3.5" /> : <VolumeX className="size-3.5" />}
                         {sound ? "Sound on" : "Sound off"}
@@ -253,7 +253,7 @@ export function MuseReels() {
                       <button
                         type="button"
                         onClick={() => setOpenIndex(null)}
-                        className="rounded-full border border-white/25 bg-black/30 px-4 py-2 text-[9px] uppercase tracking-[0.26em] text-white/85 backdrop-blur transition hover:border-gold-400/60"
+                        className="rounded-full border border-white/25 bg-black/30 px-4 py-2 text-[11px] uppercase tracking-[0.26em] text-white/85 backdrop-blur transition hover:border-gold-400/60"
                       >
                         Close
                       </button>
@@ -261,7 +261,7 @@ export function MuseReels() {
                   </div>
 
                   <div className="absolute inset-x-0 bottom-0 px-5 pb-8 sm:px-8">
-                    <p className="text-[9.5px] uppercase tracking-[0.28em] text-gold-300">
+                    <p className="text-[11px] uppercase tracking-[0.28em] text-gold-300">
                       {openReel.fabric}
                     </p>
                     <h3 className="display mt-2 text-[clamp(1.9rem,4.4vw,3.2rem)] text-white">
@@ -276,12 +276,12 @@ export function MuseReels() {
                             current === null ? null : (current + 1) % reels.length,
                           );
                         }}
-                        className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.24em] text-white/70 transition hover:text-gold-300"
+                        className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.24em] text-white/70 transition hover:text-gold-300"
                       >
                         Next reel <ArrowRight className="size-3.5" />
                       </button>
                       <span className="h-px flex-1 bg-white/15" />
-                      <span className="text-[10px] tabular-nums text-white/40">
+                      <span className="text-[11px] tabular-nums text-white/60">
                         {openReel.number} / {String(reels.length).padStart(2, "0")}
                       </span>
                     </div>

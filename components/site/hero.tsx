@@ -71,23 +71,23 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="shell relative z-10 flex h-full w-full flex-col justify-end pb-24 pt-36 sm:pb-28 lg:pb-32"
+          className="shell relative z-10 flex h-full w-full flex-col justify-end pb-[clamp(3rem,9svh,6rem)] pt-[clamp(6.5rem,18svh,10rem)]"
           style={{ y: copyY, opacity: copyOpacity }}
         >
           <div className="max-w-[980px]">
             <span className="hero-fade inline-flex items-center gap-3 rounded-full border border-white/20 bg-black/25 px-4 py-2 backdrop-blur-md">
               <span className="size-1.5 rounded-full bg-gold-400" />
-              <span className="text-[9.5px] font-medium uppercase tracking-[0.28em] text-white/85 sm:text-[10.5px]">
+              <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 sm:text-[11px]">
                 Kanchipuram · Pure Zari · Handwoven Silk
               </span>
             </span>
 
-            <h1 className="display mt-7 text-[clamp(2.85rem,8.2vw,7.4rem)] text-white">
+            <h1 className="display mt-[clamp(1rem,3svh,1.75rem)] text-[clamp(2.6rem,min(8.2vw,9.5svh),7.4rem)] text-white">
               <SplitLines mode="intro" lines={["Woven for", "the Divine."]} />
             </h1>
 
             <p
-              className="hero-fade mt-6 max-w-[34rem] text-[15px] leading-relaxed text-white/80 sm:text-base"
+              className="hero-fade mt-[clamp(0.75rem,2.4svh,1.5rem)] max-w-[34rem] text-[15px] leading-relaxed text-white/80 sm:text-base"
               style={{ "--i": 3 } as React.CSSProperties}
             >
               NOOLAM brings the temple looms of Kanchipuram home: Kanjivaram silk in
@@ -95,7 +95,7 @@ export function Hero() {
             </p>
 
             <div
-              className="hero-fade mt-9 flex flex-wrap items-center gap-3"
+              className="hero-fade mt-[clamp(1rem,3.5svh,2.25rem)] flex flex-wrap items-center gap-3"
               style={{ "--i": 4 } as React.CSSProperties}
             >
               <ArrowPill href="/#try-the-look" variant="maroon">
@@ -107,16 +107,16 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="mt-14 flex items-center justify-between gap-6 border-t border-white/15 pt-5">
-            <div className="flex flex-wrap items-center gap-x-7 gap-y-2 text-[9.5px] uppercase tracking-[0.24em] text-white/50">
+          <div className="mt-[clamp(1rem,5svh,3.5rem)] flex items-center justify-between gap-6 border-t border-white/15 pt-5">
+            <div className="flex flex-wrap items-center gap-x-7 gap-y-2 text-[11px] uppercase tracking-[0.24em] text-white/50">
               <span>Est. 1978</span>
               <span className="hidden sm:inline">Silk Mark certified</span>
               <span className="hidden md:inline">Handloom · Kanchipuram</span>
             </div>
-            <motion.div style={{ opacity: cueOpacity }} className="hidden sm:block">
+            <motion.div style={{ opacity: cueOpacity }} className="hidden xl:block">
               <Link
                 href="/#archive"
-                className="group flex items-center gap-2 text-[9.5px] uppercase tracking-[0.24em] text-white/55 transition hover:text-gold-300"
+                className="group flex min-h-11 items-center gap-2 whitespace-nowrap text-[11px] uppercase tracking-[0.24em] text-white/55 transition hover:text-gold-300"
               >
                 Scroll the archive
                 <ArrowDown className="size-3.5 animate-[drift_2.4s_ease-in-out_infinite]" />

@@ -83,7 +83,7 @@ export function EnquiryButton({ type, product, children, variant = "outline", cl
         onClick={() => setOpen(true)}
         className={cn(
           variant === "link"
-            ? "inline-flex items-center gap-2 text-[13px] font-medium text-maroon-700 underline decoration-gold-500/60 underline-offset-4 transition hover:text-maroon-800"
+            ? "inline-flex min-h-11 items-center gap-2 text-[13px] font-medium text-maroon-700 underline decoration-gold-500/60 underline-offset-4 transition hover:text-maroon-800"
             : "group inline-flex h-14 items-center gap-4 rounded-full pl-7 pr-2 text-[15px] font-medium transition-all duration-300 active:scale-[0.985]",
           variant === "maroon" &&
             "bg-maroon-600 text-white shadow-[0_18px_40px_-18px_rgba(74,10,18,0.85)] hover:bg-maroon-700",

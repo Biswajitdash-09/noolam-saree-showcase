@@ -67,11 +67,11 @@ export function CompareTable() {
 
   return (
     <div className="relative mt-10 overflow-x-auto pb-2" data-lenis-prevent>
-      <table className="w-full min-w-[640px] border-separate border-spacing-0 text-left text-[13.5px]">
+      <table style={{ maxWidth: 150 + items.length * 400, minWidth: items.length > 1 ? 640 : undefined }} className="w-full table-fixed border-separate border-spacing-0 text-left text-[13.5px]">
         <caption className="sr-only">Comparison of {items.length} pieces</caption>
         <thead>
           <tr>
-            <th scope="col" className="w-[150px] pb-5 align-bottom text-[12px] font-normal text-ink-soft">
+            <th scope="col" className="sticky left-0 z-10 w-[96px] bg-ivory md:bg-transparent pb-5 align-bottom sm:w-[150px] text-[12px] font-normal text-ink-soft">
               {items.length} of 3 pieces
             </th>
             {items.map((product) => (
@@ -102,7 +102,7 @@ export function CompareTable() {
         <tbody>
           {rows.map((row) => (
             <tr key={row.label}>
-              <th scope="row" className="border-t border-ink/10 py-4 pr-4 align-top text-[12px] font-normal text-ink-soft">
+              <th scope="row" className="sticky left-0 z-10 border-t border-ink/10 bg-ivory md:bg-transparent py-4 pr-4 align-top text-[12px] font-normal text-ink-soft">
                 {row.label}
               </th>
               {items.map((product) => (
@@ -113,7 +113,7 @@ export function CompareTable() {
             </tr>
           ))}
           <tr>
-            <th scope="row" className="border-t border-ink/10 py-5 pr-4 text-[12px] font-normal text-ink-soft">
+            <th scope="row" className="sticky left-0 z-10 border-t border-ink/10 bg-ivory md:bg-transparent py-5 pr-4 text-[12px] font-normal text-ink-soft">
               <span className="sr-only">Add to bag</span>
             </th>
             {items.map((product) => (
@@ -159,7 +159,7 @@ function CompareAdd({ product }: { product: Product }) {
         onClick={() => size && addToBag(product, size)}
         className={cn(
           "flex h-10 items-center justify-center gap-2 rounded-full text-[13px] font-medium transition",
-          size ? "bg-maroon-600 text-white hover:bg-maroon-700" : "bg-ink/10 text-ink/40",
+          size ? "bg-maroon-600 text-white hover:bg-maroon-700" : "bg-ink/10 text-ink/60",
         )}
       >
         <ShoppingBag className="size-4" />
