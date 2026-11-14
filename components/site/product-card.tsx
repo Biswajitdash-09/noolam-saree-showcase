@@ -115,7 +115,7 @@ export function ProductCard({ product, morph = false }: ProductCardProps) {
             {product.kind === "blouse" ? "Blouse" : product.fabric.split(" · ")[0]}
           </p>
           <h3 className="mt-1.5 truncate text-[15px] font-medium tracking-tight text-ink">
-            <Link href={`/product/${product.slug}`} className="transition hover:text-maroon-700">
+            <Link href={`/product/${product.slug}`} className="-my-3 inline-block py-3 align-top transition hover:text-maroon-700">
               {product.name}
             </Link>
           </h3>
